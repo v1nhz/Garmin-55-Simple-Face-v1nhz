@@ -15,9 +15,12 @@ Màn hình bao gồm:
 ---
 
 ## 🖼 Demo
-
+Demo v1
 ![Simple Face Demo](simple_face_demo.png)
 
+
+Demo v2
+![Simple Face Demo](simple_face_demo_v2.jpg)
 ---
 
 ## 🛠 Build
