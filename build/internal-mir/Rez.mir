@@ -1,0 +1,1867 @@
+[ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+import Toybox.Lang;
+[ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [WatchUi,2,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [WatchUi,3,13,20]; @symbol_usingAlias = [Ui,3,24,26]; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Graphics,4,13,21]; ]
+using Toybox.Graphics;
+[ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [Graphics,5,13,21]; @symbol_usingAlias = [Gfx,5,25,28]; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 7; @symbol_moduledef = [Rez,7,7,10]; ]
+module Rez {
+    [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 8; @symbol_moduledef = [Drawables,8,11,20]; ]
+    module Drawables {
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 8; ]
+        <init> {
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 9; @position = 27; initialized = true; @symbol_vardef = [LauncherIcon,9,27,39]; @symbol_type<0> = [ResourceId,9,43,53]; ]
+        var LauncherIcon as ResourceId;
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 10; @position = 27; initialized = true; @symbol_vardef = [HeartIcon,10,27,36]; @symbol_type<0> = [ResourceId,10,40,50]; ]
+        var HeartIcon as ResourceId;
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 11; @position = 27; initialized = true; @symbol_vardef = [FootIcon,11,27,35]; @symbol_type<0> = [ResourceId,11,39,49]; ]
+        var FootIcon as ResourceId;
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 12; @position = 27; initialized = true; @symbol_vardef = [HotIcon,12,27,34]; @symbol_type<0> = [ResourceId,12,38,48]; ]
+        var HotIcon as ResourceId;
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 13; @position = 27; initialized = true; @symbol_vardef = [SimpleFaceDemo,13,27,41]; @symbol_type<0> = [ResourceId,13,45,55]; ]
+        var SimpleFaceDemo as ResourceId;
+    }
+    [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 16; @symbol_moduledef = [Layouts,16,11,18]; ]
+    module Layouts {
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 16; ]
+        <init> {
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 17; @symbol_functiondef = [WatchFace,17,17,26]; @symbol_param<0> = [dc,17,27,29]; @symbol_param<0>_type<0> = [Graphics,17,33,41]; @symbol_param<0>_type<1> = [Dc,17,42,44]; @symbol_return<0> = [Array,17,49,54]; @symbol_return<1> = [WatchUi,17,55,62]; @symbol_return<2> = [Drawable,17,63,71]; ]
+        function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+_Users_vtpminim4_Documents_garmin_face_simpleface_build_gen_006_B3869_00_source_Rez_mcgen_17_73_39_8_start:
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen" 18 12 ]
+            [ "_Users_vtpminim4_Documents_garmin_face_simpleface_build_gen_006_B3869_00_source_Rez_mcgen_17_73_39_8_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_build_gen_006_B3869_00_source_Rez_mcgen_17_73_39_8_stop" ]
+            %rez_cmp_local_var_dc_getHeight.1 = local;
+            symbol [ rez_cmp_local_var_dc_getHeight %rez_cmp_local_var_dc_getHeight.1 18 16 46 ];
+            %tmp.1 = lgetv %dc;
+            symbol [ dc %tmp.1 18 49 51 ];
+            symbol [ getHeight %tmp.2 18 52 61 ];
+            %tmp.2 = getv function %tmp.1 :getHeight;
+            %tmp.3 = invoke %tmp.1 %tmp.2();
+            lputv %rez_cmp_local_var_dc_getHeight.1 %tmp.3;
+            symbol [ rez_cmp_local_var_dc_getHeight %rez_cmp_local_var_dc_getHeight.1 18 16 46 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen" 20 12 ]
+            [ "_Users_vtpminim4_Documents_garmin_face_simpleface_build_gen_006_B3869_00_source_Rez_mcgen_17_73_39_8_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_build_gen_006_B3869_00_source_Rez_mcgen_17_73_39_8_stop" ]
+            %rez_cmp_local_var_dc_getWidth.2 = local;
+            symbol [ rez_cmp_local_var_dc_getWidth %rez_cmp_local_var_dc_getWidth.2 20 16 45 ];
+            %tmp.4 = lgetv %dc;
+            symbol [ dc %tmp.4 20 48 50 ];
+            symbol [ getWidth %tmp.5 20 51 59 ];
+            %tmp.5 = getv function %tmp.4 :getWidth;
+            %tmp.6 = invoke %tmp.4 %tmp.5();
+            lputv %rez_cmp_local_var_dc_getWidth.2 %tmp.6;
+            symbol [ rez_cmp_local_var_dc_getWidth %rez_cmp_local_var_dc_getWidth.2 20 16 45 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen" 22 12 ]
+            [ "_Users_vtpminim4_Documents_garmin_face_simpleface_build_gen_006_B3869_00_source_Rez_mcgen_17_73_39_8_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_build_gen_006_B3869_00_source_Rez_mcgen_17_73_39_8_stop" ]
+            %rez_cmp_local_custom_drawable_11939594661139614796.3 = local;
+            symbol [ rez_cmp_local_custom_drawable_11939594661139614796 %rez_cmp_local_custom_drawable_11939594661139614796.3 22 16 66 ];
+            symbol [ Background %tmp.10 22 73 83 ];
+            %tmp.10 = getv ? :Background;
+            %tmp.7 = newc %tmp.10 ();
+            lputv %rez_cmp_local_custom_drawable_11939594661139614796.3 %tmp.7;
+            symbol [ rez_cmp_local_custom_drawable_11939594661139614796 %rez_cmp_local_custom_drawable_11939594661139614796.3 22 16 66 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen" 24 12 ]
+            [ "_Users_vtpminim4_Documents_garmin_face_simpleface_build_gen_006_B3869_00_source_Rez_mcgen_17_73_39_8_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_build_gen_006_B3869_00_source_Rez_mcgen_17_73_39_8_stop" ]
+            %rez_cmp_local_text_Date.4 = local;
+            symbol [ rez_cmp_local_text_Date %rez_cmp_local_text_Date.4 24 16 39 ];
+            symbol [ WatchUi %tmp.13 24 46 53 ];
+            %tmp.13 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.14 24 54 58 ];
+            %tmp.14 = getv function ? %tmp.13 :Text;
+            %tmp.15 = newd 5;
+            %tmp.17 = const :identifier;
+            symbol [ identifier %tmp.17 24 61 71 const ];
+            %tmp.18 = "Date";
+            %tmp.19 = dup %tmp.15;
+            %tmp.20 = aputv %tmp.19 %tmp.17 %tmp.18;
+            %tmp.22 = const :locX;
+            symbol [ locX %tmp.22 24 82 86 const ];
+            %tmp.23 = lgetv %rez_cmp_local_var_dc_getWidth.2;
+            symbol [ rez_cmp_local_var_dc_getWidth %tmp.23 24 89 118 ];
+            %tmp.24 = 0.5;
+            %tmp.25 = mul %tmp.23 %tmp.24;
+            %tmp.26 = dup %tmp.20;
+            %tmp.27 = aputv %tmp.26 %tmp.22 %tmp.25;
+            %tmp.29 = const :locY;
+            symbol [ locY %tmp.29 24 128 132 const ];
+            %tmp.30 = 50;
+            %tmp.31 = dup %tmp.27;
+            %tmp.32 = aputv %tmp.31 %tmp.29 %tmp.30;
+            %tmp.34 = const :justification;
+            symbol [ justification %tmp.34 24 139 152 const ];
+            symbol [ Graphics %tmp.35 24 154 162 ];
+            %tmp.35 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_CENTER %tmp.36 24 163 182 ];
+            %tmp.36 = getv %tmp.35 :TEXT_JUSTIFY_CENTER;
+            %tmp.37 = dup %tmp.32;
+            %tmp.38 = aputv %tmp.37 %tmp.34 %tmp.36;
+            %tmp.40 = const :font;
+            symbol [ font %tmp.40 24 185 189 const ];
+            symbol [ Graphics %tmp.41 24 191 199 ];
+            %tmp.41 = getm $.Toybox.Graphics;
+            symbol [ FONT_XTINY %tmp.42 24 200 210 ];
+            %tmp.42 = getv %tmp.41 :FONT_XTINY;
+            %tmp.43 = dup %tmp.38;
+            %tmp.44 = aputv %tmp.43 %tmp.40 %tmp.42;
+            %tmp.11 = newc %tmp.14 (%tmp.44);
+            lputv %rez_cmp_local_text_Date.4 %tmp.11;
+            symbol [ rez_cmp_local_text_Date %rez_cmp_local_text_Date.4 24 16 39 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen" 26 12 ]
+            [ "_Users_vtpminim4_Documents_garmin_face_simpleface_build_gen_006_B3869_00_source_Rez_mcgen_17_73_39_8_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_build_gen_006_B3869_00_source_Rez_mcgen_17_73_39_8_stop" ]
+            %rez_cmp_local_text_DayOfTheWeek.5 = local;
+            symbol [ rez_cmp_local_text_DayOfTheWeek %rez_cmp_local_text_DayOfTheWeek.5 26 16 47 ];
+            symbol [ WatchUi %tmp.47 26 54 61 ];
+            %tmp.47 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.48 26 62 66 ];
+            %tmp.48 = getv function ? %tmp.47 :Text;
+            %tmp.49 = newd 5;
+            %tmp.51 = const :identifier;
+            symbol [ identifier %tmp.51 26 69 79 const ];
+            %tmp.52 = "DayOfTheWeek";
+            %tmp.53 = dup %tmp.49;
+            %tmp.54 = aputv %tmp.53 %tmp.51 %tmp.52;
+            %tmp.56 = const :locX;
+            symbol [ locX %tmp.56 26 98 102 const ];
+            %tmp.57 = lgetv %rez_cmp_local_var_dc_getWidth.2;
+            symbol [ rez_cmp_local_var_dc_getWidth %tmp.57 26 105 134 ];
+            %tmp.58 = 0.5;
+            %tmp.59 = mul %tmp.57 %tmp.58;
+            %tmp.60 = dup %tmp.54;
+            %tmp.61 = aputv %tmp.60 %tmp.56 %tmp.59;
+            %tmp.63 = const :locY;
+            symbol [ locY %tmp.63 26 144 148 const ];
+            %tmp.64 = 40;
+            %tmp.65 = dup %tmp.61;
+            %tmp.66 = aputv %tmp.65 %tmp.63 %tmp.64;
+            %tmp.68 = const :justification;
+            symbol [ justification %tmp.68 26 155 168 const ];
+            symbol [ Graphics %tmp.69 26 170 178 ];
+            %tmp.69 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_CENTER %tmp.70 26 179 198 ];
+            %tmp.70 = getv %tmp.69 :TEXT_JUSTIFY_CENTER;
+            %tmp.71 = dup %tmp.66;
+            %tmp.72 = aputv %tmp.71 %tmp.68 %tmp.70;
+            %tmp.74 = const :font;
+            symbol [ font %tmp.74 26 201 205 const ];
+            symbol [ Graphics %tmp.75 26 207 215 ];
+            %tmp.75 = getm $.Toybox.Graphics;
+            symbol [ FONT_XTINY %tmp.76 26 216 226 ];
+            %tmp.76 = getv %tmp.75 :FONT_XTINY;
+            %tmp.77 = dup %tmp.72;
+            %tmp.78 = aputv %tmp.77 %tmp.74 %tmp.76;
+            %tmp.45 = newc %tmp.48 (%tmp.78);
+            lputv %rez_cmp_local_text_DayOfTheWeek.5 %tmp.45;
+            symbol [ rez_cmp_local_text_DayOfTheWeek %rez_cmp_local_text_DayOfTheWeek.5 26 16 47 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen" 28 12 ]
+            [ "_Users_vtpminim4_Documents_garmin_face_simpleface_build_gen_006_B3869_00_source_Rez_mcgen_17_73_39_8_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_build_gen_006_B3869_00_source_Rez_mcgen_17_73_39_8_stop" ]
+            %rez_cmp_local_text_HoursAndMinutes.6 = local;
+            symbol [ rez_cmp_local_text_HoursAndMinutes %rez_cmp_local_text_HoursAndMinutes.6 28 16 50 ];
+            symbol [ WatchUi %tmp.81 28 57 64 ];
+            %tmp.81 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.82 28 65 69 ];
+            %tmp.82 = getv function ? %tmp.81 :Text;
+            %tmp.83 = newd 5;
+            %tmp.85 = const :identifier;
+            symbol [ identifier %tmp.85 28 72 82 const ];
+            %tmp.86 = "HoursAndMinutes";
+            %tmp.87 = dup %tmp.83;
+            %tmp.88 = aputv %tmp.87 %tmp.85 %tmp.86;
+            %tmp.90 = const :locX;
+            symbol [ locX %tmp.90 28 104 108 const ];
+            %tmp.91 = lgetv %rez_cmp_local_var_dc_getWidth.2;
+            symbol [ rez_cmp_local_var_dc_getWidth %tmp.91 28 111 140 ];
+            %tmp.92 = 0.5;
+            %tmp.93 = mul %tmp.91 %tmp.92;
+            %tmp.94 = dup %tmp.88;
+            %tmp.95 = aputv %tmp.94 %tmp.90 %tmp.93;
+            %tmp.97 = const :locY;
+            symbol [ locY %tmp.97 28 150 154 const ];
+            %tmp.98 = lgetv %rez_cmp_local_var_dc_getHeight.1;
+            symbol [ rez_cmp_local_var_dc_getHeight %tmp.98 28 158 188 ];
+            %tmp.99 = lgetv %dc;
+            symbol [ dc %tmp.99 28 191 193 ];
+            symbol [ getFontHeight %tmp.100 28 194 207 ];
+            %tmp.100 = getv function %tmp.99 :getFontHeight;
+            symbol [ Graphics %tmp.101 28 208 216 ];
+            %tmp.101 = getm $.Toybox.Graphics;
+            symbol [ FONT_NUMBER_HOT %tmp.102 28 217 232 ];
+            %tmp.102 = getv %tmp.101 :FONT_NUMBER_HOT;
+            %tmp.103 = invoke %tmp.99 %tmp.100(%tmp.102);
+            %tmp.104 = sub %tmp.98 %tmp.103;
+            %tmp.105 = 0.5;
+            %tmp.106 = mul %tmp.104 %tmp.105;
+            %tmp.107 = dup %tmp.95;
+            %tmp.108 = aputv %tmp.107 %tmp.97 %tmp.106;
+            %tmp.110 = const :justification;
+            symbol [ justification %tmp.110 28 244 257 const ];
+            symbol [ Graphics %tmp.111 28 259 267 ];
+            %tmp.111 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_CENTER %tmp.112 28 268 287 ];
+            %tmp.112 = getv %tmp.111 :TEXT_JUSTIFY_CENTER;
+            %tmp.113 = dup %tmp.108;
+            %tmp.114 = aputv %tmp.113 %tmp.110 %tmp.112;
+            %tmp.116 = const :font;
+            symbol [ font %tmp.116 28 290 294 const ];
+            symbol [ Graphics %tmp.117 28 296 304 ];
+            %tmp.117 = getm $.Toybox.Graphics;
+            symbol [ FONT_NUMBER_HOT %tmp.118 28 305 320 ];
+            %tmp.118 = getv %tmp.117 :FONT_NUMBER_HOT;
+            %tmp.119 = dup %tmp.114;
+            %tmp.120 = aputv %tmp.119 %tmp.116 %tmp.118;
+            %tmp.79 = newc %tmp.82 (%tmp.120);
+            lputv %rez_cmp_local_text_HoursAndMinutes.6 %tmp.79;
+            symbol [ rez_cmp_local_text_HoursAndMinutes %rez_cmp_local_text_HoursAndMinutes.6 28 16 50 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen" 30 12 ]
+            [ "_Users_vtpminim4_Documents_garmin_face_simpleface_build_gen_006_B3869_00_source_Rez_mcgen_17_73_39_8_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_build_gen_006_B3869_00_source_Rez_mcgen_17_73_39_8_stop" ]
+            %rez_cmp_local_text_Battery.7 = local;
+            symbol [ rez_cmp_local_text_Battery %rez_cmp_local_text_Battery.7 30 16 42 ];
+            symbol [ WatchUi %tmp.123 30 49 56 ];
+            %tmp.123 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.124 30 57 61 ];
+            %tmp.124 = getv function ? %tmp.123 :Text;
+            %tmp.125 = newd 4;
+            %tmp.127 = const :identifier;
+            symbol [ identifier %tmp.127 30 64 74 const ];
+            %tmp.128 = "Battery";
+            %tmp.129 = dup %tmp.125;
+            %tmp.130 = aputv %tmp.129 %tmp.127 %tmp.128;
+            %tmp.132 = const :locX;
+            symbol [ locX %tmp.132 30 88 92 const ];
+            %tmp.133 = lgetv %rez_cmp_local_var_dc_getWidth.2;
+            symbol [ rez_cmp_local_var_dc_getWidth %tmp.133 30 95 124 ];
+            %tmp.134 = 0.5;
+            %tmp.135 = mul %tmp.133 %tmp.134;
+            %tmp.136 = dup %tmp.130;
+            %tmp.137 = aputv %tmp.136 %tmp.132 %tmp.135;
+            %tmp.139 = const :locY;
+            symbol [ locY %tmp.139 30 134 138 const ];
+            %tmp.140 = lgetv %rez_cmp_local_var_dc_getHeight.1;
+            symbol [ rez_cmp_local_var_dc_getHeight %tmp.140 30 141 171 ];
+            %tmp.141 = 90;
+            %tmp.142 = 100.0;
+            %tmp.143 = div %tmp.141 %tmp.142;
+            %tmp.144 = mul %tmp.140 %tmp.143;
+            %tmp.145 = dup %tmp.137;
+            %tmp.146 = aputv %tmp.145 %tmp.139 %tmp.144;
+            %tmp.148 = const :font;
+            symbol [ font %tmp.148 30 190 194 const ];
+            symbol [ Graphics %tmp.149 30 196 204 ];
+            %tmp.149 = getm $.Toybox.Graphics;
+            symbol [ FONT_XTINY %tmp.150 30 205 215 ];
+            %tmp.150 = getv %tmp.149 :FONT_XTINY;
+            %tmp.151 = dup %tmp.146;
+            %tmp.152 = aputv %tmp.151 %tmp.148 %tmp.150;
+            %tmp.121 = newc %tmp.124 (%tmp.152);
+            lputv %rez_cmp_local_text_Battery.7 %tmp.121;
+            symbol [ rez_cmp_local_text_Battery %rez_cmp_local_text_Battery.7 30 16 42 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen" 32 12 ]
+            [ "_Users_vtpminim4_Documents_garmin_face_simpleface_build_gen_006_B3869_00_source_Rez_mcgen_17_73_39_8_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_build_gen_006_B3869_00_source_Rez_mcgen_17_73_39_8_stop" ]
+            %rez_cmp_local_text_HeartRate.8 = local;
+            symbol [ rez_cmp_local_text_HeartRate %rez_cmp_local_text_HeartRate.8 32 16 44 ];
+            symbol [ WatchUi %tmp.155 32 51 58 ];
+            %tmp.155 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.156 32 59 63 ];
+            %tmp.156 = getv function ? %tmp.155 :Text;
+            %tmp.157 = newd 5;
+            %tmp.159 = const :identifier;
+            symbol [ identifier %tmp.159 32 66 76 const ];
+            %tmp.160 = "HeartRate";
+            %tmp.161 = dup %tmp.157;
+            %tmp.162 = aputv %tmp.161 %tmp.159 %tmp.160;
+            %tmp.164 = const :color;
+            symbol [ color %tmp.164 32 92 97 const ];
+            symbol [ Graphics %tmp.165 32 99 107 ];
+            %tmp.165 = getm $.Toybox.Graphics;
+            symbol [ COLOR_WHITE %tmp.166 32 108 119 ];
+            %tmp.166 = getv %tmp.165 :COLOR_WHITE;
+            %tmp.167 = dup %tmp.162;
+            %tmp.168 = aputv %tmp.167 %tmp.164 %tmp.166;
+            %tmp.170 = const :locX;
+            symbol [ locX %tmp.170 32 122 126 const ];
+            %tmp.171 = 62;
+            %tmp.172 = dup %tmp.168;
+            %tmp.173 = aputv %tmp.172 %tmp.170 %tmp.171;
+            %tmp.175 = const :locY;
+            symbol [ locY %tmp.175 32 133 137 const ];
+            %tmp.176 = 148;
+            %tmp.177 = dup %tmp.173;
+            %tmp.178 = aputv %tmp.177 %tmp.175 %tmp.176;
+            %tmp.180 = const :font;
+            symbol [ font %tmp.180 32 145 149 const ];
+            symbol [ Graphics %tmp.181 32 151 159 ];
+            %tmp.181 = getm $.Toybox.Graphics;
+            symbol [ FONT_SMALL %tmp.182 32 160 170 ];
+            %tmp.182 = getv %tmp.181 :FONT_SMALL;
+            %tmp.183 = dup %tmp.178;
+            %tmp.184 = aputv %tmp.183 %tmp.180 %tmp.182;
+            %tmp.153 = newc %tmp.156 (%tmp.184);
+            lputv %rez_cmp_local_text_HeartRate.8 %tmp.153;
+            symbol [ rez_cmp_local_text_HeartRate %rez_cmp_local_text_HeartRate.8 32 16 44 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen" 34 12 ]
+            [ "_Users_vtpminim4_Documents_garmin_face_simpleface_build_gen_006_B3869_00_source_Rez_mcgen_17_73_39_8_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_build_gen_006_B3869_00_source_Rez_mcgen_17_73_39_8_stop" ]
+            %rez_cmp_local_text_Steps.9 = local;
+            symbol [ rez_cmp_local_text_Steps %rez_cmp_local_text_Steps.9 34 16 40 ];
+            symbol [ WatchUi %tmp.187 34 47 54 ];
+            %tmp.187 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.188 34 55 59 ];
+            %tmp.188 = getv function ? %tmp.187 :Text;
+            %tmp.189 = newd 5;
+            %tmp.191 = const :identifier;
+            symbol [ identifier %tmp.191 34 62 72 const ];
+            %tmp.192 = "Steps";
+            %tmp.193 = dup %tmp.189;
+            %tmp.194 = aputv %tmp.193 %tmp.191 %tmp.192;
+            %tmp.196 = const :color;
+            symbol [ color %tmp.196 34 84 89 const ];
+            symbol [ Graphics %tmp.197 34 91 99 ];
+            %tmp.197 = getm $.Toybox.Graphics;
+            symbol [ COLOR_WHITE %tmp.198 34 100 111 ];
+            %tmp.198 = getv %tmp.197 :COLOR_WHITE;
+            %tmp.199 = dup %tmp.194;
+            %tmp.200 = aputv %tmp.199 %tmp.196 %tmp.198;
+            %tmp.202 = const :locX;
+            symbol [ locX %tmp.202 34 114 118 const ];
+            %tmp.203 = 125;
+            %tmp.204 = dup %tmp.200;
+            %tmp.205 = aputv %tmp.204 %tmp.202 %tmp.203;
+            %tmp.207 = const :locY;
+            symbol [ locY %tmp.207 34 126 130 const ];
+            %tmp.208 = 140;
+            %tmp.209 = dup %tmp.205;
+            %tmp.210 = aputv %tmp.209 %tmp.207 %tmp.208;
+            %tmp.212 = const :font;
+            symbol [ font %tmp.212 34 138 142 const ];
+            symbol [ Graphics %tmp.213 34 144 152 ];
+            %tmp.213 = getm $.Toybox.Graphics;
+            symbol [ FONT_XTINY %tmp.214 34 153 163 ];
+            %tmp.214 = getv %tmp.213 :FONT_XTINY;
+            %tmp.215 = dup %tmp.210;
+            %tmp.216 = aputv %tmp.215 %tmp.212 %tmp.214;
+            %tmp.185 = newc %tmp.188 (%tmp.216);
+            lputv %rez_cmp_local_text_Steps.9 %tmp.185;
+            symbol [ rez_cmp_local_text_Steps %rez_cmp_local_text_Steps.9 34 16 40 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen" 36 12 ]
+            [ "_Users_vtpminim4_Documents_garmin_face_simpleface_build_gen_006_B3869_00_source_Rez_mcgen_17_73_39_8_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_build_gen_006_B3869_00_source_Rez_mcgen_17_73_39_8_stop" ]
+            %rez_cmp_local_text_Calories.10 = local;
+            symbol [ rez_cmp_local_text_Calories %rez_cmp_local_text_Calories.10 36 16 43 ];
+            symbol [ WatchUi %tmp.219 36 50 57 ];
+            %tmp.219 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.220 36 58 62 ];
+            %tmp.220 = getv function ? %tmp.219 :Text;
+            %tmp.221 = newd 5;
+            %tmp.223 = const :identifier;
+            symbol [ identifier %tmp.223 36 65 75 const ];
+            %tmp.224 = "Calories";
+            %tmp.225 = dup %tmp.221;
+            %tmp.226 = aputv %tmp.225 %tmp.223 %tmp.224;
+            %tmp.228 = const :color;
+            symbol [ color %tmp.228 36 90 95 const ];
+            symbol [ Graphics %tmp.229 36 97 105 ];
+            %tmp.229 = getm $.Toybox.Graphics;
+            symbol [ COLOR_WHITE %tmp.230 36 106 117 ];
+            %tmp.230 = getv %tmp.229 :COLOR_WHITE;
+            %tmp.231 = dup %tmp.226;
+            %tmp.232 = aputv %tmp.231 %tmp.228 %tmp.230;
+            %tmp.234 = const :locX;
+            symbol [ locX %tmp.234 36 120 124 const ];
+            %tmp.235 = 125;
+            %tmp.236 = dup %tmp.232;
+            %tmp.237 = aputv %tmp.236 %tmp.234 %tmp.235;
+            %tmp.239 = const :locY;
+            symbol [ locY %tmp.239 36 132 136 const ];
+            %tmp.240 = 160;
+            %tmp.241 = dup %tmp.237;
+            %tmp.242 = aputv %tmp.241 %tmp.239 %tmp.240;
+            %tmp.244 = const :font;
+            symbol [ font %tmp.244 36 144 148 const ];
+            symbol [ Graphics %tmp.245 36 150 158 ];
+            %tmp.245 = getm $.Toybox.Graphics;
+            symbol [ FONT_XTINY %tmp.246 36 159 169 ];
+            %tmp.246 = getv %tmp.245 :FONT_XTINY;
+            %tmp.247 = dup %tmp.242;
+            %tmp.248 = aputv %tmp.247 %tmp.244 %tmp.246;
+            %tmp.217 = newc %tmp.220 (%tmp.248);
+            lputv %rez_cmp_local_text_Calories.10 %tmp.217;
+            symbol [ rez_cmp_local_text_Calories %rez_cmp_local_text_Calories.10 36 16 43 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen" 38 12 ]
+            %tmp.249 = newa 8 Array<WatchUi.Drawable>;
+            symbol [ Array %tmp.249 38 282 287 ];
+            symbol [ WatchUi %tmp.249 38 288 295 ];
+            symbol [ Drawable %tmp.249 38 296 304 ];
+            %tmp.250 = lgetv %rez_cmp_local_custom_drawable_11939594661139614796.3;
+            symbol [ rez_cmp_local_custom_drawable_11939594661139614796 %tmp.250 38 20 70 ];
+            %tmp.251 = dup %tmp.249;
+            %tmp.252 = aputv %tmp.251 0 %tmp.250;
+            %tmp.253 = lgetv %rez_cmp_local_text_Date.4;
+            symbol [ rez_cmp_local_text_Date %tmp.253 38 72 95 ];
+            %tmp.254 = dup %tmp.252;
+            %tmp.255 = aputv %tmp.254 1 %tmp.253;
+            %tmp.256 = lgetv %rez_cmp_local_text_DayOfTheWeek.5;
+            symbol [ rez_cmp_local_text_DayOfTheWeek %tmp.256 38 97 128 ];
+            %tmp.257 = dup %tmp.255;
+            %tmp.258 = aputv %tmp.257 2 %tmp.256;
+            %tmp.259 = lgetv %rez_cmp_local_text_HoursAndMinutes.6;
+            symbol [ rez_cmp_local_text_HoursAndMinutes %tmp.259 38 130 164 ];
+            %tmp.260 = dup %tmp.258;
+            %tmp.261 = aputv %tmp.260 3 %tmp.259;
+            %tmp.262 = lgetv %rez_cmp_local_text_Battery.7;
+            symbol [ rez_cmp_local_text_Battery %tmp.262 38 166 192 ];
+            %tmp.263 = dup %tmp.261;
+            %tmp.264 = aputv %tmp.263 4 %tmp.262;
+            %tmp.265 = lgetv %rez_cmp_local_text_HeartRate.8;
+            symbol [ rez_cmp_local_text_HeartRate %tmp.265 38 194 222 ];
+            %tmp.266 = dup %tmp.264;
+            %tmp.267 = aputv %tmp.266 5 %tmp.265;
+            %tmp.268 = lgetv %rez_cmp_local_text_Steps.9;
+            symbol [ rez_cmp_local_text_Steps %tmp.268 38 224 248 ];
+            %tmp.269 = dup %tmp.267;
+            %tmp.270 = aputv %tmp.269 6 %tmp.268;
+            %tmp.271 = lgetv %rez_cmp_local_text_Calories.10;
+            symbol [ rez_cmp_local_text_Calories %tmp.271 38 250 277 ];
+            %tmp.272 = dup %tmp.270;
+            %tmp.273 = aputv %tmp.272 7 %tmp.271;
+            ret %tmp.273;
+_Users_vtpminim4_Documents_garmin_face_simpleface_build_gen_006_B3869_00_source_Rez_mcgen_17_73_39_8_stop:
+        }
+    }
+    [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 42; @symbol_moduledef = [Strings,42,11,18]; ]
+    module Strings {
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 42; ]
+        <init> {
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 43; @position = 27; initialized = true; @symbol_vardef = [ColorLightGray,43,27,41]; @symbol_type<0> = [ResourceId,43,45,55]; ]
+        var ColorLightGray as ResourceId;
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 44; @position = 27; initialized = true; @symbol_vardef = [ColorBlue,44,27,36]; @symbol_type<0> = [ResourceId,44,40,50]; ]
+        var ColorBlue as ResourceId;
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 45; @position = 27; initialized = true; @symbol_vardef = [ColorRed,45,27,35]; @symbol_type<0> = [ResourceId,45,39,49]; ]
+        var ColorRed as ResourceId;
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 46; @position = 27; initialized = true; @symbol_vardef = [ForegroundColorTitle,46,27,47]; @symbol_type<0> = [ResourceId,46,51,61]; ]
+        var ForegroundColorTitle as ResourceId;
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 47; @position = 27; initialized = true; @symbol_vardef = [BackgroundColorTitle,47,27,47]; @symbol_type<0> = [ResourceId,47,51,61]; ]
+        var BackgroundColorTitle as ResourceId;
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 48; @position = 27; initialized = true; @symbol_vardef = [ColorDarkGray,48,27,40]; @symbol_type<0> = [ResourceId,48,44,54]; ]
+        var ColorDarkGray as ResourceId;
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 49; @position = 27; initialized = true; @symbol_vardef = [MilitaryFormatTitle,49,27,46]; @symbol_type<0> = [ResourceId,49,50,60]; ]
+        var MilitaryFormatTitle as ResourceId;
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 50; @position = 27; initialized = true; @symbol_vardef = [ColorBlack,50,27,37]; @symbol_type<0> = [ResourceId,50,41,51]; ]
+        var ColorBlack as ResourceId;
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 51; @position = 27; initialized = true; @symbol_vardef = [ColorWhite,51,27,37]; @symbol_type<0> = [ResourceId,51,41,51]; ]
+        var ColorWhite as ResourceId;
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 52; @position = 27; initialized = true; @symbol_vardef = [AppName,52,27,34]; @symbol_type<0> = [ResourceId,52,38,48]; ]
+        var AppName as ResourceId;
+    }
+    [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 55; @symbol_moduledef = [Styles,55,11,17]; ]
+    module Styles {
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 55; ]
+        <init> {
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 56; @symbol_moduledef = [prompt_font_enhanced_readability__body_with_title,56,15,64]; ]
+        module prompt_font_enhanced_readability__body_with_title {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 56; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 57; @position = 18; @symbol_constdef = [exclude,57,18,25]; @symbol_type<0> = [Boolean,57,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 60; @symbol_moduledef = [system_size__menu_header,60,15,39]; ]
+        module system_size__menu_header {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 60; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 61; @position = 18; @symbol_constdef = [width,61,18,23]; @symbol_type<0> = [Number,61,27,33]; ]
+            const width as Number = 208;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 62; @position = 18; @symbol_constdef = [height,62,18,24]; @symbol_type<0> = [Number,62,28,34]; ]
+            const height as Number = 65;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 65; @symbol_moduledef = [system_loc__hint_button_left_bottom,65,15,50]; ]
+        module system_loc__hint_button_left_bottom {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 65; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 66; @position = 18; @symbol_constdef = [x,66,18,19]; @symbol_type<0> = [Number,66,23,29]; ]
+            const x as Number = 11;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 67; @position = 18; @symbol_constdef = [y,67,18,19]; @symbol_type<0> = [Number,67,23,29]; ]
+            const y as Number = 138;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 70; @symbol_moduledef = [prompt_font_enhanced_readability__body_no_title,70,15,62]; ]
+        module prompt_font_enhanced_readability__body_no_title {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 70; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 71; @position = 18; @symbol_constdef = [exclude,71,18,25]; @symbol_type<0> = [Boolean,71,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 74; @symbol_moduledef = [prompt_loc__body_no_title,74,15,40]; ]
+        module prompt_loc__body_no_title {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 74; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 75; @position = 18; @symbol_constdef = [x,75,18,19]; @symbol_type<0> = [Number,75,23,29]; ]
+            const x as Number = 21;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 76; @position = 18; @symbol_constdef = [y,76,18,19]; @symbol_type<0> = [Number,76,23,29]; ]
+            const y as Number = 21;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 79; @symbol_moduledef = [system_icon_dark__about,79,15,38]; ]
+        module system_icon_dark__about {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 79; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 80; @position = 18; @symbol_constdef = [filename,80,18,26]; @symbol_type<0> = [String,80,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_dark__about.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 81; @position = 18; @symbol_constdef = [compress,81,18,26]; @symbol_type<0> = [String,81,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 82; @position = 18; @symbol_constdef = [dithering,82,18,27]; @symbol_type<0> = [String,82,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 83; @position = 18; @symbol_constdef = [automaticPalette,83,18,34]; @symbol_type<0> = [String,83,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 86; @symbol_moduledef = [system_icon_light__question,86,15,42]; ]
+        module system_icon_light__question {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 86; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 87; @position = 18; @symbol_constdef = [filename,87,18,26]; @symbol_type<0> = [String,87,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_light__question.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 88; @position = 18; @symbol_constdef = [dithering,88,18,27]; @symbol_type<0> = [String,88,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 91; @symbol_moduledef = [system_loc__hint_button_left_top,91,15,47]; ]
+        module system_loc__hint_button_left_top {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 91; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 92; @position = 18; @symbol_constdef = [exclude,92,18,25]; @symbol_type<0> = [Boolean,92,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 95; @symbol_moduledef = [prompt_font__title,95,15,33]; ]
+        module prompt_font__title {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 95; ]
+            <init> {
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen" 96 18 ]
+                symbol [ Graphics %tmp.274 96 34 42 ];
+                %tmp.274 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.275 96 43 62 ];
+                %tmp.275 = getv %tmp.274 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.276 96 63 71 ];
+                %tmp.276 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.277 96 72 92 ];
+                %tmp.277 = getv %tmp.276 :TEXT_JUSTIFY_VCENTER;
+                %tmp.278 = bitor %tmp.275 %tmp.277;
+                putv self :justification %tmp.278;
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen" 97 18 ]
+                symbol [ Graphics %tmp.279 97 25 33 ];
+                %tmp.279 = getm $.Toybox.Graphics;
+                symbol [ FONT_XTINY %tmp.280 97 34 44 ];
+                %tmp.280 = getv %tmp.279 :FONT_XTINY;
+                putv self :font %tmp.280;
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 96; @position = 18; @symbol_constdef = [justification,96,18,31]; ]
+            const justification;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 97; @position = 18; @symbol_constdef = [font,97,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 100; @symbol_moduledef = [system_icon_dark__discard,100,15,40]; ]
+        module system_icon_dark__discard {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 100; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 101; @position = 18; @symbol_constdef = [filename,101,18,26]; @symbol_type<0> = [String,101,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_dark__discard.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 102; @position = 18; @symbol_constdef = [compress,102,18,26]; @symbol_type<0> = [String,102,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 103; @position = 18; @symbol_constdef = [dithering,103,18,27]; @symbol_type<0> = [String,103,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 104; @position = 18; @symbol_constdef = [automaticPalette,104,18,34]; @symbol_type<0> = [String,104,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 107; @symbol_moduledef = [system_size__menu_item,107,15,37]; ]
+        module system_size__menu_item {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 107; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 108; @position = 18; @symbol_constdef = [width,108,18,23]; @symbol_type<0> = [Number,108,27,33]; ]
+            const width as Number = 208;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 109; @position = 18; @symbol_constdef = [height,109,18,24]; @symbol_type<0> = [Number,109,28,34]; ]
+            const height as Number = 54;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 112; @symbol_moduledef = [system_color_dark__text,112,15,38]; ]
+        module system_color_dark__text {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 112; ]
+            <init> {
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen" 114 18 ]
+                symbol [ Graphics %tmp.281 114 31 39 ];
+                %tmp.281 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.282 114 40 57 ];
+                %tmp.282 = getv %tmp.281 :COLOR_TRANSPARENT;
+                putv self :background %tmp.282;
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 113; @position = 18; @symbol_constdef = [color,113,18,23]; @symbol_type<0> = [Number,113,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 114; @position = 18; @symbol_constdef = [background,114,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 117; @symbol_moduledef = [system_icon_destructive__discard,117,15,47]; ]
+        module system_icon_destructive__discard {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 117; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 118; @position = 18; @symbol_constdef = [filename,118,18,26]; @symbol_type<0> = [String,118,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_destructive__discard.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 119; @position = 18; @symbol_constdef = [dithering,119,18,27]; @symbol_type<0> = [String,119,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 122; @symbol_moduledef = [system_icon_dark__hint_action_menu,122,15,49]; ]
+        module system_icon_dark__hint_action_menu {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 122; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 123; @position = 18; @symbol_constdef = [filename,123,18,26]; @symbol_type<0> = [String,123,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_dark__hint_button_right_top.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 124; @position = 18; @symbol_constdef = [dithering,124,18,27]; @symbol_type<0> = [String,124,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 127; @symbol_moduledef = [prompt_size__title,127,15,33]; ]
+        module prompt_size__title {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 127; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 128; @position = 18; @symbol_constdef = [width,128,18,23]; @symbol_type<0> = [Number,128,27,33]; ]
+            const width as Number = 166;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 129; @position = 18; @symbol_constdef = [height,129,18,24]; @symbol_type<0> = [Number,129,28,34]; ]
+            const height as Number = 38;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 132; @symbol_moduledef = [confirmation_font__body,132,15,38]; ]
+        module confirmation_font__body {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 132; ]
+            <init> {
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen" 133 18 ]
+                symbol [ Graphics %tmp.283 133 34 42 ];
+                %tmp.283 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.284 133 43 62 ];
+                %tmp.284 = getv %tmp.283 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.285 133 63 71 ];
+                %tmp.285 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.286 133 72 92 ];
+                %tmp.286 = getv %tmp.285 :TEXT_JUSTIFY_VCENTER;
+                %tmp.287 = bitor %tmp.284 %tmp.286;
+                putv self :justification %tmp.287;
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen" 134 18 ]
+                symbol [ Graphics %tmp.288 134 25 33 ];
+                %tmp.288 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.289 134 34 43 ];
+                %tmp.289 = getv %tmp.288 :FONT_TINY;
+                putv self :font %tmp.289;
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 133; @position = 18; @symbol_constdef = [justification,133,18,31]; ]
+            const justification;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 134; @position = 18; @symbol_constdef = [font,134,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 137; @symbol_moduledef = [system_color_dark__background,137,15,44]; ]
+        module system_color_dark__background {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 137; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 138; @position = 18; @symbol_constdef = [color,138,18,23]; @symbol_type<0> = [Number,138,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 139; @position = 18; @symbol_constdef = [background,139,18,28]; @symbol_type<0> = [Number,139,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 142; @symbol_moduledef = [system_icon_destructive__hint_button_left_top,142,15,60]; ]
+        module system_icon_destructive__hint_button_left_top {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 142; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 143; @position = 18; @symbol_constdef = [filename,143,18,26]; @symbol_type<0> = [String,143,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_destructive__hint_button_left_top.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 144; @position = 18; @symbol_constdef = [dithering,144,18,27]; @symbol_type<0> = [String,144,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 147; @symbol_moduledef = [system_size__launch_icon,147,15,39]; ]
+        module system_size__launch_icon {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 147; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 148; @position = 18; @symbol_constdef = [scaleX,148,18,24]; @symbol_type<0> = [Number,148,28,34]; ]
+            const scaleX as Number = 35;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 149; @position = 18; @symbol_constdef = [scaleY,149,18,24]; @symbol_type<0> = [Number,149,28,34]; ]
+            const scaleY as Number = 35;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 150; @position = 18; @symbol_constdef = [scaleRelativeTo,150,18,33]; @symbol_type<0> = [String,150,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 153; @symbol_moduledef = [confirmation_input__confirm,153,15,42]; ]
+        module confirmation_input__confirm {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 153; ]
+            <init> {
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen" 154 18 ]
+                symbol [ WatchUi %tmp.290 154 27 34 ];
+                %tmp.290 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.291 154 35 44 ];
+                %tmp.291 = getv %tmp.290 :KEY_ENTER;
+                putv self :button %tmp.291;
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 154; @position = 18; @symbol_constdef = [button,154,18,24]; ]
+            const button;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 157; @symbol_moduledef = [prompt_font__body_with_title,157,15,43]; ]
+        module prompt_font__body_with_title {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 157; ]
+            <init> {
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen" 158 18 ]
+                symbol [ Graphics %tmp.292 158 34 42 ];
+                %tmp.292 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.293 158 43 62 ];
+                %tmp.293 = getv %tmp.292 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.293;
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen" 159 18 ]
+                symbol [ Graphics %tmp.294 159 25 33 ];
+                %tmp.294 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.295 159 34 43 ];
+                %tmp.295 = getv %tmp.294 :FONT_TINY;
+                putv self :font %tmp.295;
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 158; @position = 18; @symbol_constdef = [justification,158,18,31]; ]
+            const justification;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 159; @position = 18; @symbol_constdef = [font,159,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 162; @symbol_moduledef = [confirmation_loc__body,162,15,37]; ]
+        module confirmation_loc__body {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 162; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 163; @position = 18; @symbol_constdef = [x,163,18,19]; @symbol_type<0> = [Number,163,23,29]; ]
+            const x as Number = 42;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 164; @position = 18; @symbol_constdef = [y,164,18,19]; @symbol_type<0> = [Number,164,23,29]; ]
+            const y as Number = 42;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 167; @symbol_moduledef = [system_icon_destructive__hint_button_left_bottom,167,15,63]; ]
+        module system_icon_destructive__hint_button_left_bottom {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 167; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 168; @position = 18; @symbol_constdef = [filename,168,18,26]; @symbol_type<0> = [String,168,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_destructive__hint_button_left_bottom.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 169; @position = 18; @symbol_constdef = [dithering,169,18,27]; @symbol_type<0> = [String,169,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 172; @symbol_moduledef = [prompt_color_dark__background,172,15,44]; ]
+        module prompt_color_dark__background {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 172; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 173; @position = 18; @symbol_constdef = [color,173,18,23]; @symbol_type<0> = [Number,173,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 174; @position = 18; @symbol_constdef = [background,174,18,28]; @symbol_type<0> = [Number,174,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 177; @symbol_moduledef = [system_icon_destructive__hint_action_menu,177,15,56]; ]
+        module system_icon_destructive__hint_action_menu {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 177; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 178; @position = 18; @symbol_constdef = [filename,178,18,26]; @symbol_type<0> = [String,178,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_destructive__hint_button_right_top.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 179; @position = 18; @symbol_constdef = [dithering,179,18,27]; @symbol_type<0> = [String,179,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 182; @symbol_moduledef = [system_loc__hint_action_menu,182,15,43]; ]
+        module system_loc__hint_action_menu {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 182; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 183; @position = 18; @symbol_constdef = [x,183,18,19]; @symbol_type<0> = [Number,183,23,29]; ]
+            const x as Number = 175;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 184; @position = 18; @symbol_constdef = [y,184,18,19]; @symbol_type<0> = [Number,184,23,29]; ]
+            const y as Number = 33;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 187; @symbol_moduledef = [confirmation_icon__hint_confirm,187,15,46]; ]
+        module confirmation_icon__hint_confirm {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 187; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 188; @position = 18; @symbol_constdef = [filename,188,18,26]; @symbol_type<0> = [String,188,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/confirmation_icon__hint_completion.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 189; @position = 18; @symbol_constdef = [dithering,189,18,27]; @symbol_type<0> = [String,189,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 192; @symbol_moduledef = [system_loc__hint_button_left_middle,192,15,50]; ]
+        module system_loc__hint_button_left_middle {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 192; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 193; @position = 18; @symbol_constdef = [x,193,18,19]; @symbol_type<0> = [Number,193,23,29]; ]
+            const x as Number = 4;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 194; @position = 18; @symbol_constdef = [y,194,18,19]; @symbol_type<0> = [Number,194,23,29]; ]
+            const y as Number = 88;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 197; @symbol_moduledef = [prompt_size__body_no_title,197,15,41]; ]
+        module prompt_size__body_no_title {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 197; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 198; @position = 18; @symbol_constdef = [width,198,18,23]; @symbol_type<0> = [Number,198,27,33]; ]
+            const width as Number = 166;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 199; @position = 18; @symbol_constdef = [height,199,18,24]; @symbol_type<0> = [Number,199,28,34]; ]
+            const height as Number = 166;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 202; @symbol_moduledef = [system_icon_light__hint_button_left_top,202,15,54]; ]
+        module system_icon_light__hint_button_left_top {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 202; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 203; @position = 18; @symbol_constdef = [filename,203,18,26]; @symbol_type<0> = [String,203,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_light__hint_button_left_top.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 204; @position = 18; @symbol_constdef = [dithering,204,18,27]; @symbol_type<0> = [String,204,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 207; @symbol_moduledef = [prompt_color_light__background,207,15,45]; ]
+        module prompt_color_light__background {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 207; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 208; @position = 18; @symbol_constdef = [color,208,18,23]; @symbol_type<0> = [Number,208,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 209; @position = 18; @symbol_constdef = [background,209,18,28]; @symbol_type<0> = [Number,209,32,38]; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 212; @symbol_moduledef = [confirmation_input__delete,212,15,41]; ]
+        module confirmation_input__delete {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 212; ]
+            <init> {
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen" 213 18 ]
+                symbol [ WatchUi %tmp.296 213 27 34 ];
+                %tmp.296 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.297 213 35 44 ];
+                %tmp.297 = getv %tmp.296 :KEY_ENTER;
+                putv self :button %tmp.297;
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 213; @position = 18; @symbol_constdef = [button,213,18,24]; ]
+            const button;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 216; @symbol_moduledef = [system_icon_dark__hint_button_left_top,216,15,53]; ]
+        module system_icon_dark__hint_button_left_top {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 216; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 217; @position = 18; @symbol_constdef = [filename,217,18,26]; @symbol_type<0> = [String,217,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_dark__hint_button_left_top.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 218; @position = 18; @symbol_constdef = [dithering,218,18,27]; @symbol_type<0> = [String,218,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 221; @symbol_moduledef = [system_input__action_menu,221,15,40]; ]
+        module system_input__action_menu {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 221; ]
+            <init> {
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen" 222 18 ]
+                symbol [ WatchUi %tmp.298 222 27 34 ];
+                %tmp.298 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.299 222 35 44 ];
+                %tmp.299 = getv %tmp.298 :KEY_ENTER;
+                putv self :button %tmp.299;
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 222; @position = 18; @symbol_constdef = [button,222,18,24]; ]
+            const button;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 225; @symbol_moduledef = [system_icon_light__save,225,15,38]; ]
+        module system_icon_light__save {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 225; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 226; @position = 18; @symbol_constdef = [filename,226,18,26]; @symbol_type<0> = [String,226,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_light__save.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 227; @position = 18; @symbol_constdef = [dithering,227,18,27]; @symbol_type<0> = [String,227,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 230; @symbol_moduledef = [prompt_color_light__body,230,15,39]; ]
+        module prompt_color_light__body {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 230; ]
+            <init> {
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen" 232 18 ]
+                symbol [ Graphics %tmp.300 232 31 39 ];
+                %tmp.300 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.301 232 40 57 ];
+                %tmp.301 = getv %tmp.300 :COLOR_TRANSPARENT;
+                putv self :background %tmp.301;
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 231; @position = 18; @symbol_constdef = [color,231,18,23]; @symbol_type<0> = [Number,231,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 232; @position = 18; @symbol_constdef = [background,232,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 235; @symbol_moduledef = [system_loc__subwindow,235,15,36]; ]
+        module system_loc__subwindow {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 235; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 236; @position = 18; @symbol_constdef = [exclude,236,18,25]; @symbol_type<0> = [Boolean,236,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 239; @symbol_moduledef = [system_icon_light__warning,239,15,41]; ]
+        module system_icon_light__warning {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 239; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 240; @position = 18; @symbol_constdef = [filename,240,18,26]; @symbol_type<0> = [String,240,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_light__warning.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 241; @position = 18; @symbol_constdef = [dithering,241,18,27]; @symbol_type<0> = [String,241,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 244; @symbol_moduledef = [confirmation_color_light__body,244,15,45]; ]
+        module confirmation_color_light__body {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 244; ]
+            <init> {
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen" 246 18 ]
+                symbol [ Graphics %tmp.302 246 31 39 ];
+                %tmp.302 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.303 246 40 57 ];
+                %tmp.303 = getv %tmp.302 :COLOR_TRANSPARENT;
+                putv self :background %tmp.303;
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 245; @position = 18; @symbol_constdef = [color,245,18,23]; @symbol_type<0> = [Number,245,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 246; @position = 18; @symbol_constdef = [background,246,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 249; @symbol_moduledef = [confirmation_icon_light__hint_keep,249,15,49]; ]
+        module confirmation_icon_light__hint_keep {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 249; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 250; @position = 18; @symbol_constdef = [filename,250,18,26]; @symbol_type<0> = [String,250,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/confirmation_icon__hint_keep.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 251; @position = 18; @symbol_constdef = [dithering,251,18,27]; @symbol_type<0> = [String,251,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 254; @symbol_moduledef = [activity_color_light__background,254,15,47]; ]
+        module activity_color_light__background {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 254; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 255; @position = 18; @symbol_constdef = [color,255,18,23]; @symbol_type<0> = [Number,255,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 256; @position = 18; @symbol_constdef = [background,256,18,28]; @symbol_type<0> = [Number,256,32,38]; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 259; @symbol_moduledef = [system_icon_positive__hint_button_right_top,259,15,58]; ]
+        module system_icon_positive__hint_button_right_top {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 259; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 260; @position = 18; @symbol_constdef = [filename,260,18,26]; @symbol_type<0> = [String,260,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_positive__hint_button_right_top.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 261; @position = 18; @symbol_constdef = [dithering,261,18,27]; @symbol_type<0> = [String,261,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 264; @symbol_moduledef = [system_size__screen,264,15,34]; ]
+        module system_size__screen {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 264; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 265; @position = 18; @symbol_constdef = [width,265,18,23]; @symbol_type<0> = [Number,265,27,33]; ]
+            const width as Number = 208;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 266; @position = 18; @symbol_constdef = [height,266,18,24]; @symbol_type<0> = [Number,266,28,34]; ]
+            const height as Number = 208;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 269; @symbol_moduledef = [system_icon_destructive__hint_button_right_bottom,269,15,64]; ]
+        module system_icon_destructive__hint_button_right_bottom {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 269; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 270; @position = 18; @symbol_constdef = [filename,270,18,26]; @symbol_type<0> = [String,270,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_destructive__hint_button_right_bottom.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 271; @position = 18; @symbol_constdef = [dithering,271,18,27]; @symbol_type<0> = [String,271,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 274; @symbol_moduledef = [system_color_light__background,274,15,45]; ]
+        module system_color_light__background {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 274; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 275; @position = 18; @symbol_constdef = [color,275,18,23]; @symbol_type<0> = [Number,275,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 276; @position = 18; @symbol_constdef = [background,276,18,28]; @symbol_type<0> = [Number,276,32,38]; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 279; @symbol_moduledef = [system_icon_destructive__hint_button_right_top,279,15,61]; ]
+        module system_icon_destructive__hint_button_right_top {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 279; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 280; @position = 18; @symbol_constdef = [filename,280,18,26]; @symbol_type<0> = [String,280,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_destructive__hint_button_right_top.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 281; @position = 18; @symbol_constdef = [dithering,281,18,27]; @symbol_type<0> = [String,281,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 284; @symbol_moduledef = [confirmation_loc__hint_confirm,284,15,45]; ]
+        module confirmation_loc__hint_confirm {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 284; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 285; @position = 18; @symbol_constdef = [x,285,18,19]; @symbol_type<0> = [Number,285,23,29]; ]
+            const x as Number = 169;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 286; @position = 18; @symbol_constdef = [y,286,18,19]; @symbol_type<0> = [Number,286,23,29]; ]
+            const y as Number = 42;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 289; @symbol_moduledef = [activity_color_dark__text,289,15,40]; ]
+        module activity_color_dark__text {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 289; ]
+            <init> {
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen" 291 18 ]
+                symbol [ Graphics %tmp.304 291 31 39 ];
+                %tmp.304 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.305 291 40 57 ];
+                %tmp.305 = getv %tmp.304 :COLOR_TRANSPARENT;
+                putv self :background %tmp.305;
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 290; @position = 18; @symbol_constdef = [color,290,18,23]; @symbol_type<0> = [Number,290,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 291; @position = 18; @symbol_constdef = [background,291,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 294; @symbol_moduledef = [confirmation_input__keep,294,15,39]; ]
+        module confirmation_input__keep {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 294; ]
+            <init> {
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen" 295 18 ]
+                symbol [ WatchUi %tmp.306 295 27 34 ];
+                %tmp.306 = getm $.Toybox.WatchUi;
+                symbol [ KEY_DOWN %tmp.307 295 35 43 ];
+                %tmp.307 = getv %tmp.306 :KEY_DOWN;
+                putv self :button %tmp.307;
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 295; @position = 18; @symbol_constdef = [button,295,18,24]; ]
+            const button;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 298; @symbol_moduledef = [prompt_loc__body_with_title,298,15,42]; ]
+        module prompt_loc__body_with_title {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 298; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 299; @position = 18; @symbol_constdef = [x,299,18,19]; @symbol_type<0> = [Number,299,23,29]; ]
+            const x as Number = 21;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 300; @position = 18; @symbol_constdef = [y,300,18,19]; @symbol_type<0> = [Number,300,23,29]; ]
+            const y as Number = 63;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 303; @symbol_moduledef = [system_icon_dark__search,303,15,39]; ]
+        module system_icon_dark__search {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 303; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 304; @position = 18; @symbol_constdef = [filename,304,18,26]; @symbol_type<0> = [String,304,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_dark__search.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 305; @position = 18; @symbol_constdef = [compress,305,18,26]; @symbol_type<0> = [String,305,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 306; @position = 18; @symbol_constdef = [dithering,306,18,27]; @symbol_type<0> = [String,306,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 307; @position = 18; @symbol_constdef = [automaticPalette,307,18,34]; @symbol_type<0> = [String,307,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 310; @symbol_moduledef = [activity_color_light__text,310,15,41]; ]
+        module activity_color_light__text {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 310; ]
+            <init> {
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen" 312 18 ]
+                symbol [ Graphics %tmp.308 312 31 39 ];
+                %tmp.308 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.309 312 40 57 ];
+                %tmp.309 = getv %tmp.308 :COLOR_TRANSPARENT;
+                putv self :background %tmp.309;
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 311; @position = 18; @symbol_constdef = [color,311,18,23]; @symbol_type<0> = [Number,311,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 312; @position = 18; @symbol_constdef = [background,312,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 315; @symbol_moduledef = [confirmation_icon__hint_keep,315,15,43]; ]
+        module confirmation_icon__hint_keep {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 315; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 316; @position = 18; @symbol_constdef = [filename,316,18,26]; @symbol_type<0> = [String,316,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/confirmation_icon__hint_keep.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 317; @position = 18; @symbol_constdef = [dithering,317,18,27]; @symbol_type<0> = [String,317,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 320; @symbol_moduledef = [system_icon_dark__save,320,15,37]; ]
+        module system_icon_dark__save {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 320; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 321; @position = 18; @symbol_constdef = [filename,321,18,26]; @symbol_type<0> = [String,321,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_dark__save.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 322; @position = 18; @symbol_constdef = [compress,322,18,26]; @symbol_type<0> = [String,322,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 323; @position = 18; @symbol_constdef = [dithering,323,18,27]; @symbol_type<0> = [String,323,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 324; @position = 18; @symbol_constdef = [automaticPalette,324,18,34]; @symbol_type<0> = [String,324,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 327; @symbol_moduledef = [system_icon_destructive__hint_button_left_middle,327,15,63]; ]
+        module system_icon_destructive__hint_button_left_middle {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 327; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 328; @position = 18; @symbol_constdef = [filename,328,18,26]; @symbol_type<0> = [String,328,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_destructive__hint_button_left_middle.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 329; @position = 18; @symbol_constdef = [dithering,329,18,27]; @symbol_type<0> = [String,329,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 332; @symbol_moduledef = [system_icon_light__search,332,15,40]; ]
+        module system_icon_light__search {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 332; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 333; @position = 18; @symbol_constdef = [filename,333,18,26]; @symbol_type<0> = [String,333,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_light__search.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 334; @position = 18; @symbol_constdef = [dithering,334,18,27]; @symbol_type<0> = [String,334,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 337; @symbol_moduledef = [system_icon_dark__hint_button_left_bottom,337,15,56]; ]
+        module system_icon_dark__hint_button_left_bottom {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 337; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 338; @position = 18; @symbol_constdef = [filename,338,18,26]; @symbol_type<0> = [String,338,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_dark__hint_button_left_bottom.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 339; @position = 18; @symbol_constdef = [dithering,339,18,27]; @symbol_type<0> = [String,339,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 342; @symbol_moduledef = [system_icon_positive__hint_button_left_top,342,15,57]; ]
+        module system_icon_positive__hint_button_left_top {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 342; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 343; @position = 18; @symbol_constdef = [filename,343,18,26]; @symbol_type<0> = [String,343,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_positive__hint_button_left_top.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 344; @position = 18; @symbol_constdef = [dithering,344,18,27]; @symbol_type<0> = [String,344,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 347; @symbol_moduledef = [system_loc__hint_button_right_bottom,347,15,51]; ]
+        module system_loc__hint_button_right_bottom {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 347; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 348; @position = 18; @symbol_constdef = [x,348,18,19]; @symbol_type<0> = [Number,348,23,29]; ]
+            const x as Number = 178;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 349; @position = 18; @symbol_constdef = [y,349,18,19]; @symbol_type<0> = [Number,349,23,29]; ]
+            const y as Number = 137;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 352; @symbol_moduledef = [confirmation_icon_dark__hint_reject,352,15,50]; ]
+        module confirmation_icon_dark__hint_reject {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 352; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 353; @position = 18; @symbol_constdef = [filename,353,18,26]; @symbol_type<0> = [String,353,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/confirmation_icon__hint_reject.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 354; @position = 18; @symbol_constdef = [dithering,354,18,27]; @symbol_type<0> = [String,354,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 357; @symbol_moduledef = [confirmation_color_dark__body,357,15,44]; ]
+        module confirmation_color_dark__body {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 357; ]
+            <init> {
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen" 359 18 ]
+                symbol [ Graphics %tmp.310 359 31 39 ];
+                %tmp.310 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.311 359 40 57 ];
+                %tmp.311 = getv %tmp.310 :COLOR_TRANSPARENT;
+                putv self :background %tmp.311;
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 358; @position = 18; @symbol_constdef = [color,358,18,23]; @symbol_type<0> = [Number,358,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 359; @position = 18; @symbol_constdef = [background,359,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 362; @symbol_moduledef = [confirmation_icon_light__hint_confirm,362,15,52]; ]
+        module confirmation_icon_light__hint_confirm {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 362; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 363; @position = 18; @symbol_constdef = [filename,363,18,26]; @symbol_type<0> = [String,363,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/confirmation_icon__hint_completion.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 364; @position = 18; @symbol_constdef = [dithering,364,18,27]; @symbol_type<0> = [String,364,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 367; @symbol_moduledef = [prompt_color_dark__title,367,15,39]; ]
+        module prompt_color_dark__title {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 367; ]
+            <init> {
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen" 369 18 ]
+                symbol [ Graphics %tmp.312 369 31 39 ];
+                %tmp.312 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.313 369 40 57 ];
+                %tmp.313 = getv %tmp.312 :COLOR_TRANSPARENT;
+                putv self :background %tmp.313;
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 368; @position = 18; @symbol_constdef = [color,368,18,23]; @symbol_type<0> = [Number,368,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 369; @position = 18; @symbol_constdef = [background,369,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 372; @symbol_moduledef = [system_icon_destructive__cancel,372,15,46]; ]
+        module system_icon_destructive__cancel {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 372; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 373; @position = 18; @symbol_constdef = [filename,373,18,26]; @symbol_type<0> = [String,373,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_destructive__cancel.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 374; @position = 18; @symbol_constdef = [dithering,374,18,27]; @symbol_type<0> = [String,374,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 377; @symbol_moduledef = [system_icon_light__hint_button_right_bottom,377,15,58]; ]
+        module system_icon_light__hint_button_right_bottom {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 377; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 378; @position = 18; @symbol_constdef = [filename,378,18,26]; @symbol_type<0> = [String,378,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_light__hint_button_right_bottom.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 379; @position = 18; @symbol_constdef = [dithering,379,18,27]; @symbol_type<0> = [String,379,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 382; @symbol_moduledef = [prompt_loc__title,382,15,32]; ]
+        module prompt_loc__title {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 382; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 383; @position = 18; @symbol_constdef = [x,383,18,19]; @symbol_type<0> = [Number,383,23,29]; ]
+            const x as Number = 21;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 384; @position = 18; @symbol_constdef = [y,384,18,19]; @symbol_type<0> = [Number,384,23,29]; ]
+            const y as Number = 15;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 387; @symbol_moduledef = [confirmation_font_enhanced_readability__body,387,15,59]; ]
+        module confirmation_font_enhanced_readability__body {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 387; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 388; @position = 18; @symbol_constdef = [exclude,388,18,25]; @symbol_type<0> = [Boolean,388,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 391; @symbol_moduledef = [prompt_color_light__title,391,15,40]; ]
+        module prompt_color_light__title {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 391; ]
+            <init> {
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen" 393 18 ]
+                symbol [ Graphics %tmp.314 393 31 39 ];
+                %tmp.314 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.315 393 40 57 ];
+                %tmp.315 = getv %tmp.314 :COLOR_TRANSPARENT;
+                putv self :background %tmp.315;
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 392; @position = 18; @symbol_constdef = [color,392,18,23]; @symbol_type<0> = [Number,392,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 393; @position = 18; @symbol_constdef = [background,393,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 396; @symbol_moduledef = [system_icon_dark__hint_button_right_top,396,15,54]; ]
+        module system_icon_dark__hint_button_right_top {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 396; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 397; @position = 18; @symbol_constdef = [filename,397,18,26]; @symbol_type<0> = [String,397,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_dark__hint_button_right_top.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 398; @position = 18; @symbol_constdef = [dithering,398,18,27]; @symbol_type<0> = [String,398,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 401; @symbol_moduledef = [system_icon_dark__hint_button_left_middle,401,15,56]; ]
+        module system_icon_dark__hint_button_left_middle {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 401; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 402; @position = 18; @symbol_constdef = [filename,402,18,26]; @symbol_type<0> = [String,402,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_dark__hint_button_left_middle.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 403; @position = 18; @symbol_constdef = [dithering,403,18,27]; @symbol_type<0> = [String,403,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 406; @symbol_moduledef = [confirmation_icon_dark__hint_keep,406,15,48]; ]
+        module confirmation_icon_dark__hint_keep {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 406; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 407; @position = 18; @symbol_constdef = [filename,407,18,26]; @symbol_type<0> = [String,407,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/confirmation_icon__hint_keep.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 408; @position = 18; @symbol_constdef = [dithering,408,18,27]; @symbol_type<0> = [String,408,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 411; @symbol_moduledef = [system_icon_light__cancel,411,15,40]; ]
+        module system_icon_light__cancel {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 411; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 412; @position = 18; @symbol_constdef = [filename,412,18,26]; @symbol_type<0> = [String,412,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_light__cancel.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 413; @position = 18; @symbol_constdef = [dithering,413,18,27]; @symbol_type<0> = [String,413,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 416; @symbol_moduledef = [confirmation_icon_light__hint_reject,416,15,51]; ]
+        module confirmation_icon_light__hint_reject {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 416; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 417; @position = 18; @symbol_constdef = [filename,417,18,26]; @symbol_type<0> = [String,417,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/confirmation_icon__hint_reject.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 418; @position = 18; @symbol_constdef = [dithering,418,18,27]; @symbol_type<0> = [String,418,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 421; @symbol_moduledef = [system_icon_light__about,421,15,39]; ]
+        module system_icon_light__about {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 421; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 422; @position = 18; @symbol_constdef = [filename,422,18,26]; @symbol_type<0> = [String,422,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_light__about.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 423; @position = 18; @symbol_constdef = [dithering,423,18,27]; @symbol_type<0> = [String,423,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 426; @symbol_moduledef = [system_size__toast_icon,426,15,38]; ]
+        module system_size__toast_icon {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 426; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 427; @position = 18; @symbol_constdef = [scaleX,427,18,24]; @symbol_type<0> = [Number,427,28,34]; ]
+            const scaleX as Number = 21;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 428; @position = 18; @symbol_constdef = [scaleY,428,18,24]; @symbol_type<0> = [Number,428,28,34]; ]
+            const scaleY as Number = 21;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 429; @position = 18; @symbol_constdef = [scaleRelativeTo,429,18,33]; @symbol_type<0> = [String,429,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 432; @symbol_moduledef = [system_icon_dark__hint_button_right_middle,432,15,57]; ]
+        module system_icon_dark__hint_button_right_middle {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 432; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 433; @position = 18; @symbol_constdef = [exclude,433,18,25]; @symbol_type<0> = [Boolean,433,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 436; @symbol_moduledef = [confirmation_icon__hint_reject,436,15,45]; ]
+        module confirmation_icon__hint_reject {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 436; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 437; @position = 18; @symbol_constdef = [filename,437,18,26]; @symbol_type<0> = [String,437,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/confirmation_icon__hint_reject.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 438; @position = 18; @symbol_constdef = [dithering,438,18,27]; @symbol_type<0> = [String,438,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 441; @symbol_moduledef = [system_icon_light__hint_action_menu,441,15,50]; ]
+        module system_icon_light__hint_action_menu {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 441; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 442; @position = 18; @symbol_constdef = [filename,442,18,26]; @symbol_type<0> = [String,442,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_light__hint_button_right_top.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 443; @position = 18; @symbol_constdef = [dithering,443,18,27]; @symbol_type<0> = [String,443,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 446; @symbol_moduledef = [system_icon_light__hint_button_right_middle,446,15,58]; ]
+        module system_icon_light__hint_button_right_middle {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 446; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 447; @position = 18; @symbol_constdef = [exclude,447,18,25]; @symbol_type<0> = [Boolean,447,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 450; @symbol_moduledef = [system_icon_destructive__hint_button_right_middle,450,15,64]; ]
+        module system_icon_destructive__hint_button_right_middle {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 450; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 451; @position = 18; @symbol_constdef = [exclude,451,18,25]; @symbol_type<0> = [Boolean,451,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 454; @symbol_moduledef = [confirmation_loc__hint_reject,454,15,44]; ]
+        module confirmation_loc__hint_reject {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 454; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 455; @position = 18; @symbol_constdef = [x,455,18,19]; @symbol_type<0> = [Number,455,23,29]; ]
+            const x as Number = 10;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 456; @position = 18; @symbol_constdef = [y,456,18,19]; @symbol_type<0> = [Number,456,23,29]; ]
+            const y as Number = 139;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 457; @position = 18; @symbol_constdef = [horizontalJustification,457,18,41]; @symbol_type<0> = [String,457,45,51]; ]
+            const horizontalJustification as String = "left";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 460; @symbol_moduledef = [confirmation_icon_dark__hint_delete,460,15,50]; ]
+        module confirmation_icon_dark__hint_delete {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 460; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 461; @position = 18; @symbol_constdef = [filename,461,18,26]; @symbol_type<0> = [String,461,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/confirmation_icon__hint_delete.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 462; @position = 18; @symbol_constdef = [dithering,462,18,27]; @symbol_type<0> = [String,462,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 465; @symbol_moduledef = [activity_color_dark__background,465,15,46]; ]
+        module activity_color_dark__background {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 465; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 466; @position = 18; @symbol_constdef = [color,466,18,23]; @symbol_type<0> = [Number,466,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 467; @position = 18; @symbol_constdef = [background,467,18,28]; @symbol_type<0> = [Number,467,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 470; @symbol_moduledef = [system_icon_light__hint_button_left_bottom,470,15,57]; ]
+        module system_icon_light__hint_button_left_bottom {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 470; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 471; @position = 18; @symbol_constdef = [filename,471,18,26]; @symbol_type<0> = [String,471,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_light__hint_button_left_bottom.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 472; @position = 18; @symbol_constdef = [dithering,472,18,27]; @symbol_type<0> = [String,472,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 475; @symbol_moduledef = [system_icon_positive__hint_button_left_middle,475,15,60]; ]
+        module system_icon_positive__hint_button_left_middle {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 475; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 476; @position = 18; @symbol_constdef = [filename,476,18,26]; @symbol_type<0> = [String,476,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_positive__hint_button_left_middle.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 477; @position = 18; @symbol_constdef = [dithering,477,18,27]; @symbol_type<0> = [String,477,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 480; @symbol_moduledef = [system_size__menu_icon,480,15,37]; ]
+        module system_size__menu_icon {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 480; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 481; @position = 18; @symbol_constdef = [scaleX,481,18,24]; @symbol_type<0> = [Number,481,28,34]; ]
+            const scaleX as Number = 35;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 482; @position = 18; @symbol_constdef = [scaleY,482,18,24]; @symbol_type<0> = [Number,482,28,34]; ]
+            const scaleY as Number = 35;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 483; @position = 18; @symbol_constdef = [scaleRelativeTo,483,18,33]; @symbol_type<0> = [String,483,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 486; @symbol_moduledef = [system_icon_destructive__warning,486,15,47]; ]
+        module system_icon_destructive__warning {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 486; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 487; @position = 18; @symbol_constdef = [filename,487,18,26]; @symbol_type<0> = [String,487,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_destructive__warning.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 488; @position = 18; @symbol_constdef = [dithering,488,18,27]; @symbol_type<0> = [String,488,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 491; @symbol_moduledef = [system_loc__hint_button_right_middle,491,15,51]; ]
+        module system_loc__hint_button_right_middle {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 491; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 492; @position = 18; @symbol_constdef = [exclude,492,18,25]; @symbol_type<0> = [Boolean,492,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 495; @symbol_moduledef = [system_icon_dark__cancel,495,15,39]; ]
+        module system_icon_dark__cancel {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 495; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 496; @position = 18; @symbol_constdef = [filename,496,18,26]; @symbol_type<0> = [String,496,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_dark__cancel.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 497; @position = 18; @symbol_constdef = [compress,497,18,26]; @symbol_type<0> = [String,497,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 498; @position = 18; @symbol_constdef = [dithering,498,18,27]; @symbol_type<0> = [String,498,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 499; @position = 18; @symbol_constdef = [automaticPalette,499,18,34]; @symbol_type<0> = [String,499,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 502; @symbol_moduledef = [prompt_size__body_with_title,502,15,43]; ]
+        module prompt_size__body_with_title {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 502; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 503; @position = 18; @symbol_constdef = [width,503,18,23]; @symbol_type<0> = [Number,503,27,33]; ]
+            const width as Number = 166;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 504; @position = 18; @symbol_constdef = [height,504,18,24]; @symbol_type<0> = [Number,504,28,34]; ]
+            const height as Number = 125;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 507; @symbol_moduledef = [system_loc__hint_button_right_top,507,15,48]; ]
+        module system_loc__hint_button_right_top {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 507; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 508; @position = 18; @symbol_constdef = [x,508,18,19]; @symbol_type<0> = [Number,508,23,29]; ]
+            const x as Number = 175;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 509; @position = 18; @symbol_constdef = [y,509,18,19]; @symbol_type<0> = [Number,509,23,29]; ]
+            const y as Number = 33;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 512; @symbol_moduledef = [system_color_light__text,512,15,39]; ]
+        module system_color_light__text {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 512; ]
+            <init> {
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen" 514 18 ]
+                symbol [ Graphics %tmp.316 514 31 39 ];
+                %tmp.316 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.317 514 40 57 ];
+                %tmp.317 = getv %tmp.316 :COLOR_TRANSPARENT;
+                putv self :background %tmp.317;
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 513; @position = 18; @symbol_constdef = [color,513,18,23]; @symbol_type<0> = [Number,513,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 514; @position = 18; @symbol_constdef = [background,514,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 517; @symbol_moduledef = [system_icon_light__check,517,15,39]; ]
+        module system_icon_light__check {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 517; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 518; @position = 18; @symbol_constdef = [filename,518,18,26]; @symbol_type<0> = [String,518,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_light__check.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 519; @position = 18; @symbol_constdef = [dithering,519,18,27]; @symbol_type<0> = [String,519,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 522; @symbol_moduledef = [confirmation_input__reject,522,15,41]; ]
+        module confirmation_input__reject {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 522; ]
+            <init> {
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen" 523 18 ]
+                symbol [ WatchUi %tmp.318 523 27 34 ];
+                %tmp.318 = getm $.Toybox.WatchUi;
+                symbol [ KEY_DOWN %tmp.319 523 35 43 ];
+                %tmp.319 = getv %tmp.318 :KEY_DOWN;
+                putv self :button %tmp.319;
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 523; @position = 18; @symbol_constdef = [button,523,18,24]; ]
+            const button;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 526; @symbol_moduledef = [system_icon_light__revert,526,15,40]; ]
+        module system_icon_light__revert {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 526; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 527; @position = 18; @symbol_constdef = [filename,527,18,26]; @symbol_type<0> = [String,527,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_light__revert.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 528; @position = 18; @symbol_constdef = [dithering,528,18,27]; @symbol_type<0> = [String,528,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 531; @symbol_moduledef = [system_size__subwindow,531,15,37]; ]
+        module system_size__subwindow {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 531; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 532; @position = 18; @symbol_constdef = [exclude,532,18,25]; @symbol_type<0> = [Boolean,532,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 535; @symbol_moduledef = [system_icon_positive__hint_button_left_bottom,535,15,60]; ]
+        module system_icon_positive__hint_button_left_bottom {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 535; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 536; @position = 18; @symbol_constdef = [filename,536,18,26]; @symbol_type<0> = [String,536,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_positive__hint_button_left_bottom.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 537; @position = 18; @symbol_constdef = [dithering,537,18,27]; @symbol_type<0> = [String,537,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 540; @symbol_moduledef = [system_icon_dark__check,540,15,38]; ]
+        module system_icon_dark__check {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 540; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 541; @position = 18; @symbol_constdef = [filename,541,18,26]; @symbol_type<0> = [String,541,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_dark__check.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 542; @position = 18; @symbol_constdef = [compress,542,18,26]; @symbol_type<0> = [String,542,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 543; @position = 18; @symbol_constdef = [dithering,543,18,27]; @symbol_type<0> = [String,543,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 544; @position = 18; @symbol_constdef = [automaticPalette,544,18,34]; @symbol_type<0> = [String,544,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 547; @symbol_moduledef = [confirmation_loc__hint_keep,547,15,42]; ]
+        module confirmation_loc__hint_keep {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 547; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 548; @position = 18; @symbol_constdef = [x,548,18,19]; @symbol_type<0> = [Number,548,23,29]; ]
+            const x as Number = 10;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 549; @position = 18; @symbol_constdef = [y,549,18,19]; @symbol_type<0> = [Number,549,23,29]; ]
+            const y as Number = 139;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 550; @position = 18; @symbol_constdef = [horizontalJustification,550,18,41]; @symbol_type<0> = [String,550,45,51]; ]
+            const horizontalJustification as String = "left";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 553; @symbol_moduledef = [confirmation_loc__hint_delete,553,15,44]; ]
+        module confirmation_loc__hint_delete {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 553; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 554; @position = 18; @symbol_constdef = [x,554,18,19]; @symbol_type<0> = [Number,554,23,29]; ]
+            const x as Number = 169;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 555; @position = 18; @symbol_constdef = [y,555,18,19]; @symbol_type<0> = [Number,555,23,29]; ]
+            const y as Number = 42;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 558; @symbol_moduledef = [system_icon_positive__hint_action_menu,558,15,53]; ]
+        module system_icon_positive__hint_action_menu {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 558; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 559; @position = 18; @symbol_constdef = [filename,559,18,26]; @symbol_type<0> = [String,559,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_positive__hint_button_right_top.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 560; @position = 18; @symbol_constdef = [dithering,560,18,27]; @symbol_type<0> = [String,560,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 563; @symbol_moduledef = [system_icon_positive__hint_button_right_middle,563,15,61]; ]
+        module system_icon_positive__hint_button_right_middle {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 563; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 564; @position = 18; @symbol_constdef = [exclude,564,18,25]; @symbol_type<0> = [Boolean,564,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 567; @symbol_moduledef = [system_icon_light__hint_button_left_middle,567,15,57]; ]
+        module system_icon_light__hint_button_left_middle {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 567; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 568; @position = 18; @symbol_constdef = [filename,568,18,26]; @symbol_type<0> = [String,568,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_light__hint_button_left_middle.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 569; @position = 18; @symbol_constdef = [dithering,569,18,27]; @symbol_type<0> = [String,569,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 572; @symbol_moduledef = [system_icon_dark__hint_button_right_bottom,572,15,57]; ]
+        module system_icon_dark__hint_button_right_bottom {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 572; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 573; @position = 18; @symbol_constdef = [filename,573,18,26]; @symbol_type<0> = [String,573,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_dark__hint_button_right_bottom.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 574; @position = 18; @symbol_constdef = [dithering,574,18,27]; @symbol_type<0> = [String,574,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 577; @symbol_moduledef = [system_icon_positive__hint_button_right_bottom,577,15,61]; ]
+        module system_icon_positive__hint_button_right_bottom {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 577; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 578; @position = 18; @symbol_constdef = [filename,578,18,26]; @symbol_type<0> = [String,578,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_positive__hint_button_right_bottom.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 579; @position = 18; @symbol_constdef = [dithering,579,18,27]; @symbol_type<0> = [String,579,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 582; @symbol_moduledef = [system_icon_dark__revert,582,15,39]; ]
+        module system_icon_dark__revert {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 582; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 583; @position = 18; @symbol_constdef = [filename,583,18,26]; @symbol_type<0> = [String,583,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_dark__revert.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 584; @position = 18; @symbol_constdef = [compress,584,18,26]; @symbol_type<0> = [String,584,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 585; @position = 18; @symbol_constdef = [dithering,585,18,27]; @symbol_type<0> = [String,585,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 586; @position = 18; @symbol_constdef = [automaticPalette,586,18,34]; @symbol_type<0> = [String,586,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 589; @symbol_moduledef = [confirmation_icon_light__hint_delete,589,15,51]; ]
+        module confirmation_icon_light__hint_delete {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 589; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 590; @position = 18; @symbol_constdef = [filename,590,18,26]; @symbol_type<0> = [String,590,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/confirmation_icon__hint_delete.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 591; @position = 18; @symbol_constdef = [dithering,591,18,27]; @symbol_type<0> = [String,591,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 594; @symbol_moduledef = [system_icon_dark__question,594,15,41]; ]
+        module system_icon_dark__question {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 594; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 595; @position = 18; @symbol_constdef = [filename,595,18,26]; @symbol_type<0> = [String,595,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_dark__question.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 596; @position = 18; @symbol_constdef = [compress,596,18,26]; @symbol_type<0> = [String,596,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 597; @position = 18; @symbol_constdef = [dithering,597,18,27]; @symbol_type<0> = [String,597,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 598; @position = 18; @symbol_constdef = [automaticPalette,598,18,34]; @symbol_type<0> = [String,598,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 601; @symbol_moduledef = [system_icon_light__discard,601,15,41]; ]
+        module system_icon_light__discard {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 601; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 602; @position = 18; @symbol_constdef = [filename,602,18,26]; @symbol_type<0> = [String,602,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_light__discard.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 603; @position = 18; @symbol_constdef = [dithering,603,18,27]; @symbol_type<0> = [String,603,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 606; @symbol_moduledef = [device_info,606,15,26]; ]
+        module device_info {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 606; ]
+            <init> {
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen" 608 18 ]
+                symbol [ Toybox %tmp.321 608 32 38 ];
+                %tmp.321 = getv ? :Toybox;
+                symbol [ System %tmp.322 608 39 45 ];
+                %tmp.322 = getv %tmp.321 :System;
+                symbol [ SCREEN_SHAPE_ROUND %tmp.323 608 46 64 ];
+                %tmp.323 = getv %tmp.322 :SCREEN_SHAPE_ROUND;
+                putv self :screenShape %tmp.323;
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 607; @position = 18; @symbol_constdef = [screenWidth,607,18,29]; @symbol_type<0> = [Number,607,33,39]; ]
+            const screenWidth as Number = 208;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 608; @position = 18; @symbol_constdef = [screenShape,608,18,29]; ]
+            const screenShape;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 609; @position = 18; @symbol_constdef = [hasNightMode,609,18,30]; @symbol_type<0> = [Boolean,609,34,41]; ]
+            const hasNightMode as Boolean = false;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 610; @position = 18; @symbol_constdef = [hasGpu,610,18,24]; @symbol_type<0> = [Boolean,610,28,35]; ]
+            const hasGpu as Boolean = false;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 611; @position = 18; @symbol_constdef = [screenHeight,611,18,30]; @symbol_type<0> = [Number,611,34,40]; ]
+            const screenHeight as Number = 208;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 612; @position = 18; @symbol_constdef = [hasTouchScreen,612,18,32]; @symbol_type<0> = [Boolean,612,36,43]; ]
+            const hasTouchScreen as Boolean = true;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 613; @position = 18; @symbol_constdef = [hasEnhancedReadabilityMode,613,18,44]; @symbol_type<0> = [Boolean,613,48,55]; ]
+            const hasEnhancedReadabilityMode as Boolean = false;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 616; @symbol_moduledef = [confirmation_icon_dark__hint_confirm,616,15,51]; ]
+        module confirmation_icon_dark__hint_confirm {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 616; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 617; @position = 18; @symbol_constdef = [filename,617,18,26]; @symbol_type<0> = [String,617,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/confirmation_icon__hint_completion.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 618; @position = 18; @symbol_constdef = [dithering,618,18,27]; @symbol_type<0> = [String,618,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 621; @symbol_moduledef = [prompt_font__body_no_title,621,15,41]; ]
+        module prompt_font__body_no_title {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 621; ]
+            <init> {
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen" 622 18 ]
+                symbol [ Graphics %tmp.324 622 34 42 ];
+                %tmp.324 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.325 622 43 62 ];
+                %tmp.325 = getv %tmp.324 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.326 622 63 71 ];
+                %tmp.326 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.327 622 72 92 ];
+                %tmp.327 = getv %tmp.326 :TEXT_JUSTIFY_VCENTER;
+                %tmp.328 = bitor %tmp.325 %tmp.327;
+                putv self :justification %tmp.328;
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen" 623 18 ]
+                symbol [ Graphics %tmp.329 623 25 33 ];
+                %tmp.329 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.330 623 34 43 ];
+                %tmp.330 = getv %tmp.329 :FONT_TINY;
+                putv self :font %tmp.330;
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 622; @position = 18; @symbol_constdef = [justification,622,18,31]; ]
+            const justification;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 623; @position = 18; @symbol_constdef = [font,623,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 626; @symbol_moduledef = [prompt_size__title_icon,626,15,38]; ]
+        module prompt_size__title_icon {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 626; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 627; @position = 18; @symbol_constdef = [scaleX,627,18,24]; @symbol_type<0> = [Float,627,28,33]; ]
+            const scaleX as Float = 0.1539;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 628; @position = 18; @symbol_constdef = [scaleRelativeTo,628,18,33]; @symbol_type<0> = [String,628,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 631; @symbol_moduledef = [system_icon_dark__warning,631,15,40]; ]
+        module system_icon_dark__warning {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 631; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 632; @position = 18; @symbol_constdef = [filename,632,18,26]; @symbol_type<0> = [String,632,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_dark__warning.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 633; @position = 18; @symbol_constdef = [compress,633,18,26]; @symbol_type<0> = [String,633,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 634; @position = 18; @symbol_constdef = [dithering,634,18,27]; @symbol_type<0> = [String,634,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 635; @position = 18; @symbol_constdef = [automaticPalette,635,18,34]; @symbol_type<0> = [String,635,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 638; @symbol_moduledef = [prompt_loc__title_icon,638,15,37]; ]
+        module prompt_loc__title_icon {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 638; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 639; @position = 18; @symbol_constdef = [x,639,18,19]; @symbol_type<0> = [Number,639,23,29]; ]
+            const x as Number = 104;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 640; @position = 18; @symbol_constdef = [y,640,18,19]; @symbol_type<0> = [Number,640,23,29]; ]
+            const y as Number = 31;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 641; @position = 18; @symbol_constdef = [horizontalJustification,641,18,41]; @symbol_type<0> = [String,641,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 642; @position = 18; @symbol_constdef = [verticalJustification,642,18,39]; @symbol_type<0> = [String,642,43,49]; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 645; @symbol_moduledef = [prompt_font_enhanced_readability__title,645,15,54]; ]
+        module prompt_font_enhanced_readability__title {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 645; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 646; @position = 18; @symbol_constdef = [exclude,646,18,25]; @symbol_type<0> = [Boolean,646,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 649; @symbol_moduledef = [prompt_color_dark__body,649,15,38]; ]
+        module prompt_color_dark__body {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 649; ]
+            <init> {
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen" 651 18 ]
+                symbol [ Graphics %tmp.331 651 31 39 ];
+                %tmp.331 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.332 651 40 57 ];
+                %tmp.332 = getv %tmp.331 :COLOR_TRANSPARENT;
+                putv self :background %tmp.332;
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 650; @position = 18; @symbol_constdef = [color,650,18,23]; @symbol_type<0> = [Number,650,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 651; @position = 18; @symbol_constdef = [background,651,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 654; @symbol_moduledef = [confirmation_icon__hint_delete,654,15,45]; ]
+        module confirmation_icon__hint_delete {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 654; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 655; @position = 18; @symbol_constdef = [filename,655,18,26]; @symbol_type<0> = [String,655,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/confirmation_icon__hint_delete.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 656; @position = 18; @symbol_constdef = [dithering,656,18,27]; @symbol_type<0> = [String,656,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 659; @symbol_moduledef = [system_icon_light__hint_button_right_top,659,15,55]; ]
+        module system_icon_light__hint_button_right_top {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 659; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 660; @position = 18; @symbol_constdef = [filename,660,18,26]; @symbol_type<0> = [String,660,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_light__hint_button_right_top.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 661; @position = 18; @symbol_constdef = [dithering,661,18,27]; @symbol_type<0> = [String,661,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 664; @symbol_moduledef = [confirmation_size__body,664,15,38]; ]
+        module confirmation_size__body {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 664; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 665; @position = 18; @symbol_constdef = [width,665,18,23]; @symbol_type<0> = [Number,665,27,33]; ]
+            const width as Number = 125;
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 666; @position = 18; @symbol_constdef = [height,666,18,24]; @symbol_type<0> = [Number,666,28,34]; ]
+            const height as Number = 125;
+        }
+        [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 669; @symbol_moduledef = [system_icon_positive__check,669,15,42]; ]
+        module system_icon_positive__check {
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 669; ]
+            <init> {
+            }
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 670; @position = 18; @symbol_constdef = [filename,670,18,26]; @symbol_type<0> = [String,670,30,36]; ]
+            const filename as String = "/Users/vtpminim4/Library/Application Support/Garmin/ConnectIQ/Devices/fr55/system_icon_positive__check.svg";
+            [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 671; @position = 18; @symbol_constdef = [dithering,671,18,27]; @symbol_type<0> = [String,671,31,37]; ]
+            const dithering as String = "none";
+        }
+    }
+}
+[ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/build/gen/006-B3869-00/source/Rez.mcgen"; @line = 1; ]
+<init> {
+}
