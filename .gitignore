@@ -1,0 +1,10 @@
+.vscode
+bin
+build/*
+gen
+mir
+internal-mir
+
+simpleface.prg.debug.xml
+garmin.code-workspace
+developer_key
