@@ -1,4 +1,4 @@
-# Garmin 55 Simple Face
+# Garmin Simple Face
 
 Watch face dành cho **Garmin Forerunner 55**.
 
