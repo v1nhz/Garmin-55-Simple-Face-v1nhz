@@ -4,6 +4,8 @@ Watch face dành cho **Garmin Forerunner 55**.
 
 ## 📱 Tính năng hiển thị
 
+Phiên bản v1
+
 Màn hình bao gồm:
 
 - 🕒 Thời gian
@@ -11,6 +13,10 @@ Màn hình bao gồm:
 - 👣 Bước chân (Steps)
 - 🔥 Calories
 - 🔋 Trạng thái pin
+
+Phiên bản v2
+
+- 🕒 Bổ sung lịch âm
 
 ---
 
