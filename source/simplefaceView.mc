@@ -14,25 +14,33 @@ class simplefaceView extends WatchUi.WatchFace {
     var heartBmp;
     var footIcon;
     var hotIcon;
+    var moonIcon;
 
     // cached labels
     var lblDate;
+    var lblLunarDate;
     var lblTime;
     var lblDow;
     var lblBattery;
     var lblHR;
     var lblSteps;
     var lblCalories;
+    var lblTitle;
 
     var dowNames = [];
+
+    var lunarConverter;
+    var cachedLunar;
+    var cachedDay = -1;
 
     function initialize() {
         WatchFace.initialize();
         isAwake = true;
 
-        heartBmp = WatchUi.loadResource(Rez.Drawables.HeartIcon);
+        heartBmp = WatchUi.loadResource(Rez.Drawables.HeartRedIcon);
         footIcon = WatchUi.loadResource(Rez.Drawables.FootIcon);
         hotIcon  = WatchUi.loadResource(Rez.Drawables.HotIcon);
+        moonIcon = WatchUi.loadResource(Rez.Drawables.MoonIcon);
 
         dowNames.add("Sunday");
         dowNames.add("Monday");
@@ -41,6 +49,8 @@ class simplefaceView extends WatchUi.WatchFace {
         dowNames.add("Thursday");
         dowNames.add("Friday");
         dowNames.add("Saturday");
+
+        lunarConverter = new LunarConverter();
     }
 
     function onLayout(dc) {
@@ -48,12 +58,14 @@ class simplefaceView extends WatchUi.WatchFace {
 
         // Cache the label once
         lblDate     = View.findDrawableById("Date");
+        lblLunarDate = View.findDrawableById("LunarDate");
         lblTime     = View.findDrawableById("HoursAndMinutes");
         lblDow      = View.findDrawableById("DayOfTheWeek");
         lblBattery  = View.findDrawableById("Battery");
         lblHR       = View.findDrawableById("HeartRate");
         lblSteps    = View.findDrawableById("Steps");
         lblCalories = View.findDrawableById("Calories");
+        lblTitle    = View.findDrawableById("Title");
     }
 
     function onUpdate(dc) {
@@ -78,6 +90,7 @@ class simplefaceView extends WatchUi.WatchFace {
         //     lblDow.setText(getDowShort(idx-1));
         // }
 
+        // hour:minuties
         if (lblTime != null) {
             lblTime.setText(
                 date.hour.format("%02d") + ":" +
@@ -107,10 +120,24 @@ class simplefaceView extends WatchUi.WatchFace {
             }
         }
 
+        // lunar date
+        if (date.day != cachedDay) {
+            cachedDay = date.day;
+            var solar = new Solar();
+            solar.solarYear  = date.year;
+            solar.solarMonth = date.month;
+            solar.solarDay   = date.day;
+            cachedLunar = lunarConverter.SolarToLunar(solar);
+            lblLunarDate.setText(cachedLunar.lunarDay + "-" + cachedLunar.lunarMonth);
+        }
+
+        // solar date
         var fullDate = formatFullDate(date);
         if (lblDate != null) {
             lblDate.setText(fullDate);
         }
+
+        lblTitle.setText("Vinh ĐZ");
 
         WatchFace.onUpdate(dc);
 
@@ -118,6 +145,7 @@ class simplefaceView extends WatchUi.WatchFace {
         dc.drawBitmap(35, 150, heartBmp);
         dc.drawBitmap(107, 144, footIcon);
         dc.drawBitmap(107, 163, hotIcon);
+        dc.drawBitmap(135, 54, moonIcon);
 
         drawBatteryIcon(dc, sys.battery);
     }
@@ -169,8 +197,9 @@ class simplefaceView extends WatchUi.WatchFace {
         else { dow = "--"; }
         return dow + ", "
             + date.day.format("%02d") + "-"
-            + date.month.format("%02d") + "-"
-            + date.year.format("%04d");
+            + date.month.format("%02d") 
+            // + "-" + date.year.format("%04d")
+            + "";
     }
 
     function onExitSleep() {

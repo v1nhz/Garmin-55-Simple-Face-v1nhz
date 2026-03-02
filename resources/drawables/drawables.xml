@@ -1,7 +1,9 @@
 <drawables xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
     <bitmap id="LauncherIcon" filename="launcher_icon.svg" dithering="none" />
     <bitmap id="HeartIcon" filename="heart_icon.png" />
+    <bitmap id="HeartRedIcon" filename="heart_red_icon.png" />
     <bitmap id="FootIcon" filename="foot_icon.png" />
     <bitmap id="HotIcon" filename="hot_icon.png" />
     <bitmap id="SimpleFaceDemo" filename="simple_face_demo.png" />
+    <bitmap id="MoonIcon" filename="moon_icon.png" />
 </drawables>
