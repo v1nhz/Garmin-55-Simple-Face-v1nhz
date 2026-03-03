@@ -18,17 +18,26 @@ Phiên bản v2
 
 - 🕒 Bổ sung lịch âm
 
+Phiên bản v3
+
+- 🔥 Thêm nhiệt độ
+- 👣 Khoảng cách di truyển
+
 ---
 
 ## 🖼 Demo
 
 Demo v1
 
-![Simple Face Demo](simple_face_demo.png)
+![Simple Face Demo](simple_face_demo_v1.png)
 
 Demo v2
 
-![Simple Face Demo](simple_face_demo_v2.jpg)
+![Simple Face Demo](simple_face_demo_v2.png)
+
+Demo v3
+
+![Simple Face Demo](simple_face_demo_v3.png)
 
 ---
 
@@ -36,7 +45,4 @@ Demo v2
 
 Dự án được phát triển bằng **Garmin Connect IQ (Monkey C)**.
 
-Có thể build bằng:
-
-```bash
-monkeyc -f monkey.jungle -o simpleface.prg -d fr55
+Sử dụng SDK 8.4.1, level API 3.4.0

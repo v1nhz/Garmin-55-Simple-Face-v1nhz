@@ -5,6 +5,7 @@ using Toybox.Time.Gregorian;
 using Toybox.ActivityMonitor;
 using Toybox.Activity;
 using Toybox.Graphics;
+using Toybox.Weather;
 
 class simplefaceView extends WatchUi.WatchFace {
 
@@ -26,6 +27,7 @@ class simplefaceView extends WatchUi.WatchFace {
     var lblSteps;
     var lblCalories;
     var lblTitle;
+    var lblCelsius;
 
     var dowNames = [];
 
@@ -66,6 +68,7 @@ class simplefaceView extends WatchUi.WatchFace {
         lblSteps    = View.findDrawableById("Steps");
         lblCalories = View.findDrawableById("Calories");
         lblTitle    = View.findDrawableById("Title");
+        lblCelsius  = View.findDrawableById("Celsius");
     }
 
     function onUpdate(dc) {
@@ -74,21 +77,11 @@ class simplefaceView extends WatchUi.WatchFace {
         var date = Gregorian.info(now, Time.FORMAT_SHORT);
         var sys  = System.getSystemStats();
         var info = ActivityMonitor.getInfo();
-
-        // ---- TEXT ----
-        // if (lblDate != null) {
-        //     lblDate.setText(
-        //         date.day.format("%02d") + "-" +
-        //         date.month.format("%02d")
-        //     );
-        // }
-
-        // if (lblDow != null) {
-        //     var idx = date.day_of_week;
-        //     if (idx < 1) { idx = 1; }
-        //     if (idx > 7) { idx = 7; }
-        //     lblDow.setText(getDowShort(idx-1));
-        // }
+        var weather = Weather.getCurrentConditions();
+        if (weather != null && lblCelsius != null) {
+            var tempC = weather.temperature;
+            lblCelsius.setText(tempC.format("%d") + "°C");
+        }
 
         // hour:minuties
         if (lblTime != null) {
@@ -112,8 +105,10 @@ class simplefaceView extends WatchUi.WatchFace {
         }
 
         if (info != null) {
-            if (lblSteps != null && info.steps != null) {
-                lblSteps.setText(info.steps.format("%d"));
+            var meter = info.distance;
+
+            if (lblSteps != null && info.steps != null && meter != null) {
+                lblSteps.setText(formatKmFromCm(meter));
             }
             if (lblCalories != null && info.calories != null) {
                 lblCalories.setText(info.calories.format("%d"));
@@ -121,7 +116,7 @@ class simplefaceView extends WatchUi.WatchFace {
         }
 
         // lunar date
-        if (date.day != cachedDay) {
+        if (lblLunarDate != null && date.day != cachedDay) {
             cachedDay = date.day;
             var solar = new Solar();
             solar.solarYear  = date.year;
@@ -137,7 +132,9 @@ class simplefaceView extends WatchUi.WatchFace {
             lblDate.setText(fullDate);
         }
 
-        lblTitle.setText("Vinh ĐZ");
+        if (lblTitle != null) {
+            lblTitle.setText("Vinh ĐZ");
+        }
 
         WatchFace.onUpdate(dc);
 
@@ -145,7 +142,7 @@ class simplefaceView extends WatchUi.WatchFace {
         dc.drawBitmap(35, 150, heartBmp);
         dc.drawBitmap(107, 144, footIcon);
         dc.drawBitmap(107, 163, hotIcon);
-        dc.drawBitmap(135, 54, moonIcon);
+        dc.drawBitmap(130, 54, moonIcon);
 
         drawBatteryIcon(dc, sys.battery);
     }
@@ -173,17 +170,7 @@ class simplefaceView extends WatchUi.WatchFace {
     function onEnterSleep() {
         isAwake = false;
     }
-    function getDowShort(idx) {
-        if (idx == 0) { return "Sun"; }
-        if (idx == 1) { return "Mon"; }
-        if (idx == 2) { return "Tue"; }
-        if (idx == 3) { return "Wed"; }
-        if (idx == 4) { return "Thu"; }
-        if (idx == 5) { return "Fri"; }
-        if (idx == 6) { return "Sat"; }
-        return "--";
-    }
-
+    
     function formatFullDate(date) {
         var idx = date.day_of_week - 1;
         var dow;
@@ -200,6 +187,24 @@ class simplefaceView extends WatchUi.WatchFace {
             + date.month.format("%02d") 
             // + "-" + date.year.format("%04d")
             + "";
+    }
+
+    function formatKmFromCm(cm) {
+        if (cm == null) {
+            return "--";
+        }
+        var km = cm / 100000.0;
+        var kmStr = km.format("%.2f");
+        var len = kmStr.length();
+        // Check ".00"
+        if (len >= 3 && kmStr.substring(len - 3, len) == ".00") {
+            kmStr = kmStr.substring(0, len - 3);
+        }
+        // Check trailing "0"
+        else if (len >= 1 && kmStr.substring(len - 1, len) == "0") {
+            kmStr = kmStr.substring(0, len - 1);
+        }
+        return kmStr + " km";
     }
 
     function onExitSleep() {
