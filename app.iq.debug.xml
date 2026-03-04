@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="/Users/vtpminim4/Documents/garmin-face/simpleface/manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceApp.mc" id="1" lineNum="5" parent="globals/simplefaceApp" pc="268435460" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceApp.mc" id="2" lineNum="31" parent="globals" pc="268435472" symbol="getApp"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceApp.mc" id="2" lineNum="32" parent="globals" pc="268435482" symbol="getApp"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceBackground.mc" id="3" lineNum="6" parent="globals/Background" pc="268435493" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/gen/no-device/source/Rez.mcgen" id="4" lineNum="7" parent="globals/Rez" pc="268435505" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="5" lineNum="12" parent="globals/simplefaceView" pc="268435525" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="5" lineNum="34" parent="globals/simplefaceView" pc="268435536" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceApp.mc" id="6" lineNum="12" parent="globals/simplefaceApp" pc="268435546" symbol="onStart"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceApp.mc" id="7" lineNum="25" parent="globals/simplefaceApp" pc="268435549" symbol="onSettingsChanged"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceApp.mc" id="7" lineNum="26" parent="globals/simplefaceApp" pc="268435551" symbol="onSettingsChanged"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceApp.mc" id="8" lineNum="20" parent="globals/simplefaceApp" pc="268435563" symbol="getInitialView"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceApp.mc" id="8" lineNum="21" parent="globals/simplefaceApp" pc="268435565" symbol="getInitialView"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceApp.mc" id="9" lineNum="7" parent="globals/simplefaceApp" pc="268435591" symbol="initialize"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceApp.mc" id="9" lineNum="8" parent="globals/simplefaceApp" pc="268435593" symbol="initialize"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceApp.mc" id="10" lineNum="16" parent="globals/simplefaceApp" pc="268435606" symbol="onStop"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="11" lineNum="9" parent="globals/Lunar" pc="268435609" symbol="initialize"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="11" lineNum="10" parent="globals/Lunar" pc="268435611" symbol="initialize"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="11" lineNum="11" parent="globals/Lunar" pc="268435619" symbol="initialize"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="11" lineNum="12" parent="globals/Lunar" pc="268435627" symbol="initialize"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="11" lineNum="13" parent="globals/Lunar" pc="268435635" symbol="initialize"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="12" lineNum="22" parent="globals/Solar" pc="268435644" symbol="initialize"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="12" lineNum="23" parent="globals/Solar" pc="268435646" symbol="initialize"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="12" lineNum="24" parent="globals/Solar" pc="268435654" symbol="initialize"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="12" lineNum="25" parent="globals/Solar" pc="268435662" symbol="initialize"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceBackground.mc" id="13" lineNum="8" parent="globals/Background" pc="268435671" symbol="initialize"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceBackground.mc" id="13" lineNum="9" parent="globals/Background" pc="268435674" symbol="initialize"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceBackground.mc" id="13" lineNum="13" parent="globals/Background" pc="268435692" symbol="initialize"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceBackground.mc" id="14" lineNum="16" parent="globals/Background" pc="268435709" symbol="draw"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceBackground.mc" id="14" lineNum="17" parent="globals/Background" pc="268435712" symbol="draw"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceBackground.mc" id="14" lineNum="18" parent="globals/Background" pc="268435731" symbol="draw"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceBackground.mc" id="14" lineNum="19" parent="globals/Background" pc="268435749" symbol="draw"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceBackground.mc" id="14" lineNum="20" parent="globals/Background" pc="268435763" symbol="draw"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="15" lineNum="181" parent="globals/simplefaceView" pc="268435790" symbol="formatFullDate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="15" lineNum="182" parent="globals/simplefaceView" pc="268435793" symbol="formatFullDate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="15" lineNum="184" parent="globals/simplefaceView" pc="268435804" symbol="formatFullDate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="15" lineNum="184" parent="globals/simplefaceView" pc="268435811" symbol="formatFullDate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="15" lineNum="185" parent="globals/simplefaceView" pc="268435821" symbol="formatFullDate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="15" lineNum="185" parent="globals/simplefaceView" pc="268435829" symbol="formatFullDate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="15" lineNum="186" parent="globals/simplefaceView" pc="268435839" symbol="formatFullDate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="15" lineNum="186" parent="globals/simplefaceView" pc="268435847" symbol="formatFullDate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="15" lineNum="187" parent="globals/simplefaceView" pc="268435857" symbol="formatFullDate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="15" lineNum="187" parent="globals/simplefaceView" pc="268435865" symbol="formatFullDate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="15" lineNum="188" parent="globals/simplefaceView" pc="268435875" symbol="formatFullDate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="15" lineNum="188" parent="globals/simplefaceView" pc="268435883" symbol="formatFullDate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="15" lineNum="189" parent="globals/simplefaceView" pc="268435893" symbol="formatFullDate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="15" lineNum="189" parent="globals/simplefaceView" pc="268435901" symbol="formatFullDate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="15" lineNum="190" parent="globals/simplefaceView" pc="268435911" symbol="formatFullDate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="15" lineNum="190" parent="globals/simplefaceView" pc="268435919" symbol="formatFullDate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="15" lineNum="191" parent="globals/simplefaceView" pc="268435929" symbol="formatFullDate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="15" lineNum="192" parent="globals/simplefaceView" pc="268435936" symbol="formatFullDate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="16" lineNum="199" parent="globals/simplefaceView" pc="268435997" symbol="formatKmFromCm"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="16" lineNum="200" parent="globals/simplefaceView" pc="268436000" symbol="formatKmFromCm"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="16" lineNum="201" parent="globals/simplefaceView" pc="268436006" symbol="formatKmFromCm"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="16" lineNum="203" parent="globals/simplefaceView" pc="268436015" symbol="formatKmFromCm"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="16" lineNum="204" parent="globals/simplefaceView" pc="268436025" symbol="formatKmFromCm"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="16" lineNum="205" parent="globals/simplefaceView" pc="268436041" symbol="formatKmFromCm"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="16" lineNum="207" parent="globals/simplefaceView" pc="268436050" symbol="formatKmFromCm"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="16" lineNum="208" parent="globals/simplefaceView" pc="268436083" symbol="formatKmFromCm"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="16" lineNum="211" parent="globals/simplefaceView" pc="268436103" symbol="formatKmFromCm"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="16" lineNum="212" parent="globals/simplefaceView" pc="268436136" symbol="formatKmFromCm"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="16" lineNum="214" parent="globals/simplefaceView" pc="268436156" symbol="formatKmFromCm"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="17" lineNum="217" parent="globals/simplefaceView" pc="268436165" symbol="onExitSleep"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="17" lineNum="218" parent="globals/simplefaceView" pc="268436167" symbol="onExitSleep"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="17" lineNum="219" parent="globals/simplefaceView" pc="268436175" symbol="onExitSleep"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="18" lineNum="60" parent="globals/simplefaceView" pc="268436187" symbol="onLayout"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="18" lineNum="61" parent="globals/simplefaceView" pc="268436189" symbol="onLayout"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="18" lineNum="64" parent="globals/simplefaceView" pc="268436222" symbol="onLayout"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="18" lineNum="65" parent="globals/simplefaceView" pc="268436247" symbol="onLayout"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="18" lineNum="66" parent="globals/simplefaceView" pc="268436272" symbol="onLayout"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="18" lineNum="67" parent="globals/simplefaceView" pc="268436297" symbol="onLayout"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="18" lineNum="68" parent="globals/simplefaceView" pc="268436322" symbol="onLayout"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="18" lineNum="69" parent="globals/simplefaceView" pc="268436347" symbol="onLayout"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="18" lineNum="70" parent="globals/simplefaceView" pc="268436372" symbol="onLayout"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="18" lineNum="71" parent="globals/simplefaceView" pc="268436397" symbol="onLayout"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="18" lineNum="72" parent="globals/simplefaceView" pc="268436422" symbol="onLayout"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="18" lineNum="73" parent="globals/simplefaceView" pc="268436447" symbol="onLayout"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="19" lineNum="158" parent="globals/simplefaceView" pc="268436473" symbol="drawBatteryIcon"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="19" lineNum="160" parent="globals/simplefaceView" pc="268436476" symbol="drawBatteryIcon"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="19" lineNum="161" parent="globals/simplefaceView" pc="268436480" symbol="drawBatteryIcon"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="19" lineNum="162" parent="globals/simplefaceView" pc="268436484" symbol="drawBatteryIcon"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="19" lineNum="163" parent="globals/simplefaceView" pc="268436488" symbol="drawBatteryIcon"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="19" lineNum="165" parent="globals/simplefaceView" pc="268436493" symbol="drawBatteryIcon"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="19" lineNum="166" parent="globals/simplefaceView" pc="268436510" symbol="drawBatteryIcon"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="19" lineNum="167" parent="globals/simplefaceView" pc="268436528" symbol="drawBatteryIcon"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="19" lineNum="169" parent="globals/simplefaceView" pc="268436558" symbol="drawBatteryIcon"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="19" lineNum="171" parent="globals/simplefaceView" pc="268436571" symbol="drawBatteryIcon"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="19" lineNum="172" parent="globals/simplefaceView" pc="268436578" symbol="drawBatteryIcon"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="19" lineNum="173" parent="globals/simplefaceView" pc="268436596" symbol="drawBatteryIcon"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="20" lineNum="177" parent="globals/simplefaceView" pc="268436627" symbol="onEnterSleep"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="20" lineNum="178" parent="globals/simplefaceView" pc="268436629" symbol="onEnterSleep"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="21" lineNum="40" parent="globals/simplefaceView" pc="268436638" symbol="initialize"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="21" lineNum="41" parent="globals/simplefaceView" pc="268436640" symbol="initialize"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="21" lineNum="42" parent="globals/simplefaceView" pc="268436652" symbol="initialize"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="21" lineNum="44" parent="globals/simplefaceView" pc="268436660" symbol="initialize"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="21" lineNum="45" parent="globals/simplefaceView" pc="268436698" symbol="initialize"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="21" lineNum="46" parent="globals/simplefaceView" pc="268436736" symbol="initialize"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="21" lineNum="47" parent="globals/simplefaceView" pc="268436774" symbol="initialize"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="21" lineNum="49" parent="globals/simplefaceView" pc="268436812" symbol="initialize"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="21" lineNum="50" parent="globals/simplefaceView" pc="268436831" symbol="initialize"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="21" lineNum="51" parent="globals/simplefaceView" pc="268436850" symbol="initialize"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="21" lineNum="52" parent="globals/simplefaceView" pc="268436869" symbol="initialize"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="21" lineNum="53" parent="globals/simplefaceView" pc="268436888" symbol="initialize"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="21" lineNum="54" parent="globals/simplefaceView" pc="268436907" symbol="initialize"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="21" lineNum="55" parent="globals/simplefaceView" pc="268436926" symbol="initialize"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="21" lineNum="57" parent="globals/simplefaceView" pc="268436945" symbol="initialize"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="76" parent="globals/simplefaceView" pc="268436971" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="77" parent="globals/simplefaceView" pc="268436974" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="78" parent="globals/simplefaceView" pc="268436993" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="79" parent="globals/simplefaceView" pc="268437008" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="80" parent="globals/simplefaceView" pc="268437020" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="81" parent="globals/simplefaceView" pc="268437037" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="82" parent="globals/simplefaceView" pc="268437049" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="83" parent="globals/simplefaceView" pc="268437061" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="84" parent="globals/simplefaceView" pc="268437073" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="85" parent="globals/simplefaceView" pc="268437088" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="86" parent="globals/simplefaceView" pc="268437097" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="90" parent="globals/simplefaceView" pc="268437134" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="91" parent="globals/simplefaceView" pc="268437143" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="97" parent="globals/simplefaceView" pc="268437205" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="98" parent="globals/simplefaceView" pc="268437214" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="101" parent="globals/simplefaceView" pc="268437256" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="102" parent="globals/simplefaceView" pc="268437265" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="103" parent="globals/simplefaceView" pc="268437277" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="104" parent="globals/simplefaceView" pc="268437294" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="106" parent="globals/simplefaceView" pc="268437331" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="110" parent="globals/simplefaceView" pc="268437353" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="111" parent="globals/simplefaceView" pc="268437359" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="113" parent="globals/simplefaceView" pc="268437368" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="114" parent="globals/simplefaceView" pc="268437394" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="116" parent="globals/simplefaceView" pc="268437421" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="117" parent="globals/simplefaceView" pc="268437441" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="122" parent="globals/simplefaceView" pc="268437481" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="123" parent="globals/simplefaceView" pc="268437505" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="124" parent="globals/simplefaceView" pc="268437518" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="125" parent="globals/simplefaceView" pc="268437538" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="126" parent="globals/simplefaceView" pc="268437552" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="127" parent="globals/simplefaceView" pc="268437566" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="128" parent="globals/simplefaceView" pc="268437580" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="129" parent="globals/simplefaceView" pc="268437602" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="133" parent="globals/simplefaceView" pc="268437646" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="134" parent="globals/simplefaceView" pc="268437658" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="135" parent="globals/simplefaceView" pc="268437667" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="138" parent="globals/simplefaceView" pc="268437686" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="139" parent="globals/simplefaceView" pc="268437695" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="140" parent="globals/simplefaceView" pc="268437712" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="142" parent="globals/simplefaceView" pc="268437731" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="146" parent="globals/simplefaceView" pc="268437753" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="149" parent="globals/simplefaceView" pc="268437769" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="150" parent="globals/simplefaceView" pc="268437789" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="151" parent="globals/simplefaceView" pc="268437809" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="152" parent="globals/simplefaceView" pc="268437829" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/simplefaceView.mc" id="22" lineNum="154" parent="globals/simplefaceView" pc="268437849" symbol="onUpdate"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="23" lineNum="113" parent="globals/LunarConverter" pc="268437867" symbol="LunarToSolar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="23" lineNum="114" parent="globals/LunarConverter" pc="268437870" symbol="LunarToSolar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="23" lineNum="115" parent="globals/LunarConverter" pc="268437879" symbol="LunarToSolar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="23" lineNum="116" parent="globals/LunarConverter" pc="268437890" symbol="LunarToSolar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="23" lineNum="117" parent="globals/LunarConverter" pc="268437914" symbol="LunarToSolar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="23" lineNum="119" parent="globals/LunarConverter" pc="268437919" symbol="LunarToSolar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="23" lineNum="120" parent="globals/LunarConverter" pc="268437929" symbol="LunarToSolar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="23" lineNum="121" parent="globals/LunarConverter" pc="268437945" symbol="LunarToSolar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="23" lineNum="122" parent="globals/LunarConverter" pc="268437948" symbol="LunarToSolar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="23" lineNum="123" parent="globals/LunarConverter" pc="268437952" symbol="LunarToSolar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="23" lineNum="124" parent="globals/LunarConverter" pc="268437962" symbol="LunarToSolar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="23" lineNum="125" parent="globals/LunarConverter" pc="268437981" symbol="LunarToSolar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="23" lineNum="127" parent="globals/LunarConverter" pc="268437995" symbol="LunarToSolar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="23" lineNum="130" parent="globals/LunarConverter" pc="268438006" symbol="LunarToSolar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="23" lineNum="131" parent="globals/LunarConverter" pc="268438017" symbol="LunarToSolar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="23" lineNum="133" parent="globals/LunarConverter" pc="268438062" symbol="LunarToSolar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="23" lineNum="135" parent="globals/LunarConverter" pc="268438073" symbol="LunarToSolar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="23" lineNum="136" parent="globals/LunarConverter" pc="268438083" symbol="LunarToSolar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="23" lineNum="137" parent="globals/LunarConverter" pc="268438099" symbol="LunarToSolar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="23" lineNum="138" parent="globals/LunarConverter" pc="268438115" symbol="LunarToSolar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="23" lineNum="140" parent="globals/LunarConverter" pc="268438130" symbol="LunarToSolar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="24" lineNum="87" parent="globals/LunarConverter" pc="268438159" symbol="SolarToInt"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="24" lineNum="88" parent="globals/LunarConverter" pc="268438161" symbol="SolarToInt"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="24" lineNum="89" parent="globals/LunarConverter" pc="268438171" symbol="SolarToInt"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="24" lineNum="90" parent="globals/LunarConverter" pc="268438181" symbol="SolarToInt"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="25" lineNum="144" parent="globals/LunarConverter" pc="268438226" symbol="SolarToLunar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="25" lineNum="145" parent="globals/LunarConverter" pc="268438229" symbol="SolarToLunar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="25" lineNum="146" parent="globals/LunarConverter" pc="268438238" symbol="SolarToLunar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="25" lineNum="147" parent="globals/LunarConverter" pc="268438249" symbol="SolarToLunar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="25" lineNum="148" parent="globals/LunarConverter" pc="268438273" symbol="SolarToLunar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="25" lineNum="151" parent="globals/LunarConverter" pc="268438278" symbol="SolarToLunar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="25" lineNum="152" parent="globals/LunarConverter" pc="268438306" symbol="SolarToLunar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="25" lineNum="153" parent="globals/LunarConverter" pc="268438316" symbol="SolarToLunar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="25" lineNum="154" parent="globals/LunarConverter" pc="268438330" symbol="SolarToLunar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="25" lineNum="155" parent="globals/LunarConverter" pc="268438337" symbol="SolarToLunar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="25" lineNum="158" parent="globals/LunarConverter" pc="268438350" symbol="SolarToLunar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="25" lineNum="159" parent="globals/LunarConverter" pc="268438366" symbol="SolarToLunar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="25" lineNum="160" parent="globals/LunarConverter" pc="268438382" symbol="SolarToLunar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="25" lineNum="162" parent="globals/LunarConverter" pc="268438397" symbol="SolarToLunar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="25" lineNum="164" parent="globals/LunarConverter" pc="268438440" symbol="SolarToLunar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="25" lineNum="165" parent="globals/LunarConverter" pc="268438450" symbol="SolarToLunar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="25" lineNum="167" parent="globals/LunarConverter" pc="268438466" symbol="SolarToLunar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="25" lineNum="168" parent="globals/LunarConverter" pc="268438473" symbol="SolarToLunar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="25" lineNum="169" parent="globals/LunarConverter" pc="268438477" symbol="SolarToLunar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="25" lineNum="171" parent="globals/LunarConverter" pc="268438484" symbol="SolarToLunar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="25" lineNum="172" parent="globals/LunarConverter" pc="268438495" symbol="SolarToLunar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="25" lineNum="173" parent="globals/LunarConverter" pc="268438527" symbol="SolarToLunar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="25" lineNum="174" parent="globals/LunarConverter" pc="268438535" symbol="SolarToLunar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="25" lineNum="175" parent="globals/LunarConverter" pc="268438542" symbol="SolarToLunar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="25" lineNum="177" parent="globals/LunarConverter" pc="268438552" symbol="SolarToLunar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="25" lineNum="181" parent="globals/LunarConverter" pc="268438565" symbol="SolarToLunar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="25" lineNum="182" parent="globals/LunarConverter" pc="268438569" symbol="SolarToLunar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="25" lineNum="183" parent="globals/LunarConverter" pc="268438589" symbol="SolarToLunar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="25" lineNum="184" parent="globals/LunarConverter" pc="268438599" symbol="SolarToLunar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="25" lineNum="185" parent="globals/LunarConverter" pc="268438609" symbol="SolarToLunar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="25" lineNum="186" parent="globals/LunarConverter" pc="268438619" symbol="SolarToLunar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="25" lineNum="188" parent="globals/LunarConverter" pc="268438628" symbol="SolarToLunar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="25" lineNum="189" parent="globals/LunarConverter" pc="268438643" symbol="SolarToLunar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="25" lineNum="190" parent="globals/LunarConverter" pc="268438656" symbol="SolarToLunar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="25" lineNum="191" parent="globals/LunarConverter" pc="268438667" symbol="SolarToLunar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="25" lineNum="195" parent="globals/LunarConverter" pc="268438682" symbol="SolarToLunar"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="26" lineNum="82" parent="globals/LunarConverter" pc="268438685" symbol="GetBitInt"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="26" lineNum="83" parent="globals/LunarConverter" pc="268438687" symbol="GetBitInt"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="27" lineNum="94" parent="globals/LunarConverter" pc="268438705" symbol="SolarFromInt"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="27" lineNum="95" parent="globals/LunarConverter" pc="268438708" symbol="SolarFromInt"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="27" lineNum="96" parent="globals/LunarConverter" pc="268438725" symbol="SolarFromInt"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="27" lineNum="97" parent="globals/LunarConverter" pc="268438755" symbol="SolarFromInt"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="27" lineNum="98" parent="globals/LunarConverter" pc="268438762" symbol="SolarFromInt"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="27" lineNum="99" parent="globals/LunarConverter" pc="268438769" symbol="SolarFromInt"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="27" lineNum="101" parent="globals/LunarConverter" pc="268438802" symbol="SolarFromInt"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="27" lineNum="102" parent="globals/LunarConverter" pc="268438816" symbol="SolarFromInt"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="27" lineNum="103" parent="globals/LunarConverter" pc="268438829" symbol="SolarFromInt"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="27" lineNum="104" parent="globals/LunarConverter" pc="268438842" symbol="SolarFromInt"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="27" lineNum="105" parent="globals/LunarConverter" pc="268438862" symbol="SolarFromInt"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="27" lineNum="106" parent="globals/LunarConverter" pc="268438882" symbol="SolarFromInt"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="27" lineNum="107" parent="globals/LunarConverter" pc="268438892" symbol="SolarFromInt"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="27" lineNum="108" parent="globals/LunarConverter" pc="268438902" symbol="SolarFromInt"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="27" lineNum="109" parent="globals/LunarConverter" pc="268438912" symbol="SolarFromInt"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="28" lineNum="35" parent="globals/LunarConverter" pc="268438915" symbol="initialize"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="28" lineNum="37" parent="globals/LunarConverter" pc="268438917" symbol="initialize"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" id="28" lineNum="57" parent="globals/LunarConverter" pc="268438929" symbol="initialize"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/gen/no-device/source/Rez.mcgen" id="29" lineNum="18" parent="globals/Rez/Layouts" pc="268438942" symbol="WatchFace"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/gen/no-device/source/Rez.mcgen" id="29" lineNum="19" parent="globals/Rez/Layouts" pc="268438953" symbol="WatchFace"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/gen/no-device/source/Rez.mcgen" id="29" lineNum="21" parent="globals/Rez/Layouts" pc="268438962" symbol="WatchFace"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/gen/no-device/source/Rez.mcgen" id="29" lineNum="23" parent="globals/Rez/Layouts" pc="268438971" symbol="WatchFace"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/gen/no-device/source/Rez.mcgen" id="29" lineNum="25" parent="globals/Rez/Layouts" pc="268438995" symbol="WatchFace"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/gen/no-device/source/Rez.mcgen" id="29" lineNum="27" parent="globals/Rez/Layouts" pc="268439071" symbol="WatchFace"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/gen/no-device/source/Rez.mcgen" id="29" lineNum="29" parent="globals/Rez/Layouts" pc="268439134" symbol="WatchFace"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/gen/no-device/source/Rez.mcgen" id="29" lineNum="31" parent="globals/Rez/Layouts" pc="268439206" symbol="WatchFace"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/gen/no-device/source/Rez.mcgen" id="29" lineNum="33" parent="globals/Rez/Layouts" pc="268439283" symbol="WatchFace"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/gen/no-device/source/Rez.mcgen" id="29" lineNum="35" parent="globals/Rez/Layouts" pc="268439379" symbol="WatchFace"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/gen/no-device/source/Rez.mcgen" id="29" lineNum="37" parent="globals/Rez/Layouts" pc="268439454" symbol="WatchFace"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/gen/no-device/source/Rez.mcgen" id="29" lineNum="39" parent="globals/Rez/Layouts" pc="268439530" symbol="WatchFace"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/gen/no-device/source/Rez.mcgen" id="29" lineNum="41" parent="globals/Rez/Layouts" pc="268439605" symbol="WatchFace"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/gen/no-device/source/Rez.mcgen" id="29" lineNum="43" parent="globals/Rez/Layouts" pc="268439680" symbol="WatchFace"/>
+        <entry filename="/Users/vtpminim4/Documents/garmin-face/simpleface/gen/no-device/source/Rez.mcgen" id="29" lineNum="45" parent="globals/Rez/Layouts" pc="268439758" symbol="WatchFace"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry field="true" id="20" symbol="cachedLunar"/>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry id="45" method="true" symbol="SolarToLunar"/>
+        <entry field="true" id="32" symbol="lblDate"/>
+        <entry field="true" id="11" symbol="isleap"/>
+        <entry field="true" id="34" symbol="lblHR"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry field="true" id="51" symbol="HotIcon"/>
+        <entry id="8389683" method="true" symbol="onSettingsChanged"/>
+        <entry field="true" id="29" symbol="lblBattery"/>
+        <entry field="true" id="60" symbol="ColorRed"/>
+        <entry field="true" id="19" symbol="cachedDay"/>
+        <entry id="42" method="true" symbol="LunarToSolar"/>
+        <entry field="true" id="40" symbol="moonIcon"/>
+        <entry field="true" id="63" symbol="MilitaryFormatTitle"/>
+        <entry id="8388924" module="true" symbol="Gregorian"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry field="true" id="37" symbol="lblTime"/>
+        <entry field="true" id="21" symbol="dowNames"/>
+        <entry field="true" id="57" symbol="ColorBlue"/>
+        <entry field="true" id="35" symbol="lblLunarDate"/>
+        <entry id="6" object="true" symbol="Lunar"/>
+        <entry field="true" id="54" symbol="AppName"/>
+        <entry id="8388633" module="true" symbol="ActivityMonitor"/>
+        <entry id="5" module="true" symbol="globals/Rez/Strings"/>
+        <entry field="true" id="16" symbol="solarMonth"/>
+        <entry field="true" id="28" symbol="isAwake"/>
+        <entry id="8388631" module="true" symbol="Activity"/>
+        <entry field="true" id="39" symbol="lunarConverter"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="8" object="true" symbol="Solar"/>
+        <entry id="24" method="true" symbol="formatFullDate"/>
+        <entry field="true" id="26" symbol="heartBmp"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry field="true" id="12" symbol="lunarDay"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry id="8389375" method="true" object="true" symbol="WatchFace"/>
+        <entry field="true" id="8389065" symbol="locY"/>
+        <entry field="true" id="8389064" symbol="locX"/>
+        <entry id="8391489" module="true" symbol="Weather"/>
+        <entry field="true" id="14" symbol="lunarYear"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389348" symbol="font"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry field="true" id="58" symbol="ColorDarkGray"/>
+        <entry id="4" module="true" symbol="globals/Rez/Layouts"/>
+        <entry id="10" object="true" symbol="simplefaceView"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry id="8389376" method="true" symbol="onEnterSleep"/>
+        <entry id="22" method="true" symbol="drawBatteryIcon"/>
+        <entry id="7" object="true" symbol="LunarConverter"/>
+        <entry field="true" id="8389063" symbol="identifier"/>
+        <entry field="true" id="31" symbol="lblCelsius"/>
+        <entry id="8389349" symbol="justification"/>
+        <entry field="true" id="33" symbol="lblDow"/>
+        <entry field="true" id="61" symbol="ColorWhite"/>
+        <entry field="true" id="56" symbol="ColorBlack"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry field="true" id="38" symbol="lblTitle"/>
+        <entry id="25" method="true" symbol="formatKmFromCm"/>
+        <entry field="true" id="49" symbol="HeartIcon"/>
+        <entry field="true" id="17" symbol="solarYear"/>
+        <entry id="8389377" method="true" symbol="onExitSleep"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry field="true" id="27" symbol="hotIcon"/>
+        <entry id="8388645" module="true" symbol="Time"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry field="true" id="47" symbol="solar_1_1"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry id="8389068" method="true" symbol="draw"/>
+        <entry field="true" id="50" symbol="HeartRedIcon"/>
+        <entry field="true" id="52" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="41" method="true" symbol="GetBitInt"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry field="true" id="55" symbol="BackgroundColorTitle"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="8390146" module="true" object="true" symbol="Background"/>
+        <entry field="true" id="48" symbol="FootIcon"/>
+        <entry id="43" method="true" symbol="SolarFromInt"/>
+        <entry field="true" id="64" symbol="Title"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry field="true" id="59" symbol="ColorLightGray"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry field="true" id="8389347" symbol="color"/>
+        <entry field="true" id="62" symbol="ForegroundColorTitle"/>
+        <entry field="true" id="15" symbol="solarDay"/>
+        <entry id="9" object="true" symbol="simplefaceApp"/>
+        <entry field="true" id="36" symbol="lblSteps"/>
+        <entry id="18" module="true" symbol="Layouts"/>
+        <entry field="true" id="53" symbol="MoonIcon"/>
+        <entry field="true" id="13" symbol="lunarMonth"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+        <entry field="true" id="23" symbol="footIcon"/>
+        <entry id="44" method="true" symbol="SolarToInt"/>
+        <entry field="true" id="30" symbol="lblCalories"/>
+        <entry field="true" id="46" symbol="lunar_month_days"/>
+    </symbolTable>
+    <localVars>
+        <entry endPc="268435707" name="dictionary" stackId="1" startPc="268435674"/>
+        <entry arg="true" endPc="268435789" name="dc" stackId="1" startPc="268435709"/>
+        <entry endPc="268435788" name="bg" stackId="2" startPc="268435712"/>
+        <entry endPc="268435788" name="color" stackId="3" startPc="268435712"/>
+        <entry arg="true" endPc="268435996" name="date" stackId="1" startPc="268435790"/>
+        <entry endPc="268435996" name="idx" stackId="2" startPc="268435793"/>
+        <entry endPc="268435996" name="dow" stackId="3" startPc="268435793"/>
+        <entry arg="true" endPc="268436164" name="cm" stackId="1" startPc="268435997"/>
+        <entry endPc="268436164" name="km" stackId="2" startPc="268436000"/>
+        <entry endPc="268436164" name="kmStr" stackId="3" startPc="268436000"/>
+        <entry endPc="268436164" name="len" stackId="4" startPc="268436000"/>
+        <entry arg="true" endPc="268436472" name="dc" stackId="1" startPc="268436187"/>
+        <entry arg="true" endPc="268436626" name="dc" stackId="1" startPc="268436473"/>
+        <entry arg="true" endPc="268436626" name="battery" stackId="2" startPc="268436473"/>
+        <entry endPc="268436625" name="w" stackId="3" startPc="268436476"/>
+        <entry endPc="268436625" name="h" stackId="4" startPc="268436476"/>
+        <entry endPc="268436625" name="x" stackId="5" startPc="268436476"/>
+        <entry endPc="268436625" name="y" stackId="6" startPc="268436476"/>
+        <entry endPc="268436625" name="fillWidth" stackId="7" startPc="268436476"/>
+        <entry arg="true" endPc="268437866" name="dc" stackId="1" startPc="268436971"/>
+        <entry endPc="268437865" name="titleff" stackId="2" startPc="268436974"/>
+        <entry endPc="268437865" name="now" stackId="3" startPc="268436974"/>
+        <entry endPc="268437865" name="date" stackId="4" startPc="268436974"/>
+        <entry endPc="268437865" name="sys" stackId="5" startPc="268436974"/>
+        <entry endPc="268437865" name="info" stackId="6" startPc="268436974"/>
+        <entry endPc="268437865" name="weather" stackId="7" startPc="268436974"/>
+        <entry endPc="268437130" name="tempC" stackId="8" startPc="268437088"/>
+        <entry endPc="268437349" name="act" stackId="9" startPc="268437265"/>
+        <entry endPc="268437477" name="meter" stackId="10" startPc="268437359"/>
+        <entry endPc="268437642" name="solar" stackId="11" startPc="268437505"/>
+        <entry endPc="268437865" name="fullDate" stackId="12" startPc="268436974"/>
+        <entry arg="true" endPc="268438158" name="lunar" stackId="1" startPc="268437867"/>
+        <entry endPc="268438158" name="baseYear" stackId="2" startPc="268437870"/>
+        <entry endPc="268438158" name="index" stackId="3" startPc="268437870"/>
+        <entry endPc="268438158" name="days" stackId="4" startPc="268437870"/>
+        <entry endPc="268438158" name="leap" stackId="5" startPc="268437870"/>
+        <entry endPc="268438158" name="offset" stackId="6" startPc="268437870"/>
+        <entry endPc="268438158" name="loopend" stackId="7" startPc="268437870"/>
+        <entry endPc="268438061" name="i" stackId="8" startPc="268438017"/>
+        <entry endPc="268438158" name="solar11" stackId="9" startPc="268437870"/>
+        <entry endPc="268438158" name="y" stackId="10" startPc="268437870"/>
+        <entry endPc="268438158" name="m" stackId="11" startPc="268437870"/>
+        <entry endPc="268438158" name="d" stackId="12" startPc="268437870"/>
+        <entry arg="true" endPc="268438225" name="y" stackId="1" startPc="268438159"/>
+        <entry arg="true" endPc="268438225" name="m" stackId="2" startPc="268438159"/>
+        <entry arg="true" endPc="268438225" name="d" stackId="3" startPc="268438159"/>
+        <entry arg="true" endPc="268438684" name="solar" stackId="1" startPc="268438226"/>
+        <entry endPc="268438684" name="baseYear" stackId="2" startPc="268438229"/>
+        <entry endPc="268438684" name="index" stackId="3" startPc="268438229"/>
+        <entry endPc="268438684" name="data" stackId="4" startPc="268438229"/>
+        <entry endPc="268438684" name="solar11" stackId="5" startPc="268438229"/>
+        <entry endPc="268438684" name="y" stackId="6" startPc="268438229"/>
+        <entry endPc="268438684" name="m" stackId="7" startPc="268438229"/>
+        <entry endPc="268438684" name="d" stackId="8" startPc="268438229"/>
+        <entry endPc="268438684" name="offset" stackId="9" startPc="268438229"/>
+        <entry endPc="268438684" name="days" stackId="10" startPc="268438229"/>
+        <entry endPc="268438684" name="leap" stackId="11" startPc="268438229"/>
+        <entry endPc="268438684" name="lunarY" stackId="12" startPc="268438229"/>
+        <entry endPc="268438684" name="lunarM" stackId="13" startPc="268438229"/>
+        <entry endPc="268438564" name="i" stackId="14" startPc="268438495"/>
+        <entry endPc="268438554" name="dm" stackId="15" startPc="268438495"/>
+        <entry endPc="268438684" name="lunarD" stackId="16" startPc="268438229"/>
+        <entry endPc="268438684" name="lunar" stackId="17" startPc="268438229"/>
+        <entry arg="true" endPc="268438704" name="data" stackId="1" startPc="268438685"/>
+        <entry arg="true" endPc="268438704" name="length" stackId="2" startPc="268438685"/>
+        <entry arg="true" endPc="268438704" name="shift" stackId="3" startPc="268438685"/>
+        <entry arg="true" endPc="268438914" name="g" stackId="1" startPc="268438705"/>
+        <entry endPc="268438914" name="y" stackId="2" startPc="268438708"/>
+        <entry endPc="268438914" name="ddd" stackId="3" startPc="268438708"/>
+        <entry endPc="268438914" name="mi" stackId="4" startPc="268438708"/>
+        <entry endPc="268438914" name="mm" stackId="5" startPc="268438708"/>
+        <entry endPc="268438914" name="dd" stackId="6" startPc="268438708"/>
+        <entry endPc="268438914" name="solar" stackId="7" startPc="268438708"/>
+        <entry arg="true" endPc="268439817" name="dc" stackId="1" startPc="268438942"/>
+        <entry endPc="268439817" name="rez_cmp_local_var_dc_getHeight" stackId="2" startPc="268438953"/>
+        <entry endPc="268439817" name="rez_cmp_local_var_dc_getWidth" stackId="3" startPc="268438953"/>
+        <entry endPc="268439817" name="rez_cmp_local_custom_drawable_11939594661139614796" stackId="4" startPc="268438953"/>
+        <entry endPc="268439817" name="rez_cmp_local_text_Celsius" stackId="5" startPc="268438953"/>
+        <entry endPc="268439817" name="rez_cmp_local_text_Date" stackId="6" startPc="268438953"/>
+        <entry endPc="268439817" name="rez_cmp_local_text_LunarDate" stackId="7" startPc="268438953"/>
+        <entry endPc="268439817" name="rez_cmp_local_text_DayOfTheWeek" stackId="8" startPc="268438953"/>
+        <entry endPc="268439817" name="rez_cmp_local_text_HoursAndMinutes" stackId="9" startPc="268438953"/>
+        <entry endPc="268439817" name="rez_cmp_local_text_Battery" stackId="10" startPc="268438953"/>
+        <entry endPc="268439817" name="rez_cmp_local_text_HeartRate" stackId="11" startPc="268438953"/>
+        <entry endPc="268439817" name="rez_cmp_local_text_Steps" stackId="12" startPc="268438953"/>
+        <entry endPc="268439817" name="rez_cmp_local_text_Calories" stackId="13" startPc="268438953"/>
+        <entry endPc="268439817" name="rez_cmp_local_text_Title" stackId="14" startPc="268438953"/>
+    </localVars>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="MilitaryFormatTitle"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="Title"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="FootIcon"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="MoonIcon"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="HeartRedIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorWhite"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ForegroundColorTitle"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorLightGray"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorBlue"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="HotIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BackgroundColorTitle"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorRed"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorDarkGray"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorBlack"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="HeartIcon"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="58" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/simplefaceApp" offset="161" parentId="globals" symbolId="simplefaceApp" type="class"/>
+        <dataEntry label="globals/Lunar" offset="241" parentId="globals" symbolId="Lunar" type="class"/>
+        <dataEntry label="globals/Solar" offset="321" parentId="globals" symbolId="Solar" type="class"/>
+        <dataEntry label="globals/Background" offset="392" parentId="globals" symbolId="Background" type="class"/>
+        <dataEntry label="globals/Rez" offset="445" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/simplefaceView" offset="498" parentId="globals" symbolId="simplefaceView" type="class"/>
+        <dataEntry label="globals/LunarConverter" offset="776" parentId="globals" symbolId="LunarConverter" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="883" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="963" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="998" parentId="Rez" symbolId="Strings" type="module"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435471" name="&lt;init&gt;" parent="simplefaceApp" startPc="268435460">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Lunar">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435492" name="getApp" startPc="268435472">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Solar">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435504" name="&lt;init&gt;" parent="Background" startPc="268435493">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435524" name="&lt;init&gt;" parent="Rez" startPc="268435505">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435545" name="&lt;init&gt;" parent="simplefaceView" startPc="268435525">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="LunarConverter">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435548" name="onStart" parent="simplefaceApp" startPc="268435546">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435562" name="onSettingsChanged" parent="simplefaceApp" startPc="268435549">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435590" name="getInitialView" parent="simplefaceApp" startPc="268435563">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435605" name="initialize" parent="simplefaceApp" startPc="268435591">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435608" name="onStop" parent="simplefaceApp" startPc="268435606">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435643" name="initialize" parent="Lunar" startPc="268435609">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435670" name="initialize" parent="Solar" startPc="268435644">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435708" name="initialize" parent="Background" startPc="268435671">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435789" name="draw" parent="Background" startPc="268435709">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435996" name="formatFullDate" parent="simplefaceView" startPc="268435790">
+            <param id="date"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436164" name="formatKmFromCm" parent="simplefaceView" startPc="268435997">
+            <param id="cm"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436186" name="onExitSleep" parent="simplefaceView" startPc="268436165">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436472" name="onLayout" parent="simplefaceView" startPc="268436187">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436626" name="drawBatteryIcon" parent="simplefaceView" startPc="268436473">
+            <param id="dc"/>
+            <param id="battery"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436637" name="onEnterSleep" parent="simplefaceView" startPc="268436627">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436970" name="initialize" parent="simplefaceView" startPc="268436638">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437866" name="onUpdate" parent="simplefaceView" startPc="268436971">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438158" name="LunarToSolar" parent="LunarConverter" startPc="268437867">
+            <param id="lunar"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438225" name="SolarToInt" parent="LunarConverter" startPc="268438159">
+            <param id="y"/>
+            <param id="m"/>
+            <param id="d"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438684" name="SolarToLunar" parent="LunarConverter" startPc="268438226">
+            <param id="solar"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438704" name="GetBitInt" parent="LunarConverter" startPc="268438685">
+            <param id="data"/>
+            <param id="length"/>
+            <param id="shift"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438914" name="SolarFromInt" parent="LunarConverter" startPc="268438705">
+            <param id="g"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438941" name="initialize" parent="LunarConverter" startPc="268438915">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439817" name="WatchFace" parent="Layouts" startPc="268438942">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

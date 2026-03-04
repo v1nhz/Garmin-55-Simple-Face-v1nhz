@@ -6,6 +6,8 @@ using Toybox.ActivityMonitor;
 using Toybox.Activity;
 using Toybox.Graphics;
 using Toybox.Weather;
+using Toybox.Application;
+
 
 class simplefaceView extends WatchUi.WatchFace {
 
@@ -72,6 +74,7 @@ class simplefaceView extends WatchUi.WatchFace {
     }
 
     function onUpdate(dc) {
+        var watchName = Application.Properties.getValue("titleText");
 
         var now  = Time.now();
         var date = Gregorian.info(now, Time.FORMAT_SHORT);
@@ -133,7 +136,11 @@ class simplefaceView extends WatchUi.WatchFace {
         }
 
         if (lblTitle != null) {
-            lblTitle.setText("Vinh ĐZ");
+            if (watchName != null && watchName != "") {
+                lblTitle.setText(watchName);
+            } else {
+                lblTitle.setText("Garmin");
+            }
         }
 
         WatchFace.onUpdate(dc);

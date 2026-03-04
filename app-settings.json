@@ -1,0 +1,74 @@
+{
+  "settings" : [ {
+    "key" : "BackgroundColor",
+    "valueType" : "number",
+    "defaultValue" : 0,
+    "configTitle" : "BackgroundColorTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "ColorBlack",
+      "value" : 0
+    }, {
+      "display" : "ColorDarkGray",
+      "value" : 5592405
+    }, {
+      "display" : "ColorLightGray",
+      "value" : 11184810
+    }, {
+      "display" : "ColorWhite",
+      "value" : 16777215
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "UseMilitaryFormat",
+    "valueType" : "boolean",
+    "defaultValue" : false,
+    "configTitle" : "MilitaryFormatTitle",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "titleText",
+    "valueType" : "string",
+    "defaultValue" : "Vinh DZ",
+    "configTitle" : "$literal0$",
+    "configPrompt" : null,
+    "configType" : "alphaNumeric",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  } ],
+  "supportsLiveValidation" : false,
+  "languages" : {
+    "valyrian" : {
+      "ColorLightGray" : "Light Gray",
+      "ColorBlue" : "Blue",
+      "ColorRed" : "Red",
+      "$literal0$" : "Title Text",
+      "ColorDarkGray" : "Dark Gray",
+      "ColorBlack" : "Black",
+      "Title" : "Vinh ĐZ",
+      "ColorWhite" : "White",
+      "AppName" : "G55 - Face 1"
+    }
+  }
+}

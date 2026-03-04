@@ -1,0 +1,2456 @@
+[ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [Lang,1,13,17]; ]
+using Toybox.Lang;
+[ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc"; @line = 3; @symbol_classdef = [Lunar,3,6,11]; ]
+class Lunar {
+    [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc"; @line = 3; ]
+    <init> {
+    }
+    [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc"; @line = 3; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc"; @line = 4; @position = 8; @symbol_vardef = [isleap,4,8,14]; ]
+    var isleap;
+    [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc"; @line = 5; @position = 8; @symbol_vardef = [lunarDay,5,8,16]; ]
+    var lunarDay;
+    [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc"; @line = 6; @position = 8; @symbol_vardef = [lunarMonth,6,8,18]; ]
+    var lunarMonth;
+    [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc"; @line = 7; @position = 8; @symbol_vardef = [lunarYear,7,8,17]; ]
+    var lunarYear;
+    [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc"; @line = 9; @symbol_functiondef = [initialize,9,13,23]; ]
+    function initialize() as Void {
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_9_26_14_4_start:
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 10 8 ]
+        %tmp.1 = false;
+        symbol [ isleap ? 10 8 14 ];
+        putv self :isleap %tmp.1;
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 11 8 ]
+        %tmp.2 = 0;
+        symbol [ lunarDay ? 11 8 16 ];
+        putv self :lunarDay %tmp.2;
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 12 8 ]
+        %tmp.3 = 0;
+        symbol [ lunarMonth ? 12 8 18 ];
+        putv self :lunarMonth %tmp.3;
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 13 8 ]
+        %tmp.4 = 0;
+        symbol [ lunarYear ? 13 8 17 ];
+        putv self :lunarYear %tmp.4;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_9_26_14_4_stop:
+    }
+}
+[ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc"; @line = 17; @symbol_classdef = [Solar,17,6,11]; ]
+class Solar {
+    [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc"; @line = 17; ]
+    <init> {
+    }
+    [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc"; @line = 17; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc"; @line = 18; @position = 8; @symbol_vardef = [solarDay,18,8,16]; ]
+    var solarDay;
+    [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc"; @line = 19; @position = 8; @symbol_vardef = [solarMonth,19,8,18]; ]
+    var solarMonth;
+    [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc"; @line = 20; @position = 8; @symbol_vardef = [solarYear,20,8,17]; ]
+    var solarYear;
+    [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc"; @line = 22; @symbol_functiondef = [initialize,22,13,23]; ]
+    function initialize() as Void {
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_22_26_26_4_start:
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 23 8 ]
+        %tmp.1 = 0;
+        symbol [ solarDay ? 23 8 16 ];
+        putv self :solarDay %tmp.1;
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 24 8 ]
+        %tmp.2 = 0;
+        symbol [ solarMonth ? 24 8 18 ];
+        putv self :solarMonth %tmp.2;
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 25 8 ]
+        %tmp.3 = 0;
+        symbol [ solarYear ? 25 8 17 ];
+        putv self :solarYear %tmp.3;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_22_26_26_4_stop:
+    }
+}
+[ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc"; @line = 29; @symbol_classdef = [LunarConverter,29,6,20]; ]
+class LunarConverter {
+    [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc"; @line = 29; ]
+    <init> {
+    }
+    [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc"; @line = 29; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc"; @line = 32; @position = 8; @symbol_vardef = [lunar_month_days,32,8,24]; @symbol_type<0> = [Lang,32,28,32]; @symbol_type<1> = [Array,32,33,38]; @symbol_type<2> = [Lang,32,39,43]; @symbol_type<3> = [Number,32,44,50]; ]
+    var lunar_month_days as Lang.Array<Lang.Number>;
+    [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc"; @line = 33; @position = 8; @symbol_vardef = [solar_1_1,33,8,17]; @symbol_type<0> = [Lang,33,21,25]; @symbol_type<1> = [Array,33,26,31]; @symbol_type<2> = [Lang,33,32,36]; @symbol_type<3> = [Number,33,37,43]; ]
+    var solar_1_1 as Lang.Array<Lang.Number>;
+    [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc"; @line = 35; @symbol_functiondef = [initialize,35,13,23]; ]
+    function initialize() as Void {
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_35_26_79_4_start:
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 37 8 ]
+        %tmp.1 = newa 225;
+        %tmp.2 = 1887;
+        %tmp.3 = dup %tmp.1;
+        %tmp.4 = aputv %tmp.3 0 %tmp.2;
+        %tmp.5 = 0x1694;
+        %tmp.6 = dup %tmp.4;
+        %tmp.7 = aputv %tmp.6 1 %tmp.5;
+        %tmp.8 = 0x16aa;
+        %tmp.9 = dup %tmp.7;
+        %tmp.10 = aputv %tmp.9 2 %tmp.8;
+        %tmp.11 = 0x4ad5;
+        %tmp.12 = dup %tmp.10;
+        %tmp.13 = aputv %tmp.12 3 %tmp.11;
+        %tmp.14 = 0xab6;
+        %tmp.15 = dup %tmp.13;
+        %tmp.16 = aputv %tmp.15 4 %tmp.14;
+        %tmp.17 = 0xc4b7;
+        %tmp.18 = dup %tmp.16;
+        %tmp.19 = aputv %tmp.18 5 %tmp.17;
+        %tmp.20 = 0x4ae;
+        %tmp.21 = dup %tmp.19;
+        %tmp.22 = aputv %tmp.21 6 %tmp.20;
+        %tmp.23 = 0xa56;
+        %tmp.24 = dup %tmp.22;
+        %tmp.25 = aputv %tmp.24 7 %tmp.23;
+        %tmp.26 = 0xb52a;
+        %tmp.27 = dup %tmp.25;
+        %tmp.28 = aputv %tmp.27 8 %tmp.26;
+        %tmp.29 = 0x1d2a;
+        %tmp.30 = dup %tmp.28;
+        %tmp.31 = aputv %tmp.30 9 %tmp.29;
+        %tmp.32 = 0xd54;
+        %tmp.33 = dup %tmp.31;
+        %tmp.34 = aputv %tmp.33 10 %tmp.32;
+        %tmp.35 = 0x75aa;
+        %tmp.36 = dup %tmp.34;
+        %tmp.37 = aputv %tmp.36 11 %tmp.35;
+        %tmp.38 = 0x156a;
+        %tmp.39 = dup %tmp.37;
+        %tmp.40 = aputv %tmp.39 12 %tmp.38;
+        %tmp.41 = 0x1096d;
+        %tmp.42 = dup %tmp.40;
+        %tmp.43 = aputv %tmp.42 13 %tmp.41;
+        %tmp.44 = 0x95c;
+        %tmp.45 = dup %tmp.43;
+        %tmp.46 = aputv %tmp.45 14 %tmp.44;
+        %tmp.47 = 0x14ae;
+        %tmp.48 = dup %tmp.46;
+        %tmp.49 = aputv %tmp.48 15 %tmp.47;
+        %tmp.50 = 0xaa4d;
+        %tmp.51 = dup %tmp.49;
+        %tmp.52 = aputv %tmp.51 16 %tmp.50;
+        %tmp.53 = 0x1a4c;
+        %tmp.54 = dup %tmp.52;
+        %tmp.55 = aputv %tmp.54 17 %tmp.53;
+        %tmp.56 = 0x1b2a;
+        %tmp.57 = dup %tmp.55;
+        %tmp.58 = aputv %tmp.57 18 %tmp.56;
+        %tmp.59 = 0x8d55;
+        %tmp.60 = dup %tmp.58;
+        %tmp.61 = aputv %tmp.60 19 %tmp.59;
+        %tmp.62 = 0xad4;
+        %tmp.63 = dup %tmp.61;
+        %tmp.64 = aputv %tmp.63 20 %tmp.62;
+        %tmp.65 = 0x135a;
+        %tmp.66 = dup %tmp.64;
+        %tmp.67 = aputv %tmp.66 21 %tmp.65;
+        %tmp.68 = 0x495d;
+        %tmp.69 = dup %tmp.67;
+        %tmp.70 = aputv %tmp.69 22 %tmp.68;
+        %tmp.71 = 0x95c;
+        %tmp.72 = dup %tmp.70;
+        %tmp.73 = aputv %tmp.72 23 %tmp.71;
+        %tmp.74 = 0xd49b;
+        %tmp.75 = dup %tmp.73;
+        %tmp.76 = aputv %tmp.75 24 %tmp.74;
+        %tmp.77 = 0x149a;
+        %tmp.78 = dup %tmp.76;
+        %tmp.79 = aputv %tmp.78 25 %tmp.77;
+        %tmp.80 = 0x1a4a;
+        %tmp.81 = dup %tmp.79;
+        %tmp.82 = aputv %tmp.81 26 %tmp.80;
+        %tmp.83 = 0xbaa5;
+        %tmp.84 = dup %tmp.82;
+        %tmp.85 = aputv %tmp.84 27 %tmp.83;
+        %tmp.86 = 0x16a8;
+        %tmp.87 = dup %tmp.85;
+        %tmp.88 = aputv %tmp.87 28 %tmp.86;
+        %tmp.89 = 0x1ad4;
+        %tmp.90 = dup %tmp.88;
+        %tmp.91 = aputv %tmp.90 29 %tmp.89;
+        %tmp.92 = 0x52da;
+        %tmp.93 = dup %tmp.91;
+        %tmp.94 = aputv %tmp.93 30 %tmp.92;
+        %tmp.95 = 0x12b6;
+        %tmp.96 = dup %tmp.94;
+        %tmp.97 = aputv %tmp.96 31 %tmp.95;
+        %tmp.98 = 0xe937;
+        %tmp.99 = dup %tmp.97;
+        %tmp.100 = aputv %tmp.99 32 %tmp.98;
+        %tmp.101 = 0x92e;
+        %tmp.102 = dup %tmp.100;
+        %tmp.103 = aputv %tmp.102 33 %tmp.101;
+        %tmp.104 = 0x1496;
+        %tmp.105 = dup %tmp.103;
+        %tmp.106 = aputv %tmp.105 34 %tmp.104;
+        %tmp.107 = 0xb64b;
+        %tmp.108 = dup %tmp.106;
+        %tmp.109 = aputv %tmp.108 35 %tmp.107;
+        %tmp.110 = 0xd4a;
+        %tmp.111 = dup %tmp.109;
+        %tmp.112 = aputv %tmp.111 36 %tmp.110;
+        %tmp.113 = 0xda8;
+        %tmp.114 = dup %tmp.112;
+        %tmp.115 = aputv %tmp.114 37 %tmp.113;
+        %tmp.116 = 0x95b5;
+        %tmp.117 = dup %tmp.115;
+        %tmp.118 = aputv %tmp.117 38 %tmp.116;
+        %tmp.119 = 0x56c;
+        %tmp.120 = dup %tmp.118;
+        %tmp.121 = aputv %tmp.120 39 %tmp.119;
+        %tmp.122 = 0x12ae;
+        %tmp.123 = dup %tmp.121;
+        %tmp.124 = aputv %tmp.123 40 %tmp.122;
+        %tmp.125 = 0x492f;
+        %tmp.126 = dup %tmp.124;
+        %tmp.127 = aputv %tmp.126 41 %tmp.125;
+        %tmp.128 = 0x92e;
+        %tmp.129 = dup %tmp.127;
+        %tmp.130 = aputv %tmp.129 42 %tmp.128;
+        %tmp.131 = 0xcc96;
+        %tmp.132 = dup %tmp.130;
+        %tmp.133 = aputv %tmp.132 43 %tmp.131;
+        %tmp.134 = 0x1a94;
+        %tmp.135 = dup %tmp.133;
+        %tmp.136 = aputv %tmp.135 44 %tmp.134;
+        %tmp.137 = 0x1d4a;
+        %tmp.138 = dup %tmp.136;
+        %tmp.139 = aputv %tmp.138 45 %tmp.137;
+        %tmp.140 = 0xada9;
+        %tmp.141 = dup %tmp.139;
+        %tmp.142 = aputv %tmp.141 46 %tmp.140;
+        %tmp.143 = 0xb5a;
+        %tmp.144 = dup %tmp.142;
+        %tmp.145 = aputv %tmp.144 47 %tmp.143;
+        %tmp.146 = 0x56c;
+        %tmp.147 = dup %tmp.145;
+        %tmp.148 = aputv %tmp.147 48 %tmp.146;
+        %tmp.149 = 0x726e;
+        %tmp.150 = dup %tmp.148;
+        %tmp.151 = aputv %tmp.150 49 %tmp.149;
+        %tmp.152 = 0x125c;
+        %tmp.153 = dup %tmp.151;
+        %tmp.154 = aputv %tmp.153 50 %tmp.152;
+        %tmp.155 = 0xf92d;
+        %tmp.156 = dup %tmp.154;
+        %tmp.157 = aputv %tmp.156 51 %tmp.155;
+        %tmp.158 = 0x192a;
+        %tmp.159 = dup %tmp.157;
+        %tmp.160 = aputv %tmp.159 52 %tmp.158;
+        %tmp.161 = 0x1a94;
+        %tmp.162 = dup %tmp.160;
+        %tmp.163 = aputv %tmp.162 53 %tmp.161;
+        %tmp.164 = 0xdb4a;
+        %tmp.165 = dup %tmp.163;
+        %tmp.166 = aputv %tmp.165 54 %tmp.164;
+        %tmp.167 = 0x16aa;
+        %tmp.168 = dup %tmp.166;
+        %tmp.169 = aputv %tmp.168 55 %tmp.167;
+        %tmp.170 = 0xad4;
+        %tmp.171 = dup %tmp.169;
+        %tmp.172 = aputv %tmp.171 56 %tmp.170;
+        %tmp.173 = 0x955b;
+        %tmp.174 = dup %tmp.172;
+        %tmp.175 = aputv %tmp.174 57 %tmp.173;
+        %tmp.176 = 0x4ba;
+        %tmp.177 = dup %tmp.175;
+        %tmp.178 = aputv %tmp.177 58 %tmp.176;
+        %tmp.179 = 0x125a;
+        %tmp.180 = dup %tmp.178;
+        %tmp.181 = aputv %tmp.180 59 %tmp.179;
+        %tmp.182 = 0x592b;
+        %tmp.183 = dup %tmp.181;
+        %tmp.184 = aputv %tmp.183 60 %tmp.182;
+        %tmp.185 = 0x152a;
+        %tmp.186 = dup %tmp.184;
+        %tmp.187 = aputv %tmp.186 61 %tmp.185;
+        %tmp.188 = 0xf695;
+        %tmp.189 = dup %tmp.187;
+        %tmp.190 = aputv %tmp.189 62 %tmp.188;
+        %tmp.191 = 0xd94;
+        %tmp.192 = dup %tmp.190;
+        %tmp.193 = aputv %tmp.192 63 %tmp.191;
+        %tmp.194 = 0x16aa;
+        %tmp.195 = dup %tmp.193;
+        %tmp.196 = aputv %tmp.195 64 %tmp.194;
+        %tmp.197 = 0xaab5;
+        %tmp.198 = dup %tmp.196;
+        %tmp.199 = aputv %tmp.198 65 %tmp.197;
+        %tmp.200 = 0x9b4;
+        %tmp.201 = dup %tmp.199;
+        %tmp.202 = aputv %tmp.201 66 %tmp.200;
+        %tmp.203 = 0x14b6;
+        %tmp.204 = dup %tmp.202;
+        %tmp.205 = aputv %tmp.204 67 %tmp.203;
+        %tmp.206 = 0x6a57;
+        %tmp.207 = dup %tmp.205;
+        %tmp.208 = aputv %tmp.207 68 %tmp.206;
+        %tmp.209 = 0xa56;
+        %tmp.210 = dup %tmp.208;
+        %tmp.211 = aputv %tmp.210 69 %tmp.209;
+        %tmp.212 = 0x1152a;
+        %tmp.213 = dup %tmp.211;
+        %tmp.214 = aputv %tmp.213 70 %tmp.212;
+        %tmp.215 = 0x1d2a;
+        %tmp.216 = dup %tmp.214;
+        %tmp.217 = aputv %tmp.216 71 %tmp.215;
+        %tmp.218 = 0xd54;
+        %tmp.219 = dup %tmp.217;
+        %tmp.220 = aputv %tmp.219 72 %tmp.218;
+        %tmp.221 = 0xd5aa;
+        %tmp.222 = dup %tmp.220;
+        %tmp.223 = aputv %tmp.222 73 %tmp.221;
+        %tmp.224 = 0x156a;
+        %tmp.225 = dup %tmp.223;
+        %tmp.226 = aputv %tmp.225 74 %tmp.224;
+        %tmp.227 = 0x96c;
+        %tmp.228 = dup %tmp.226;
+        %tmp.229 = aputv %tmp.228 75 %tmp.227;
+        %tmp.230 = 0x94ae;
+        %tmp.231 = dup %tmp.229;
+        %tmp.232 = aputv %tmp.231 76 %tmp.230;
+        %tmp.233 = 0x14ae;
+        %tmp.234 = dup %tmp.232;
+        %tmp.235 = aputv %tmp.234 77 %tmp.233;
+        %tmp.236 = 0xa4c;
+        %tmp.237 = dup %tmp.235;
+        %tmp.238 = aputv %tmp.237 78 %tmp.236;
+        %tmp.239 = 0x7d26;
+        %tmp.240 = dup %tmp.238;
+        %tmp.241 = aputv %tmp.240 79 %tmp.239;
+        %tmp.242 = 0x1b2a;
+        %tmp.243 = dup %tmp.241;
+        %tmp.244 = aputv %tmp.243 80 %tmp.242;
+        %tmp.245 = 0xeb55;
+        %tmp.246 = dup %tmp.244;
+        %tmp.247 = aputv %tmp.246 81 %tmp.245;
+        %tmp.248 = 0xad4;
+        %tmp.249 = dup %tmp.247;
+        %tmp.250 = aputv %tmp.249 82 %tmp.248;
+        %tmp.251 = 0x12da;
+        %tmp.252 = dup %tmp.250;
+        %tmp.253 = aputv %tmp.252 83 %tmp.251;
+        %tmp.254 = 0xa95d;
+        %tmp.255 = dup %tmp.253;
+        %tmp.256 = aputv %tmp.255 84 %tmp.254;
+        %tmp.257 = 0x95a;
+        %tmp.258 = dup %tmp.256;
+        %tmp.259 = aputv %tmp.258 85 %tmp.257;
+        %tmp.260 = 0x149a;
+        %tmp.261 = dup %tmp.259;
+        %tmp.262 = aputv %tmp.261 86 %tmp.260;
+        %tmp.263 = 0x9a4d;
+        %tmp.264 = dup %tmp.262;
+        %tmp.265 = aputv %tmp.264 87 %tmp.263;
+        %tmp.266 = 0x1a4a;
+        %tmp.267 = dup %tmp.265;
+        %tmp.268 = aputv %tmp.267 88 %tmp.266;
+        %tmp.269 = 0x11aa5;
+        %tmp.270 = dup %tmp.268;
+        %tmp.271 = aputv %tmp.270 89 %tmp.269;
+        %tmp.272 = 0x16a8;
+        %tmp.273 = dup %tmp.271;
+        %tmp.274 = aputv %tmp.273 90 %tmp.272;
+        %tmp.275 = 0x16d4;
+        %tmp.276 = dup %tmp.274;
+        %tmp.277 = aputv %tmp.276 91 %tmp.275;
+        %tmp.278 = 0xd2da;
+        %tmp.279 = dup %tmp.277;
+        %tmp.280 = aputv %tmp.279 92 %tmp.278;
+        %tmp.281 = 0x12b6;
+        %tmp.282 = dup %tmp.280;
+        %tmp.283 = aputv %tmp.282 93 %tmp.281;
+        %tmp.284 = 0x936;
+        %tmp.285 = dup %tmp.283;
+        %tmp.286 = aputv %tmp.285 94 %tmp.284;
+        %tmp.287 = 0x9497;
+        %tmp.288 = dup %tmp.286;
+        %tmp.289 = aputv %tmp.288 95 %tmp.287;
+        %tmp.290 = 0x1496;
+        %tmp.291 = dup %tmp.289;
+        %tmp.292 = aputv %tmp.291 96 %tmp.290;
+        %tmp.293 = 0x1564b;
+        %tmp.294 = dup %tmp.292;
+        %tmp.295 = aputv %tmp.294 97 %tmp.293;
+        %tmp.296 = 0xd4a;
+        %tmp.297 = dup %tmp.295;
+        %tmp.298 = aputv %tmp.297 98 %tmp.296;
+        %tmp.299 = 0xda8;
+        %tmp.300 = dup %tmp.298;
+        %tmp.301 = aputv %tmp.300 99 %tmp.299;
+        %tmp.302 = 0xd5b4;
+        %tmp.303 = dup %tmp.301;
+        %tmp.304 = aputv %tmp.303 100 %tmp.302;
+        %tmp.305 = 0x156c;
+        %tmp.306 = dup %tmp.304;
+        %tmp.307 = aputv %tmp.306 101 %tmp.305;
+        %tmp.308 = 0x12ae;
+        %tmp.309 = dup %tmp.307;
+        %tmp.310 = aputv %tmp.309 102 %tmp.308;
+        %tmp.311 = 0xa92f;
+        %tmp.312 = dup %tmp.310;
+        %tmp.313 = aputv %tmp.312 103 %tmp.311;
+        %tmp.314 = 0x92e;
+        %tmp.315 = dup %tmp.313;
+        %tmp.316 = aputv %tmp.315 104 %tmp.314;
+        %tmp.317 = 0xc96;
+        %tmp.318 = dup %tmp.316;
+        %tmp.319 = aputv %tmp.318 105 %tmp.317;
+        %tmp.320 = 0x6d4a;
+        %tmp.321 = dup %tmp.319;
+        %tmp.322 = aputv %tmp.321 106 %tmp.320;
+        %tmp.323 = 0x1d4a;
+        %tmp.324 = dup %tmp.322;
+        %tmp.325 = aputv %tmp.324 107 %tmp.323;
+        %tmp.326 = 0x10d65;
+        %tmp.327 = dup %tmp.325;
+        %tmp.328 = aputv %tmp.327 108 %tmp.326;
+        %tmp.329 = 0xb58;
+        %tmp.330 = dup %tmp.328;
+        %tmp.331 = aputv %tmp.330 109 %tmp.329;
+        %tmp.332 = 0x156c;
+        %tmp.333 = dup %tmp.331;
+        %tmp.334 = aputv %tmp.333 110 %tmp.332;
+        %tmp.335 = 0xb26d;
+        %tmp.336 = dup %tmp.334;
+        %tmp.337 = aputv %tmp.336 111 %tmp.335;
+        %tmp.338 = 0x125c;
+        %tmp.339 = dup %tmp.337;
+        %tmp.340 = aputv %tmp.339 112 %tmp.338;
+        %tmp.341 = 0x192c;
+        %tmp.342 = dup %tmp.340;
+        %tmp.343 = aputv %tmp.342 113 %tmp.341;
+        %tmp.344 = 0x9a95;
+        %tmp.345 = dup %tmp.343;
+        %tmp.346 = aputv %tmp.345 114 %tmp.344;
+        %tmp.347 = 0x1a94;
+        %tmp.348 = dup %tmp.346;
+        %tmp.349 = aputv %tmp.348 115 %tmp.347;
+        %tmp.350 = 0x1b4a;
+        %tmp.351 = dup %tmp.349;
+        %tmp.352 = aputv %tmp.351 116 %tmp.350;
+        %tmp.353 = 0x4b55;
+        %tmp.354 = dup %tmp.352;
+        %tmp.355 = aputv %tmp.354 117 %tmp.353;
+        %tmp.356 = 0xad4;
+        %tmp.357 = dup %tmp.355;
+        %tmp.358 = aputv %tmp.357 118 %tmp.356;
+        %tmp.359 = 0xf55b;
+        %tmp.360 = dup %tmp.358;
+        %tmp.361 = aputv %tmp.360 119 %tmp.359;
+        %tmp.362 = 0x4ba;
+        %tmp.363 = dup %tmp.361;
+        %tmp.364 = aputv %tmp.363 120 %tmp.362;
+        %tmp.365 = 0x125a;
+        %tmp.366 = dup %tmp.364;
+        %tmp.367 = aputv %tmp.366 121 %tmp.365;
+        %tmp.368 = 0xb92b;
+        %tmp.369 = dup %tmp.367;
+        %tmp.370 = aputv %tmp.369 122 %tmp.368;
+        %tmp.371 = 0x152a;
+        %tmp.372 = dup %tmp.370;
+        %tmp.373 = aputv %tmp.372 123 %tmp.371;
+        %tmp.374 = 0x1694;
+        %tmp.375 = dup %tmp.373;
+        %tmp.376 = aputv %tmp.375 124 %tmp.374;
+        %tmp.377 = 0x96aa;
+        %tmp.378 = dup %tmp.376;
+        %tmp.379 = aputv %tmp.378 125 %tmp.377;
+        %tmp.380 = 0x15aa;
+        %tmp.381 = dup %tmp.379;
+        %tmp.382 = aputv %tmp.381 126 %tmp.380;
+        %tmp.383 = 0x12ab5;
+        %tmp.384 = dup %tmp.382;
+        %tmp.385 = aputv %tmp.384 127 %tmp.383;
+        %tmp.386 = 0x974;
+        %tmp.387 = dup %tmp.385;
+        %tmp.388 = aputv %tmp.387 128 %tmp.386;
+        %tmp.389 = 0x14b6;
+        %tmp.390 = dup %tmp.388;
+        %tmp.391 = aputv %tmp.390 129 %tmp.389;
+        %tmp.392 = 0xca57;
+        %tmp.393 = dup %tmp.391;
+        %tmp.394 = aputv %tmp.393 130 %tmp.392;
+        %tmp.395 = 0xa56;
+        %tmp.396 = dup %tmp.394;
+        %tmp.397 = aputv %tmp.396 131 %tmp.395;
+        %tmp.398 = 0x1526;
+        %tmp.399 = dup %tmp.397;
+        %tmp.400 = aputv %tmp.399 132 %tmp.398;
+        %tmp.401 = 0x8e95;
+        %tmp.402 = dup %tmp.400;
+        %tmp.403 = aputv %tmp.402 133 %tmp.401;
+        %tmp.404 = 0xd54;
+        %tmp.405 = dup %tmp.403;
+        %tmp.406 = aputv %tmp.405 134 %tmp.404;
+        %tmp.407 = 0x15aa;
+        %tmp.408 = dup %tmp.406;
+        %tmp.409 = aputv %tmp.408 135 %tmp.407;
+        %tmp.410 = 0x49b5;
+        %tmp.411 = dup %tmp.409;
+        %tmp.412 = aputv %tmp.411 136 %tmp.410;
+        %tmp.413 = 0x96c;
+        %tmp.414 = dup %tmp.412;
+        %tmp.415 = aputv %tmp.414 137 %tmp.413;
+        %tmp.416 = 0xd4ae;
+        %tmp.417 = dup %tmp.415;
+        %tmp.418 = aputv %tmp.417 138 %tmp.416;
+        %tmp.419 = 0x149c;
+        %tmp.420 = dup %tmp.418;
+        %tmp.421 = aputv %tmp.420 139 %tmp.419;
+        %tmp.422 = 0x1a4c;
+        %tmp.423 = dup %tmp.421;
+        %tmp.424 = aputv %tmp.423 140 %tmp.422;
+        %tmp.425 = 0xbd26;
+        %tmp.426 = dup %tmp.424;
+        %tmp.427 = aputv %tmp.426 141 %tmp.425;
+        %tmp.428 = 0x1aa6;
+        %tmp.429 = dup %tmp.427;
+        %tmp.430 = aputv %tmp.429 142 %tmp.428;
+        %tmp.431 = 0xb54;
+        %tmp.432 = dup %tmp.430;
+        %tmp.433 = aputv %tmp.432 143 %tmp.431;
+        %tmp.434 = 0x6d6a;
+        %tmp.435 = dup %tmp.433;
+        %tmp.436 = aputv %tmp.435 144 %tmp.434;
+        %tmp.437 = 0x12da;
+        %tmp.438 = dup %tmp.436;
+        %tmp.439 = aputv %tmp.438 145 %tmp.437;
+        %tmp.440 = 0x1695d;
+        %tmp.441 = dup %tmp.439;
+        %tmp.442 = aputv %tmp.441 146 %tmp.440;
+        %tmp.443 = 0x95a;
+        %tmp.444 = dup %tmp.442;
+        %tmp.445 = aputv %tmp.444 147 %tmp.443;
+        %tmp.446 = 0x149a;
+        %tmp.447 = dup %tmp.445;
+        %tmp.448 = aputv %tmp.447 148 %tmp.446;
+        %tmp.449 = 0xda4b;
+        %tmp.450 = dup %tmp.448;
+        %tmp.451 = aputv %tmp.450 149 %tmp.449;
+        %tmp.452 = 0x1a4a;
+        %tmp.453 = dup %tmp.451;
+        %tmp.454 = aputv %tmp.453 150 %tmp.452;
+        %tmp.455 = 0x1aa4;
+        %tmp.456 = dup %tmp.454;
+        %tmp.457 = aputv %tmp.456 151 %tmp.455;
+        %tmp.458 = 0xbb54;
+        %tmp.459 = dup %tmp.457;
+        %tmp.460 = aputv %tmp.459 152 %tmp.458;
+        %tmp.461 = 0x16b4;
+        %tmp.462 = dup %tmp.460;
+        %tmp.463 = aputv %tmp.462 153 %tmp.461;
+        %tmp.464 = 0xada;
+        %tmp.465 = dup %tmp.463;
+        %tmp.466 = aputv %tmp.465 154 %tmp.464;
+        %tmp.467 = 0x495b;
+        %tmp.468 = dup %tmp.466;
+        %tmp.469 = aputv %tmp.468 155 %tmp.467;
+        %tmp.470 = 0x936;
+        %tmp.471 = dup %tmp.469;
+        %tmp.472 = aputv %tmp.471 156 %tmp.470;
+        %tmp.473 = 0xf497;
+        %tmp.474 = dup %tmp.472;
+        %tmp.475 = aputv %tmp.474 157 %tmp.473;
+        %tmp.476 = 0x1496;
+        %tmp.477 = dup %tmp.475;
+        %tmp.478 = aputv %tmp.477 158 %tmp.476;
+        %tmp.479 = 0x154a;
+        %tmp.480 = dup %tmp.478;
+        %tmp.481 = aputv %tmp.480 159 %tmp.479;
+        %tmp.482 = 0xb6a5;
+        %tmp.483 = dup %tmp.481;
+        %tmp.484 = aputv %tmp.483 160 %tmp.482;
+        %tmp.485 = 0xda4;
+        %tmp.486 = dup %tmp.484;
+        %tmp.487 = aputv %tmp.486 161 %tmp.485;
+        %tmp.488 = 0x15b4;
+        %tmp.489 = dup %tmp.487;
+        %tmp.490 = aputv %tmp.489 162 %tmp.488;
+        %tmp.491 = 0x6ab6;
+        %tmp.492 = dup %tmp.490;
+        %tmp.493 = aputv %tmp.492 163 %tmp.491;
+        %tmp.494 = 0x126e;
+        %tmp.495 = dup %tmp.493;
+        %tmp.496 = aputv %tmp.495 164 %tmp.494;
+        %tmp.497 = 0x1092f;
+        %tmp.498 = dup %tmp.496;
+        %tmp.499 = aputv %tmp.498 165 %tmp.497;
+        %tmp.500 = 0x92e;
+        %tmp.501 = dup %tmp.499;
+        %tmp.502 = aputv %tmp.501 166 %tmp.500;
+        %tmp.503 = 0xc96;
+        %tmp.504 = dup %tmp.502;
+        %tmp.505 = aputv %tmp.504 167 %tmp.503;
+        %tmp.506 = 0xcd4a;
+        %tmp.507 = dup %tmp.505;
+        %tmp.508 = aputv %tmp.507 168 %tmp.506;
+        %tmp.509 = 0x1d4a;
+        %tmp.510 = dup %tmp.508;
+        %tmp.511 = aputv %tmp.510 169 %tmp.509;
+        %tmp.512 = 0xd64;
+        %tmp.513 = dup %tmp.511;
+        %tmp.514 = aputv %tmp.513 170 %tmp.512;
+        %tmp.515 = 0x956c;
+        %tmp.516 = dup %tmp.514;
+        %tmp.517 = aputv %tmp.516 171 %tmp.515;
+        %tmp.518 = 0x155c;
+        %tmp.519 = dup %tmp.517;
+        %tmp.520 = aputv %tmp.519 172 %tmp.518;
+        %tmp.521 = 0x125c;
+        %tmp.522 = dup %tmp.520;
+        %tmp.523 = aputv %tmp.522 173 %tmp.521;
+        %tmp.524 = 0x792e;
+        %tmp.525 = dup %tmp.523;
+        %tmp.526 = aputv %tmp.525 174 %tmp.524;
+        %tmp.527 = 0x192c;
+        %tmp.528 = dup %tmp.526;
+        %tmp.529 = aputv %tmp.528 175 %tmp.527;
+        %tmp.530 = 0xfa95;
+        %tmp.531 = dup %tmp.529;
+        %tmp.532 = aputv %tmp.531 176 %tmp.530;
+        %tmp.533 = 0x1a94;
+        %tmp.534 = dup %tmp.532;
+        %tmp.535 = aputv %tmp.534 177 %tmp.533;
+        %tmp.536 = 0x1b4a;
+        %tmp.537 = dup %tmp.535;
+        %tmp.538 = aputv %tmp.537 178 %tmp.536;
+        %tmp.539 = 0xab55;
+        %tmp.540 = dup %tmp.538;
+        %tmp.541 = aputv %tmp.540 179 %tmp.539;
+        %tmp.542 = 0xad4;
+        %tmp.543 = dup %tmp.541;
+        %tmp.544 = aputv %tmp.543 180 %tmp.542;
+        %tmp.545 = 0x14da;
+        %tmp.546 = dup %tmp.544;
+        %tmp.547 = aputv %tmp.546 181 %tmp.545;
+        %tmp.548 = 0x8a5d;
+        %tmp.549 = dup %tmp.547;
+        %tmp.550 = aputv %tmp.549 182 %tmp.548;
+        %tmp.551 = 0xa5a;
+        %tmp.552 = dup %tmp.550;
+        %tmp.553 = aputv %tmp.552 183 %tmp.551;
+        %tmp.554 = 0x1152b;
+        %tmp.555 = dup %tmp.553;
+        %tmp.556 = aputv %tmp.555 184 %tmp.554;
+        %tmp.557 = 0x152a;
+        %tmp.558 = dup %tmp.556;
+        %tmp.559 = aputv %tmp.558 185 %tmp.557;
+        %tmp.560 = 0x1694;
+        %tmp.561 = dup %tmp.559;
+        %tmp.562 = aputv %tmp.561 186 %tmp.560;
+        %tmp.563 = 0xd6aa;
+        %tmp.564 = dup %tmp.562;
+        %tmp.565 = aputv %tmp.564 187 %tmp.563;
+        %tmp.566 = 0x15aa;
+        %tmp.567 = dup %tmp.565;
+        %tmp.568 = aputv %tmp.567 188 %tmp.566;
+        %tmp.569 = 0xab4;
+        %tmp.570 = dup %tmp.568;
+        %tmp.571 = aputv %tmp.570 189 %tmp.569;
+        %tmp.572 = 0x94ba;
+        %tmp.573 = dup %tmp.571;
+        %tmp.574 = aputv %tmp.573 190 %tmp.572;
+        %tmp.575 = 0x14b6;
+        %tmp.576 = dup %tmp.574;
+        %tmp.577 = aputv %tmp.576 191 %tmp.575;
+        %tmp.578 = 0xa56;
+        %tmp.579 = dup %tmp.577;
+        %tmp.580 = aputv %tmp.579 192 %tmp.578;
+        %tmp.581 = 0x7527;
+        %tmp.582 = dup %tmp.580;
+        %tmp.583 = aputv %tmp.582 193 %tmp.581;
+        %tmp.584 = 0xd26;
+        %tmp.585 = dup %tmp.583;
+        %tmp.586 = aputv %tmp.585 194 %tmp.584;
+        %tmp.587 = 0xee53;
+        %tmp.588 = dup %tmp.586;
+        %tmp.589 = aputv %tmp.588 195 %tmp.587;
+        %tmp.590 = 0xd54;
+        %tmp.591 = dup %tmp.589;
+        %tmp.592 = aputv %tmp.591 196 %tmp.590;
+        %tmp.593 = 0x15aa;
+        %tmp.594 = dup %tmp.592;
+        %tmp.595 = aputv %tmp.594 197 %tmp.593;
+        %tmp.596 = 0xa9b5;
+        %tmp.597 = dup %tmp.595;
+        %tmp.598 = aputv %tmp.597 198 %tmp.596;
+        %tmp.599 = 0x96c;
+        %tmp.600 = dup %tmp.598;
+        %tmp.601 = aputv %tmp.600 199 %tmp.599;
+        %tmp.602 = 0x14ae;
+        %tmp.603 = dup %tmp.601;
+        %tmp.604 = aputv %tmp.603 200 %tmp.602;
+        %tmp.605 = 0x8a4e;
+        %tmp.606 = dup %tmp.604;
+        %tmp.607 = aputv %tmp.606 201 %tmp.605;
+        %tmp.608 = 0x1a4c;
+        %tmp.609 = dup %tmp.607;
+        %tmp.610 = aputv %tmp.609 202 %tmp.608;
+        %tmp.611 = 0x11d26;
+        %tmp.612 = dup %tmp.610;
+        %tmp.613 = aputv %tmp.612 203 %tmp.611;
+        %tmp.614 = 0x1aa4;
+        %tmp.615 = dup %tmp.613;
+        %tmp.616 = aputv %tmp.615 204 %tmp.614;
+        %tmp.617 = 0x1b54;
+        %tmp.618 = dup %tmp.616;
+        %tmp.619 = aputv %tmp.618 205 %tmp.617;
+        %tmp.620 = 0xcd6a;
+        %tmp.621 = dup %tmp.619;
+        %tmp.622 = aputv %tmp.621 206 %tmp.620;
+        %tmp.623 = 0xada;
+        %tmp.624 = dup %tmp.622;
+        %tmp.625 = aputv %tmp.624 207 %tmp.623;
+        %tmp.626 = 0x95c;
+        %tmp.627 = dup %tmp.625;
+        %tmp.628 = aputv %tmp.627 208 %tmp.626;
+        %tmp.629 = 0x949d;
+        %tmp.630 = dup %tmp.628;
+        %tmp.631 = aputv %tmp.630 209 %tmp.629;
+        %tmp.632 = 0x149a;
+        %tmp.633 = dup %tmp.631;
+        %tmp.634 = aputv %tmp.633 210 %tmp.632;
+        %tmp.635 = 0x1a2a;
+        %tmp.636 = dup %tmp.634;
+        %tmp.637 = aputv %tmp.636 211 %tmp.635;
+        %tmp.638 = 0x5b25;
+        %tmp.639 = dup %tmp.637;
+        %tmp.640 = aputv %tmp.639 212 %tmp.638;
+        %tmp.641 = 0x1aa4;
+        %tmp.642 = dup %tmp.640;
+        %tmp.643 = aputv %tmp.642 213 %tmp.641;
+        %tmp.644 = 0xfb52;
+        %tmp.645 = dup %tmp.643;
+        %tmp.646 = aputv %tmp.645 214 %tmp.644;
+        %tmp.647 = 0x16b4;
+        %tmp.648 = dup %tmp.646;
+        %tmp.649 = aputv %tmp.648 215 %tmp.647;
+        %tmp.650 = 0xaba;
+        %tmp.651 = dup %tmp.649;
+        %tmp.652 = aputv %tmp.651 216 %tmp.650;
+        %tmp.653 = 0xa95b;
+        %tmp.654 = dup %tmp.652;
+        %tmp.655 = aputv %tmp.654 217 %tmp.653;
+        %tmp.656 = 0x936;
+        %tmp.657 = dup %tmp.655;
+        %tmp.658 = aputv %tmp.657 218 %tmp.656;
+        %tmp.659 = 0x1496;
+        %tmp.660 = dup %tmp.658;
+        %tmp.661 = aputv %tmp.660 219 %tmp.659;
+        %tmp.662 = 0x9a4b;
+        %tmp.663 = dup %tmp.661;
+        %tmp.664 = aputv %tmp.663 220 %tmp.662;
+        %tmp.665 = 0x154a;
+        %tmp.666 = dup %tmp.664;
+        %tmp.667 = aputv %tmp.666 221 %tmp.665;
+        %tmp.668 = 0x136a5;
+        %tmp.669 = dup %tmp.667;
+        %tmp.670 = aputv %tmp.669 222 %tmp.668;
+        %tmp.671 = 0xda4;
+        %tmp.672 = dup %tmp.670;
+        %tmp.673 = aputv %tmp.672 223 %tmp.671;
+        %tmp.674 = 0x15ac;
+        %tmp.675 = dup %tmp.673;
+        %tmp.676 = aputv %tmp.675 224 %tmp.674;
+        symbol [ lunar_month_days ? 37 8 24 ];
+        putv self :lunar_month_days %tmp.676;
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 57 8 ]
+        %tmp.677 = newa 225;
+        %tmp.678 = 1887;
+        %tmp.679 = dup %tmp.677;
+        %tmp.680 = aputv %tmp.679 0 %tmp.678;
+        %tmp.681 = 0xec04c;
+        %tmp.682 = dup %tmp.680;
+        %tmp.683 = aputv %tmp.682 1 %tmp.681;
+        %tmp.684 = 0xec23f;
+        %tmp.685 = dup %tmp.683;
+        %tmp.686 = aputv %tmp.685 2 %tmp.684;
+        %tmp.687 = 0xec435;
+        %tmp.688 = dup %tmp.686;
+        %tmp.689 = aputv %tmp.688 3 %tmp.687;
+        %tmp.690 = 0xec649;
+        %tmp.691 = dup %tmp.689;
+        %tmp.692 = aputv %tmp.691 4 %tmp.690;
+        %tmp.693 = 0xec83e;
+        %tmp.694 = dup %tmp.692;
+        %tmp.695 = aputv %tmp.694 5 %tmp.693;
+        %tmp.696 = 0xeca51;
+        %tmp.697 = dup %tmp.695;
+        %tmp.698 = aputv %tmp.697 6 %tmp.696;
+        %tmp.699 = 0xecc46;
+        %tmp.700 = dup %tmp.698;
+        %tmp.701 = aputv %tmp.700 7 %tmp.699;
+        %tmp.702 = 0xece3a;
+        %tmp.703 = dup %tmp.701;
+        %tmp.704 = aputv %tmp.703 8 %tmp.702;
+        %tmp.705 = 0xed04d;
+        %tmp.706 = dup %tmp.704;
+        %tmp.707 = aputv %tmp.706 9 %tmp.705;
+        %tmp.708 = 0xed242;
+        %tmp.709 = dup %tmp.707;
+        %tmp.710 = aputv %tmp.709 10 %tmp.708;
+        %tmp.711 = 0xed436;
+        %tmp.712 = dup %tmp.710;
+        %tmp.713 = aputv %tmp.712 11 %tmp.711;
+        %tmp.714 = 0xed64a;
+        %tmp.715 = dup %tmp.713;
+        %tmp.716 = aputv %tmp.715 12 %tmp.714;
+        %tmp.717 = 0xed83f;
+        %tmp.718 = dup %tmp.716;
+        %tmp.719 = aputv %tmp.718 13 %tmp.717;
+        %tmp.720 = 0xeda53;
+        %tmp.721 = dup %tmp.719;
+        %tmp.722 = aputv %tmp.721 14 %tmp.720;
+        %tmp.723 = 0xedc48;
+        %tmp.724 = dup %tmp.722;
+        %tmp.725 = aputv %tmp.724 15 %tmp.723;
+        %tmp.726 = 0xede3d;
+        %tmp.727 = dup %tmp.725;
+        %tmp.728 = aputv %tmp.727 16 %tmp.726;
+        %tmp.729 = 0xee050;
+        %tmp.730 = dup %tmp.728;
+        %tmp.731 = aputv %tmp.730 17 %tmp.729;
+        %tmp.732 = 0xee244;
+        %tmp.733 = dup %tmp.731;
+        %tmp.734 = aputv %tmp.733 18 %tmp.732;
+        %tmp.735 = 0xee439;
+        %tmp.736 = dup %tmp.734;
+        %tmp.737 = aputv %tmp.736 19 %tmp.735;
+        %tmp.738 = 0xee64d;
+        %tmp.739 = dup %tmp.737;
+        %tmp.740 = aputv %tmp.739 20 %tmp.738;
+        %tmp.741 = 0xee842;
+        %tmp.742 = dup %tmp.740;
+        %tmp.743 = aputv %tmp.742 21 %tmp.741;
+        %tmp.744 = 0xeea36;
+        %tmp.745 = dup %tmp.743;
+        %tmp.746 = aputv %tmp.745 22 %tmp.744;
+        %tmp.747 = 0xeec4a;
+        %tmp.748 = dup %tmp.746;
+        %tmp.749 = aputv %tmp.748 23 %tmp.747;
+        %tmp.750 = 0xeee3e;
+        %tmp.751 = dup %tmp.749;
+        %tmp.752 = aputv %tmp.751 24 %tmp.750;
+        %tmp.753 = 0xef052;
+        %tmp.754 = dup %tmp.752;
+        %tmp.755 = aputv %tmp.754 25 %tmp.753;
+        %tmp.756 = 0xef246;
+        %tmp.757 = dup %tmp.755;
+        %tmp.758 = aputv %tmp.757 26 %tmp.756;
+        %tmp.759 = 0xef43a;
+        %tmp.760 = dup %tmp.758;
+        %tmp.761 = aputv %tmp.760 27 %tmp.759;
+        %tmp.762 = 0xef64e;
+        %tmp.763 = dup %tmp.761;
+        %tmp.764 = aputv %tmp.763 28 %tmp.762;
+        %tmp.765 = 0xef843;
+        %tmp.766 = dup %tmp.764;
+        %tmp.767 = aputv %tmp.766 29 %tmp.765;
+        %tmp.768 = 0xefa37;
+        %tmp.769 = dup %tmp.767;
+        %tmp.770 = aputv %tmp.769 30 %tmp.768;
+        %tmp.771 = 0xefc4b;
+        %tmp.772 = dup %tmp.770;
+        %tmp.773 = aputv %tmp.772 31 %tmp.771;
+        %tmp.774 = 0xefe41;
+        %tmp.775 = dup %tmp.773;
+        %tmp.776 = aputv %tmp.775 32 %tmp.774;
+        %tmp.777 = 0xf0054;
+        %tmp.778 = dup %tmp.776;
+        %tmp.779 = aputv %tmp.778 33 %tmp.777;
+        %tmp.780 = 0xf0248;
+        %tmp.781 = dup %tmp.779;
+        %tmp.782 = aputv %tmp.781 34 %tmp.780;
+        %tmp.783 = 0xf043c;
+        %tmp.784 = dup %tmp.782;
+        %tmp.785 = aputv %tmp.784 35 %tmp.783;
+        %tmp.786 = 0xf0650;
+        %tmp.787 = dup %tmp.785;
+        %tmp.788 = aputv %tmp.787 36 %tmp.786;
+        %tmp.789 = 0xf0845;
+        %tmp.790 = dup %tmp.788;
+        %tmp.791 = aputv %tmp.790 37 %tmp.789;
+        %tmp.792 = 0xf0a38;
+        %tmp.793 = dup %tmp.791;
+        %tmp.794 = aputv %tmp.793 38 %tmp.792;
+        %tmp.795 = 0xf0c4d;
+        %tmp.796 = dup %tmp.794;
+        %tmp.797 = aputv %tmp.796 39 %tmp.795;
+        %tmp.798 = 0xf0e42;
+        %tmp.799 = dup %tmp.797;
+        %tmp.800 = aputv %tmp.799 40 %tmp.798;
+        %tmp.801 = 0xf1037;
+        %tmp.802 = dup %tmp.800;
+        %tmp.803 = aputv %tmp.802 41 %tmp.801;
+        %tmp.804 = 0xf124a;
+        %tmp.805 = dup %tmp.803;
+        %tmp.806 = aputv %tmp.805 42 %tmp.804;
+        %tmp.807 = 0xf143e;
+        %tmp.808 = dup %tmp.806;
+        %tmp.809 = aputv %tmp.808 43 %tmp.807;
+        %tmp.810 = 0xf1651;
+        %tmp.811 = dup %tmp.809;
+        %tmp.812 = aputv %tmp.811 44 %tmp.810;
+        %tmp.813 = 0xf1846;
+        %tmp.814 = dup %tmp.812;
+        %tmp.815 = aputv %tmp.814 45 %tmp.813;
+        %tmp.816 = 0xf1a3a;
+        %tmp.817 = dup %tmp.815;
+        %tmp.818 = aputv %tmp.817 46 %tmp.816;
+        %tmp.819 = 0xf1c4e;
+        %tmp.820 = dup %tmp.818;
+        %tmp.821 = aputv %tmp.820 47 %tmp.819;
+        %tmp.822 = 0xf1e44;
+        %tmp.823 = dup %tmp.821;
+        %tmp.824 = aputv %tmp.823 48 %tmp.822;
+        %tmp.825 = 0xf2038;
+        %tmp.826 = dup %tmp.824;
+        %tmp.827 = aputv %tmp.826 49 %tmp.825;
+        %tmp.828 = 0xf224b;
+        %tmp.829 = dup %tmp.827;
+        %tmp.830 = aputv %tmp.829 50 %tmp.828;
+        %tmp.831 = 0xf243f;
+        %tmp.832 = dup %tmp.830;
+        %tmp.833 = aputv %tmp.832 51 %tmp.831;
+        %tmp.834 = 0xf2653;
+        %tmp.835 = dup %tmp.833;
+        %tmp.836 = aputv %tmp.835 52 %tmp.834;
+        %tmp.837 = 0xf2848;
+        %tmp.838 = dup %tmp.836;
+        %tmp.839 = aputv %tmp.838 53 %tmp.837;
+        %tmp.840 = 0xf2a3b;
+        %tmp.841 = dup %tmp.839;
+        %tmp.842 = aputv %tmp.841 54 %tmp.840;
+        %tmp.843 = 0xf2c4f;
+        %tmp.844 = dup %tmp.842;
+        %tmp.845 = aputv %tmp.844 55 %tmp.843;
+        %tmp.846 = 0xf2e45;
+        %tmp.847 = dup %tmp.845;
+        %tmp.848 = aputv %tmp.847 56 %tmp.846;
+        %tmp.849 = 0xf3039;
+        %tmp.850 = dup %tmp.848;
+        %tmp.851 = aputv %tmp.850 57 %tmp.849;
+        %tmp.852 = 0xf324d;
+        %tmp.853 = dup %tmp.851;
+        %tmp.854 = aputv %tmp.853 58 %tmp.852;
+        %tmp.855 = 0xf3442;
+        %tmp.856 = dup %tmp.854;
+        %tmp.857 = aputv %tmp.856 59 %tmp.855;
+        %tmp.858 = 0xf3636;
+        %tmp.859 = dup %tmp.857;
+        %tmp.860 = aputv %tmp.859 60 %tmp.858;
+        %tmp.861 = 0xf384a;
+        %tmp.862 = dup %tmp.860;
+        %tmp.863 = aputv %tmp.862 61 %tmp.861;
+        %tmp.864 = 0xf3a3d;
+        %tmp.865 = dup %tmp.863;
+        %tmp.866 = aputv %tmp.865 62 %tmp.864;
+        %tmp.867 = 0xf3c51;
+        %tmp.868 = dup %tmp.866;
+        %tmp.869 = aputv %tmp.868 63 %tmp.867;
+        %tmp.870 = 0xf3e46;
+        %tmp.871 = dup %tmp.869;
+        %tmp.872 = aputv %tmp.871 64 %tmp.870;
+        %tmp.873 = 0xf403b;
+        %tmp.874 = dup %tmp.872;
+        %tmp.875 = aputv %tmp.874 65 %tmp.873;
+        %tmp.876 = 0xf424e;
+        %tmp.877 = dup %tmp.875;
+        %tmp.878 = aputv %tmp.877 66 %tmp.876;
+        %tmp.879 = 0xf4443;
+        %tmp.880 = dup %tmp.878;
+        %tmp.881 = aputv %tmp.880 67 %tmp.879;
+        %tmp.882 = 0xf4638;
+        %tmp.883 = dup %tmp.881;
+        %tmp.884 = aputv %tmp.883 68 %tmp.882;
+        %tmp.885 = 0xf484c;
+        %tmp.886 = dup %tmp.884;
+        %tmp.887 = aputv %tmp.886 69 %tmp.885;
+        %tmp.888 = 0xf4a3f;
+        %tmp.889 = dup %tmp.887;
+        %tmp.890 = aputv %tmp.889 70 %tmp.888;
+        %tmp.891 = 0xf4c52;
+        %tmp.892 = dup %tmp.890;
+        %tmp.893 = aputv %tmp.892 71 %tmp.891;
+        %tmp.894 = 0xf4e48;
+        %tmp.895 = dup %tmp.893;
+        %tmp.896 = aputv %tmp.895 72 %tmp.894;
+        %tmp.897 = 0xf503c;
+        %tmp.898 = dup %tmp.896;
+        %tmp.899 = aputv %tmp.898 73 %tmp.897;
+        %tmp.900 = 0xf524f;
+        %tmp.901 = dup %tmp.899;
+        %tmp.902 = aputv %tmp.901 74 %tmp.900;
+        %tmp.903 = 0xf5445;
+        %tmp.904 = dup %tmp.902;
+        %tmp.905 = aputv %tmp.904 75 %tmp.903;
+        %tmp.906 = 0xf5639;
+        %tmp.907 = dup %tmp.905;
+        %tmp.908 = aputv %tmp.907 76 %tmp.906;
+        %tmp.909 = 0xf584d;
+        %tmp.910 = dup %tmp.908;
+        %tmp.911 = aputv %tmp.910 77 %tmp.909;
+        %tmp.912 = 0xf5a42;
+        %tmp.913 = dup %tmp.911;
+        %tmp.914 = aputv %tmp.913 78 %tmp.912;
+        %tmp.915 = 0xf5c35;
+        %tmp.916 = dup %tmp.914;
+        %tmp.917 = aputv %tmp.916 79 %tmp.915;
+        %tmp.918 = 0xf5e49;
+        %tmp.919 = dup %tmp.917;
+        %tmp.920 = aputv %tmp.919 80 %tmp.918;
+        %tmp.921 = 0xf603e;
+        %tmp.922 = dup %tmp.920;
+        %tmp.923 = aputv %tmp.922 81 %tmp.921;
+        %tmp.924 = 0xf6251;
+        %tmp.925 = dup %tmp.923;
+        %tmp.926 = aputv %tmp.925 82 %tmp.924;
+        %tmp.927 = 0xf6446;
+        %tmp.928 = dup %tmp.926;
+        %tmp.929 = aputv %tmp.928 83 %tmp.927;
+        %tmp.930 = 0xf663b;
+        %tmp.931 = dup %tmp.929;
+        %tmp.932 = aputv %tmp.931 84 %tmp.930;
+        %tmp.933 = 0xf684f;
+        %tmp.934 = dup %tmp.932;
+        %tmp.935 = aputv %tmp.934 85 %tmp.933;
+        %tmp.936 = 0xf6a43;
+        %tmp.937 = dup %tmp.935;
+        %tmp.938 = aputv %tmp.937 86 %tmp.936;
+        %tmp.939 = 0xf6c37;
+        %tmp.940 = dup %tmp.938;
+        %tmp.941 = aputv %tmp.940 87 %tmp.939;
+        %tmp.942 = 0xf6e4b;
+        %tmp.943 = dup %tmp.941;
+        %tmp.944 = aputv %tmp.943 88 %tmp.942;
+        %tmp.945 = 0xf703f;
+        %tmp.946 = dup %tmp.944;
+        %tmp.947 = aputv %tmp.946 89 %tmp.945;
+        %tmp.948 = 0xf7252;
+        %tmp.949 = dup %tmp.947;
+        %tmp.950 = aputv %tmp.949 90 %tmp.948;
+        %tmp.951 = 0xf7447;
+        %tmp.952 = dup %tmp.950;
+        %tmp.953 = aputv %tmp.952 91 %tmp.951;
+        %tmp.954 = 0xf763c;
+        %tmp.955 = dup %tmp.953;
+        %tmp.956 = aputv %tmp.955 92 %tmp.954;
+        %tmp.957 = 0xf7850;
+        %tmp.958 = dup %tmp.956;
+        %tmp.959 = aputv %tmp.958 93 %tmp.957;
+        %tmp.960 = 0xf7a45;
+        %tmp.961 = dup %tmp.959;
+        %tmp.962 = aputv %tmp.961 94 %tmp.960;
+        %tmp.963 = 0xf7c39;
+        %tmp.964 = dup %tmp.962;
+        %tmp.965 = aputv %tmp.964 95 %tmp.963;
+        %tmp.966 = 0xf7e4d;
+        %tmp.967 = dup %tmp.965;
+        %tmp.968 = aputv %tmp.967 96 %tmp.966;
+        %tmp.969 = 0xf8042;
+        %tmp.970 = dup %tmp.968;
+        %tmp.971 = aputv %tmp.970 97 %tmp.969;
+        %tmp.972 = 0xf8254;
+        %tmp.973 = dup %tmp.971;
+        %tmp.974 = aputv %tmp.973 98 %tmp.972;
+        %tmp.975 = 0xf8449;
+        %tmp.976 = dup %tmp.974;
+        %tmp.977 = aputv %tmp.976 99 %tmp.975;
+        %tmp.978 = 0xf863d;
+        %tmp.979 = dup %tmp.977;
+        %tmp.980 = aputv %tmp.979 100 %tmp.978;
+        %tmp.981 = 0xf8851;
+        %tmp.982 = dup %tmp.980;
+        %tmp.983 = aputv %tmp.982 101 %tmp.981;
+        %tmp.984 = 0xf8a46;
+        %tmp.985 = dup %tmp.983;
+        %tmp.986 = aputv %tmp.985 102 %tmp.984;
+        %tmp.987 = 0xf8c3b;
+        %tmp.988 = dup %tmp.986;
+        %tmp.989 = aputv %tmp.988 103 %tmp.987;
+        %tmp.990 = 0xf8e4f;
+        %tmp.991 = dup %tmp.989;
+        %tmp.992 = aputv %tmp.991 104 %tmp.990;
+        %tmp.993 = 0xf9044;
+        %tmp.994 = dup %tmp.992;
+        %tmp.995 = aputv %tmp.994 105 %tmp.993;
+        %tmp.996 = 0xf9237;
+        %tmp.997 = dup %tmp.995;
+        %tmp.998 = aputv %tmp.997 106 %tmp.996;
+        %tmp.999 = 0xf944a;
+        %tmp.1000 = dup %tmp.998;
+        %tmp.1001 = aputv %tmp.1000 107 %tmp.999;
+        %tmp.1002 = 0xf963f;
+        %tmp.1003 = dup %tmp.1001;
+        %tmp.1004 = aputv %tmp.1003 108 %tmp.1002;
+        %tmp.1005 = 0xf9853;
+        %tmp.1006 = dup %tmp.1004;
+        %tmp.1007 = aputv %tmp.1006 109 %tmp.1005;
+        %tmp.1008 = 0xf9a47;
+        %tmp.1009 = dup %tmp.1007;
+        %tmp.1010 = aputv %tmp.1009 110 %tmp.1008;
+        %tmp.1011 = 0xf9c3c;
+        %tmp.1012 = dup %tmp.1010;
+        %tmp.1013 = aputv %tmp.1012 111 %tmp.1011;
+        %tmp.1014 = 0xf9e50;
+        %tmp.1015 = dup %tmp.1013;
+        %tmp.1016 = aputv %tmp.1015 112 %tmp.1014;
+        %tmp.1017 = 0xfa045;
+        %tmp.1018 = dup %tmp.1016;
+        %tmp.1019 = aputv %tmp.1018 113 %tmp.1017;
+        %tmp.1020 = 0xfa238;
+        %tmp.1021 = dup %tmp.1019;
+        %tmp.1022 = aputv %tmp.1021 114 %tmp.1020;
+        %tmp.1023 = 0xfa44c;
+        %tmp.1024 = dup %tmp.1022;
+        %tmp.1025 = aputv %tmp.1024 115 %tmp.1023;
+        %tmp.1026 = 0xfa641;
+        %tmp.1027 = dup %tmp.1025;
+        %tmp.1028 = aputv %tmp.1027 116 %tmp.1026;
+        %tmp.1029 = 0xfa836;
+        %tmp.1030 = dup %tmp.1028;
+        %tmp.1031 = aputv %tmp.1030 117 %tmp.1029;
+        %tmp.1032 = 0xfaa49;
+        %tmp.1033 = dup %tmp.1031;
+        %tmp.1034 = aputv %tmp.1033 118 %tmp.1032;
+        %tmp.1035 = 0xfac3d;
+        %tmp.1036 = dup %tmp.1034;
+        %tmp.1037 = aputv %tmp.1036 119 %tmp.1035;
+        %tmp.1038 = 0xfae52;
+        %tmp.1039 = dup %tmp.1037;
+        %tmp.1040 = aputv %tmp.1039 120 %tmp.1038;
+        %tmp.1041 = 0xfb047;
+        %tmp.1042 = dup %tmp.1040;
+        %tmp.1043 = aputv %tmp.1042 121 %tmp.1041;
+        %tmp.1044 = 0xfb23a;
+        %tmp.1045 = dup %tmp.1043;
+        %tmp.1046 = aputv %tmp.1045 122 %tmp.1044;
+        %tmp.1047 = 0xfb44e;
+        %tmp.1048 = dup %tmp.1046;
+        %tmp.1049 = aputv %tmp.1048 123 %tmp.1047;
+        %tmp.1050 = 0xfb643;
+        %tmp.1051 = dup %tmp.1049;
+        %tmp.1052 = aputv %tmp.1051 124 %tmp.1050;
+        %tmp.1053 = 0xfb837;
+        %tmp.1054 = dup %tmp.1052;
+        %tmp.1055 = aputv %tmp.1054 125 %tmp.1053;
+        %tmp.1056 = 0xfba4a;
+        %tmp.1057 = dup %tmp.1055;
+        %tmp.1058 = aputv %tmp.1057 126 %tmp.1056;
+        %tmp.1059 = 0xfbc3f;
+        %tmp.1060 = dup %tmp.1058;
+        %tmp.1061 = aputv %tmp.1060 127 %tmp.1059;
+        %tmp.1062 = 0xfbe53;
+        %tmp.1063 = dup %tmp.1061;
+        %tmp.1064 = aputv %tmp.1063 128 %tmp.1062;
+        %tmp.1065 = 0xfc048;
+        %tmp.1066 = dup %tmp.1064;
+        %tmp.1067 = aputv %tmp.1066 129 %tmp.1065;
+        %tmp.1068 = 0xfc23c;
+        %tmp.1069 = dup %tmp.1067;
+        %tmp.1070 = aputv %tmp.1069 130 %tmp.1068;
+        %tmp.1071 = 0xfc450;
+        %tmp.1072 = dup %tmp.1070;
+        %tmp.1073 = aputv %tmp.1072 131 %tmp.1071;
+        %tmp.1074 = 0xfc645;
+        %tmp.1075 = dup %tmp.1073;
+        %tmp.1076 = aputv %tmp.1075 132 %tmp.1074;
+        %tmp.1077 = 0xfc839;
+        %tmp.1078 = dup %tmp.1076;
+        %tmp.1079 = aputv %tmp.1078 133 %tmp.1077;
+        %tmp.1080 = 0xfca4c;
+        %tmp.1081 = dup %tmp.1079;
+        %tmp.1082 = aputv %tmp.1081 134 %tmp.1080;
+        %tmp.1083 = 0xfcc41;
+        %tmp.1084 = dup %tmp.1082;
+        %tmp.1085 = aputv %tmp.1084 135 %tmp.1083;
+        %tmp.1086 = 0xfce36;
+        %tmp.1087 = dup %tmp.1085;
+        %tmp.1088 = aputv %tmp.1087 136 %tmp.1086;
+        %tmp.1089 = 0xfd04a;
+        %tmp.1090 = dup %tmp.1088;
+        %tmp.1091 = aputv %tmp.1090 137 %tmp.1089;
+        %tmp.1092 = 0xfd23d;
+        %tmp.1093 = dup %tmp.1091;
+        %tmp.1094 = aputv %tmp.1093 138 %tmp.1092;
+        %tmp.1095 = 0xfd451;
+        %tmp.1096 = dup %tmp.1094;
+        %tmp.1097 = aputv %tmp.1096 139 %tmp.1095;
+        %tmp.1098 = 0xfd646;
+        %tmp.1099 = dup %tmp.1097;
+        %tmp.1100 = aputv %tmp.1099 140 %tmp.1098;
+        %tmp.1101 = 0xfd83a;
+        %tmp.1102 = dup %tmp.1100;
+        %tmp.1103 = aputv %tmp.1102 141 %tmp.1101;
+        %tmp.1104 = 0xfda4d;
+        %tmp.1105 = dup %tmp.1103;
+        %tmp.1106 = aputv %tmp.1105 142 %tmp.1104;
+        %tmp.1107 = 0xfdc43;
+        %tmp.1108 = dup %tmp.1106;
+        %tmp.1109 = aputv %tmp.1108 143 %tmp.1107;
+        %tmp.1110 = 0xfde37;
+        %tmp.1111 = dup %tmp.1109;
+        %tmp.1112 = aputv %tmp.1111 144 %tmp.1110;
+        %tmp.1113 = 0xfe04b;
+        %tmp.1114 = dup %tmp.1112;
+        %tmp.1115 = aputv %tmp.1114 145 %tmp.1113;
+        %tmp.1116 = 0xfe23f;
+        %tmp.1117 = dup %tmp.1115;
+        %tmp.1118 = aputv %tmp.1117 146 %tmp.1116;
+        %tmp.1119 = 0xfe453;
+        %tmp.1120 = dup %tmp.1118;
+        %tmp.1121 = aputv %tmp.1120 147 %tmp.1119;
+        %tmp.1122 = 0xfe648;
+        %tmp.1123 = dup %tmp.1121;
+        %tmp.1124 = aputv %tmp.1123 148 %tmp.1122;
+        %tmp.1125 = 0xfe83c;
+        %tmp.1126 = dup %tmp.1124;
+        %tmp.1127 = aputv %tmp.1126 149 %tmp.1125;
+        %tmp.1128 = 0xfea4f;
+        %tmp.1129 = dup %tmp.1127;
+        %tmp.1130 = aputv %tmp.1129 150 %tmp.1128;
+        %tmp.1131 = 0xfec44;
+        %tmp.1132 = dup %tmp.1130;
+        %tmp.1133 = aputv %tmp.1132 151 %tmp.1131;
+        %tmp.1134 = 0xfee38;
+        %tmp.1135 = dup %tmp.1133;
+        %tmp.1136 = aputv %tmp.1135 152 %tmp.1134;
+        %tmp.1137 = 0xff04c;
+        %tmp.1138 = dup %tmp.1136;
+        %tmp.1139 = aputv %tmp.1138 153 %tmp.1137;
+        %tmp.1140 = 0xff241;
+        %tmp.1141 = dup %tmp.1139;
+        %tmp.1142 = aputv %tmp.1141 154 %tmp.1140;
+        %tmp.1143 = 0xff436;
+        %tmp.1144 = dup %tmp.1142;
+        %tmp.1145 = aputv %tmp.1144 155 %tmp.1143;
+        %tmp.1146 = 0xff64a;
+        %tmp.1147 = dup %tmp.1145;
+        %tmp.1148 = aputv %tmp.1147 156 %tmp.1146;
+        %tmp.1149 = 0xff83e;
+        %tmp.1150 = dup %tmp.1148;
+        %tmp.1151 = aputv %tmp.1150 157 %tmp.1149;
+        %tmp.1152 = 0xffa51;
+        %tmp.1153 = dup %tmp.1151;
+        %tmp.1154 = aputv %tmp.1153 158 %tmp.1152;
+        %tmp.1155 = 0xffc46;
+        %tmp.1156 = dup %tmp.1154;
+        %tmp.1157 = aputv %tmp.1156 159 %tmp.1155;
+        %tmp.1158 = 0xffe3a;
+        %tmp.1159 = dup %tmp.1157;
+        %tmp.1160 = aputv %tmp.1159 160 %tmp.1158;
+        %tmp.1161 = 0x10004e;
+        %tmp.1162 = dup %tmp.1160;
+        %tmp.1163 = aputv %tmp.1162 161 %tmp.1161;
+        %tmp.1164 = 0x100242;
+        %tmp.1165 = dup %tmp.1163;
+        %tmp.1166 = aputv %tmp.1165 162 %tmp.1164;
+        %tmp.1167 = 0x100437;
+        %tmp.1168 = dup %tmp.1166;
+        %tmp.1169 = aputv %tmp.1168 163 %tmp.1167;
+        %tmp.1170 = 0x10064b;
+        %tmp.1171 = dup %tmp.1169;
+        %tmp.1172 = aputv %tmp.1171 164 %tmp.1170;
+        %tmp.1173 = 0x100841;
+        %tmp.1174 = dup %tmp.1172;
+        %tmp.1175 = aputv %tmp.1174 165 %tmp.1173;
+        %tmp.1176 = 0x100a53;
+        %tmp.1177 = dup %tmp.1175;
+        %tmp.1178 = aputv %tmp.1177 166 %tmp.1176;
+        %tmp.1179 = 0x100c48;
+        %tmp.1180 = dup %tmp.1178;
+        %tmp.1181 = aputv %tmp.1180 167 %tmp.1179;
+        %tmp.1182 = 0x100e3c;
+        %tmp.1183 = dup %tmp.1181;
+        %tmp.1184 = aputv %tmp.1183 168 %tmp.1182;
+        %tmp.1185 = 0x10104f;
+        %tmp.1186 = dup %tmp.1184;
+        %tmp.1187 = aputv %tmp.1186 169 %tmp.1185;
+        %tmp.1188 = 0x101244;
+        %tmp.1189 = dup %tmp.1187;
+        %tmp.1190 = aputv %tmp.1189 170 %tmp.1188;
+        %tmp.1191 = 0x101438;
+        %tmp.1192 = dup %tmp.1190;
+        %tmp.1193 = aputv %tmp.1192 171 %tmp.1191;
+        %tmp.1194 = 0x10164c;
+        %tmp.1195 = dup %tmp.1193;
+        %tmp.1196 = aputv %tmp.1195 172 %tmp.1194;
+        %tmp.1197 = 0x101842;
+        %tmp.1198 = dup %tmp.1196;
+        %tmp.1199 = aputv %tmp.1198 173 %tmp.1197;
+        %tmp.1200 = 0x101a35;
+        %tmp.1201 = dup %tmp.1199;
+        %tmp.1202 = aputv %tmp.1201 174 %tmp.1200;
+        %tmp.1203 = 0x101c49;
+        %tmp.1204 = dup %tmp.1202;
+        %tmp.1205 = aputv %tmp.1204 175 %tmp.1203;
+        %tmp.1206 = 0x101e3d;
+        %tmp.1207 = dup %tmp.1205;
+        %tmp.1208 = aputv %tmp.1207 176 %tmp.1206;
+        %tmp.1209 = 0x102051;
+        %tmp.1210 = dup %tmp.1208;
+        %tmp.1211 = aputv %tmp.1210 177 %tmp.1209;
+        %tmp.1212 = 0x102245;
+        %tmp.1213 = dup %tmp.1211;
+        %tmp.1214 = aputv %tmp.1213 178 %tmp.1212;
+        %tmp.1215 = 0x10243a;
+        %tmp.1216 = dup %tmp.1214;
+        %tmp.1217 = aputv %tmp.1216 179 %tmp.1215;
+        %tmp.1218 = 0x10264e;
+        %tmp.1219 = dup %tmp.1217;
+        %tmp.1220 = aputv %tmp.1219 180 %tmp.1218;
+        %tmp.1221 = 0x102843;
+        %tmp.1222 = dup %tmp.1220;
+        %tmp.1223 = aputv %tmp.1222 181 %tmp.1221;
+        %tmp.1224 = 0x102a37;
+        %tmp.1225 = dup %tmp.1223;
+        %tmp.1226 = aputv %tmp.1225 182 %tmp.1224;
+        %tmp.1227 = 0x102c4b;
+        %tmp.1228 = dup %tmp.1226;
+        %tmp.1229 = aputv %tmp.1228 183 %tmp.1227;
+        %tmp.1230 = 0x102e3f;
+        %tmp.1231 = dup %tmp.1229;
+        %tmp.1232 = aputv %tmp.1231 184 %tmp.1230;
+        %tmp.1233 = 0x103053;
+        %tmp.1234 = dup %tmp.1232;
+        %tmp.1235 = aputv %tmp.1234 185 %tmp.1233;
+        %tmp.1236 = 0x103247;
+        %tmp.1237 = dup %tmp.1235;
+        %tmp.1238 = aputv %tmp.1237 186 %tmp.1236;
+        %tmp.1239 = 0x10343b;
+        %tmp.1240 = dup %tmp.1238;
+        %tmp.1241 = aputv %tmp.1240 187 %tmp.1239;
+        %tmp.1242 = 0x10364f;
+        %tmp.1243 = dup %tmp.1241;
+        %tmp.1244 = aputv %tmp.1243 188 %tmp.1242;
+        %tmp.1245 = 0x103845;
+        %tmp.1246 = dup %tmp.1244;
+        %tmp.1247 = aputv %tmp.1246 189 %tmp.1245;
+        %tmp.1248 = 0x103a38;
+        %tmp.1249 = dup %tmp.1247;
+        %tmp.1250 = aputv %tmp.1249 190 %tmp.1248;
+        %tmp.1251 = 0x103c4c;
+        %tmp.1252 = dup %tmp.1250;
+        %tmp.1253 = aputv %tmp.1252 191 %tmp.1251;
+        %tmp.1254 = 0x103e42;
+        %tmp.1255 = dup %tmp.1253;
+        %tmp.1256 = aputv %tmp.1255 192 %tmp.1254;
+        %tmp.1257 = 0x104036;
+        %tmp.1258 = dup %tmp.1256;
+        %tmp.1259 = aputv %tmp.1258 193 %tmp.1257;
+        %tmp.1260 = 0x104249;
+        %tmp.1261 = dup %tmp.1259;
+        %tmp.1262 = aputv %tmp.1261 194 %tmp.1260;
+        %tmp.1263 = 0x10443d;
+        %tmp.1264 = dup %tmp.1262;
+        %tmp.1265 = aputv %tmp.1264 195 %tmp.1263;
+        %tmp.1266 = 0x104651;
+        %tmp.1267 = dup %tmp.1265;
+        %tmp.1268 = aputv %tmp.1267 196 %tmp.1266;
+        %tmp.1269 = 0x104846;
+        %tmp.1270 = dup %tmp.1268;
+        %tmp.1271 = aputv %tmp.1270 197 %tmp.1269;
+        %tmp.1272 = 0x104a3a;
+        %tmp.1273 = dup %tmp.1271;
+        %tmp.1274 = aputv %tmp.1273 198 %tmp.1272;
+        %tmp.1275 = 0x104c4e;
+        %tmp.1276 = dup %tmp.1274;
+        %tmp.1277 = aputv %tmp.1276 199 %tmp.1275;
+        %tmp.1278 = 0x104e43;
+        %tmp.1279 = dup %tmp.1277;
+        %tmp.1280 = aputv %tmp.1279 200 %tmp.1278;
+        %tmp.1281 = 0x105038;
+        %tmp.1282 = dup %tmp.1280;
+        %tmp.1283 = aputv %tmp.1282 201 %tmp.1281;
+        %tmp.1284 = 0x10524a;
+        %tmp.1285 = dup %tmp.1283;
+        %tmp.1286 = aputv %tmp.1285 202 %tmp.1284;
+        %tmp.1287 = 0x10543e;
+        %tmp.1288 = dup %tmp.1286;
+        %tmp.1289 = aputv %tmp.1288 203 %tmp.1287;
+        %tmp.1290 = 0x105652;
+        %tmp.1291 = dup %tmp.1289;
+        %tmp.1292 = aputv %tmp.1291 204 %tmp.1290;
+        %tmp.1293 = 0x105847;
+        %tmp.1294 = dup %tmp.1292;
+        %tmp.1295 = aputv %tmp.1294 205 %tmp.1293;
+        %tmp.1296 = 0x105a3b;
+        %tmp.1297 = dup %tmp.1295;
+        %tmp.1298 = aputv %tmp.1297 206 %tmp.1296;
+        %tmp.1299 = 0x105c4f;
+        %tmp.1300 = dup %tmp.1298;
+        %tmp.1301 = aputv %tmp.1300 207 %tmp.1299;
+        %tmp.1302 = 0x105e45;
+        %tmp.1303 = dup %tmp.1301;
+        %tmp.1304 = aputv %tmp.1303 208 %tmp.1302;
+        %tmp.1305 = 0x106039;
+        %tmp.1306 = dup %tmp.1304;
+        %tmp.1307 = aputv %tmp.1306 209 %tmp.1305;
+        %tmp.1308 = 0x10624c;
+        %tmp.1309 = dup %tmp.1307;
+        %tmp.1310 = aputv %tmp.1309 210 %tmp.1308;
+        %tmp.1311 = 0x106441;
+        %tmp.1312 = dup %tmp.1310;
+        %tmp.1313 = aputv %tmp.1312 211 %tmp.1311;
+        %tmp.1314 = 0x106635;
+        %tmp.1315 = dup %tmp.1313;
+        %tmp.1316 = aputv %tmp.1315 212 %tmp.1314;
+        %tmp.1317 = 0x106849;
+        %tmp.1318 = dup %tmp.1316;
+        %tmp.1319 = aputv %tmp.1318 213 %tmp.1317;
+        %tmp.1320 = 0x106a3d;
+        %tmp.1321 = dup %tmp.1319;
+        %tmp.1322 = aputv %tmp.1321 214 %tmp.1320;
+        %tmp.1323 = 0x106c51;
+        %tmp.1324 = dup %tmp.1322;
+        %tmp.1325 = aputv %tmp.1324 215 %tmp.1323;
+        %tmp.1326 = 0x106e47;
+        %tmp.1327 = dup %tmp.1325;
+        %tmp.1328 = aputv %tmp.1327 216 %tmp.1326;
+        %tmp.1329 = 0x10703c;
+        %tmp.1330 = dup %tmp.1328;
+        %tmp.1331 = aputv %tmp.1330 217 %tmp.1329;
+        %tmp.1332 = 0x10724f;
+        %tmp.1333 = dup %tmp.1331;
+        %tmp.1334 = aputv %tmp.1333 218 %tmp.1332;
+        %tmp.1335 = 0x107444;
+        %tmp.1336 = dup %tmp.1334;
+        %tmp.1337 = aputv %tmp.1336 219 %tmp.1335;
+        %tmp.1338 = 0x107638;
+        %tmp.1339 = dup %tmp.1337;
+        %tmp.1340 = aputv %tmp.1339 220 %tmp.1338;
+        %tmp.1341 = 0x10784c;
+        %tmp.1342 = dup %tmp.1340;
+        %tmp.1343 = aputv %tmp.1342 221 %tmp.1341;
+        %tmp.1344 = 0x107a3f;
+        %tmp.1345 = dup %tmp.1343;
+        %tmp.1346 = aputv %tmp.1345 222 %tmp.1344;
+        %tmp.1347 = 0x107c53;
+        %tmp.1348 = dup %tmp.1346;
+        %tmp.1349 = aputv %tmp.1348 223 %tmp.1347;
+        %tmp.1350 = 0x107e48;
+        %tmp.1351 = dup %tmp.1349;
+        %tmp.1352 = aputv %tmp.1351 224 %tmp.1350;
+        symbol [ solar_1_1 ? 57 8 17 ];
+        putv self :solar_1_1 %tmp.1352;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_35_26_79_4_stop:
+    }
+    [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc"; @line = 82; @symbol_functiondef = [GetBitInt,82,13,22]; @symbol_param<0> = [data,82,23,27]; @symbol_param<1> = [length,82,29,35]; @symbol_param<2> = [shift,82,37,42]; ]
+    function GetBitInt(data, length, shift) {
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_82_44_84_4_start:
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 83 8 ]
+        %tmp.1 = lgetv %data;
+        symbol [ data %tmp.1 83 16 20 ];
+        %tmp.2 = 1;
+        %tmp.3 = lgetv %length;
+        symbol [ length %tmp.3 83 31 37 ];
+        %tmp.4 = shl %tmp.2 %tmp.3;
+        %tmp.5 = 1;
+        %tmp.6 = sub %tmp.4 %tmp.5;
+        %tmp.7 = lgetv %shift;
+        symbol [ shift %tmp.7 83 47 52 ];
+        %tmp.8 = shl %tmp.6 %tmp.7;
+        %tmp.9 = bitand %tmp.1 %tmp.8;
+        %tmp.10 = lgetv %shift;
+        symbol [ shift %tmp.10 83 58 63 ];
+        %tmp.11 = shr %tmp.9 %tmp.10;
+        ret %tmp.11;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_82_44_84_4_stop:
+    }
+    [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc"; @line = 87; @symbol_functiondef = [SolarToInt,87,13,23]; @symbol_param<0> = [y,87,24,25]; @symbol_param<1> = [m,87,27,28]; @symbol_param<2> = [d,87,30,31]; ]
+    function SolarToInt(y, m, d) {
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_87_33_91_4_start:
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 88 8 ]
+        %tmp.1 = lgetv %m;
+        symbol [ m %tmp.1 88 13 14 ];
+        %tmp.2 = 9;
+        %tmp.3 = add %tmp.1 %tmp.2;
+        %tmp.4 = 12;
+        %tmp.5 = mod %tmp.3 %tmp.4;
+        lputv %m %tmp.5;
+        symbol [ m %m 88 8 9 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 89 8 ]
+        %tmp.6 = lgetv %y;
+        symbol [ y %tmp.6 89 12 13 ];
+        %tmp.7 = lgetv %m;
+        symbol [ m %tmp.7 89 17 18 ];
+        %tmp.8 = 10;
+        %tmp.9 = div %tmp.7 %tmp.8;
+        %tmp.10 = sub %tmp.6 %tmp.9;
+        lputv %y %tmp.10;
+        symbol [ y %y 89 8 9 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 90 8 ]
+        %tmp.11 = 365;
+        %tmp.12 = lgetv %y;
+        symbol [ y %tmp.12 90 21 22 ];
+        %tmp.13 = mul %tmp.11 %tmp.12;
+        %tmp.14 = lgetv %y;
+        symbol [ y %tmp.14 90 26 27 ];
+        %tmp.15 = 4;
+        %tmp.16 = div %tmp.14 %tmp.15;
+        %tmp.17 = add %tmp.13 %tmp.16;
+        %tmp.18 = lgetv %y;
+        symbol [ y %tmp.18 90 36 37 ];
+        %tmp.19 = 100;
+        %tmp.20 = div %tmp.18 %tmp.19;
+        %tmp.21 = sub %tmp.17 %tmp.20;
+        %tmp.22 = lgetv %y;
+        symbol [ y %tmp.22 90 48 49 ];
+        %tmp.23 = 400;
+        %tmp.24 = div %tmp.22 %tmp.23;
+        %tmp.25 = add %tmp.21 %tmp.24;
+        %tmp.26 = lgetv %m;
+        symbol [ m %tmp.26 90 61 62 ];
+        %tmp.27 = 306;
+        %tmp.28 = mul %tmp.26 %tmp.27;
+        %tmp.29 = 5;
+        %tmp.30 = add %tmp.28 %tmp.29;
+        %tmp.31 = 10;
+        %tmp.32 = div %tmp.30 %tmp.31;
+        %tmp.33 = add %tmp.25 %tmp.32;
+        %tmp.34 = lgetv %d;
+        symbol [ d %tmp.34 90 83 84 ];
+        %tmp.35 = 1;
+        %tmp.36 = sub %tmp.34 %tmp.35;
+        %tmp.37 = add %tmp.33 %tmp.36;
+        ret %tmp.37;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_87_33_91_4_stop:
+    }
+    [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc"; @line = 94; @symbol_functiondef = [SolarFromInt,94,13,25]; @symbol_param<0> = [g,94,26,27]; ]
+    function SolarFromInt(g) {
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_94_29_110_4_start:
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 95 8 ]
+        [ "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_94_29_110_4_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_94_29_110_4_stop" ]
+        %y.1 = local;
+        symbol [ y %y.1 95 12 13 ];
+        %tmp.1 = 10000;
+        %tmp.2 = lgetv %g;
+        symbol [ g %tmp.2 95 25 26 ];
+        %tmp.3 = mul %tmp.1 %tmp.2;
+        %tmp.4 = 14780;
+        %tmp.5 = add %tmp.3 %tmp.4;
+        %tmp.6 = 3652425;
+        %tmp.7 = div %tmp.5 %tmp.6;
+        lputv %y.1 %tmp.7;
+        symbol [ y %y.1 95 12 13 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 96 8 ]
+        [ "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_94_29_110_4_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_94_29_110_4_stop" ]
+        %ddd.2 = local;
+        symbol [ ddd %ddd.2 96 12 15 ];
+        %tmp.8 = lgetv %g;
+        symbol [ g %tmp.8 96 18 19 ];
+        %tmp.9 = 365;
+        %tmp.10 = lgetv %y.1;
+        symbol [ y %tmp.10 96 29 30 ];
+        %tmp.11 = mul %tmp.9 %tmp.10;
+        %tmp.12 = lgetv %y.1;
+        symbol [ y %tmp.12 96 34 35 ];
+        %tmp.13 = 4;
+        %tmp.14 = div %tmp.12 %tmp.13;
+        %tmp.15 = add %tmp.11 %tmp.14;
+        %tmp.16 = lgetv %y.1;
+        symbol [ y %tmp.16 96 44 45 ];
+        %tmp.17 = 100;
+        %tmp.18 = div %tmp.16 %tmp.17;
+        %tmp.19 = sub %tmp.15 %tmp.18;
+        %tmp.20 = lgetv %y.1;
+        symbol [ y %tmp.20 96 56 57 ];
+        %tmp.21 = 400;
+        %tmp.22 = div %tmp.20 %tmp.21;
+        %tmp.23 = add %tmp.19 %tmp.22;
+        %tmp.24 = sub %tmp.8 %tmp.23;
+        lputv %ddd.2 %tmp.24;
+        symbol [ ddd %ddd.2 96 12 15 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 97 8 ]
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_97_8_100_8_if_stmt:
+        %tmp.25 = lgetv %ddd.2;
+        symbol [ ddd %tmp.25 97 12 15 ];
+        %tmp.26 = 0;
+        %tmp.27 = lt %tmp.25 %tmp.26;
+        bf %tmp.27 @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_97_8_100_8_if_end;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_97_8_100_8_if_true:
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_97_21_100_8_start:
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 98 12 ]
+        %tmp.28 = lgetv %y.1;
+        symbol [ y %tmp.28 98 16 17 ];
+        %tmp.29 = 1;
+        %tmp.30 = sub %tmp.28 %tmp.29;
+        lputv %y.1 %tmp.30;
+        symbol [ y %y.1 98 12 13 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 99 12 ]
+        %tmp.31 = lgetv %g;
+        symbol [ g %tmp.31 99 18 19 ];
+        %tmp.32 = 365;
+        %tmp.33 = lgetv %y.1;
+        symbol [ y %tmp.33 99 29 30 ];
+        %tmp.34 = mul %tmp.32 %tmp.33;
+        %tmp.35 = lgetv %y.1;
+        symbol [ y %tmp.35 99 34 35 ];
+        %tmp.36 = 4;
+        %tmp.37 = div %tmp.35 %tmp.36;
+        %tmp.38 = add %tmp.34 %tmp.37;
+        %tmp.39 = lgetv %y.1;
+        symbol [ y %tmp.39 99 44 45 ];
+        %tmp.40 = 100;
+        %tmp.41 = div %tmp.39 %tmp.40;
+        %tmp.42 = sub %tmp.38 %tmp.41;
+        %tmp.43 = lgetv %y.1;
+        symbol [ y %tmp.43 99 56 57 ];
+        %tmp.44 = 400;
+        %tmp.45 = div %tmp.43 %tmp.44;
+        %tmp.46 = add %tmp.42 %tmp.45;
+        %tmp.47 = sub %tmp.31 %tmp.46;
+        lputv %ddd.2 %tmp.47;
+        symbol [ ddd %ddd.2 99 12 15 ];
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_97_21_100_8_stop:
+        goto @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_97_8_100_8_if_end;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_97_8_100_8_if_end:
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 101 8 ]
+        [ "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_94_29_110_4_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_94_29_110_4_stop" ]
+        %mi.3 = local;
+        symbol [ mi %mi.3 101 12 14 ];
+        %tmp.48 = 100;
+        %tmp.49 = lgetv %ddd.2;
+        symbol [ ddd %tmp.49 101 24 27 ];
+        %tmp.50 = mul %tmp.48 %tmp.49;
+        %tmp.51 = 52;
+        %tmp.52 = add %tmp.50 %tmp.51;
+        %tmp.53 = 3060;
+        %tmp.54 = div %tmp.52 %tmp.53;
+        lputv %mi.3 %tmp.54;
+        symbol [ mi %mi.3 101 12 14 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 102 8 ]
+        [ "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_94_29_110_4_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_94_29_110_4_stop" ]
+        %mm.4 = local;
+        symbol [ mm %mm.4 102 12 14 ];
+        %tmp.55 = lgetv %mi.3;
+        symbol [ mi %tmp.55 102 18 20 ];
+        %tmp.56 = 2;
+        %tmp.57 = add %tmp.55 %tmp.56;
+        %tmp.58 = 12;
+        %tmp.59 = mod %tmp.57 %tmp.58;
+        %tmp.60 = 1;
+        %tmp.61 = add %tmp.59 %tmp.60;
+        lputv %mm.4 %tmp.61;
+        symbol [ mm %mm.4 102 12 14 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 103 8 ]
+        %tmp.62 = lgetv %y.1;
+        symbol [ y %tmp.62 103 12 13 ];
+        %tmp.63 = lgetv %mi.3;
+        symbol [ mi %tmp.63 103 17 19 ];
+        %tmp.64 = 2;
+        %tmp.65 = add %tmp.63 %tmp.64;
+        %tmp.66 = 12;
+        %tmp.67 = div %tmp.65 %tmp.66;
+        %tmp.68 = add %tmp.62 %tmp.67;
+        lputv %y.1 %tmp.68;
+        symbol [ y %y.1 103 8 9 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 104 8 ]
+        [ "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_94_29_110_4_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_94_29_110_4_stop" ]
+        %dd.5 = local;
+        symbol [ dd %dd.5 104 12 14 ];
+        %tmp.69 = lgetv %ddd.2;
+        symbol [ ddd %tmp.69 104 17 20 ];
+        %tmp.70 = lgetv %mi.3;
+        symbol [ mi %tmp.70 104 25 27 ];
+        %tmp.71 = 306;
+        %tmp.72 = mul %tmp.70 %tmp.71;
+        %tmp.73 = 5;
+        %tmp.74 = add %tmp.72 %tmp.73;
+        %tmp.75 = 10;
+        %tmp.76 = div %tmp.74 %tmp.75;
+        %tmp.77 = sub %tmp.69 %tmp.76;
+        %tmp.78 = 1;
+        %tmp.79 = add %tmp.77 %tmp.78;
+        lputv %dd.5 %tmp.79;
+        symbol [ dd %dd.5 104 12 14 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 105 8 ]
+        [ "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_94_29_110_4_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_94_29_110_4_stop" ]
+        %solar.6 = local;
+        symbol [ solar %solar.6 105 12 17 ];
+        symbol [ Solar %tmp.83 105 24 29 ];
+        %tmp.83 = getv ? :Solar;
+        %tmp.80 = newc %tmp.83 ();
+        lputv %solar.6 %tmp.80;
+        symbol [ solar %solar.6 105 12 17 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 106 8 ]
+        %tmp.84 = lgetv %solar.6;
+        symbol [ solar %tmp.84 106 8 13 ];
+        %tmp.85 = lgetv %y.1;
+        symbol [ y %tmp.85 106 26 27 ];
+        symbol [ solarYear ? 106 14 23 ];
+        putv %tmp.84 :solarYear %tmp.85;
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 107 8 ]
+        %tmp.86 = lgetv %solar.6;
+        symbol [ solar %tmp.86 107 8 13 ];
+        %tmp.87 = lgetv %mm.4;
+        symbol [ mm %tmp.87 107 27 29 ];
+        symbol [ solarMonth ? 107 14 24 ];
+        putv %tmp.86 :solarMonth %tmp.87;
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 108 8 ]
+        %tmp.88 = lgetv %solar.6;
+        symbol [ solar %tmp.88 108 8 13 ];
+        %tmp.89 = lgetv %dd.5;
+        symbol [ dd %tmp.89 108 25 27 ];
+        symbol [ solarDay ? 108 14 22 ];
+        putv %tmp.88 :solarDay %tmp.89;
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 109 8 ]
+        %tmp.90 = lgetv %solar.6;
+        symbol [ solar %tmp.90 109 15 20 ];
+        ret %tmp.90;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_94_29_110_4_stop:
+    }
+    [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc"; @line = 113; @symbol_functiondef = [LunarToSolar,113,13,25]; @symbol_param<0> = [lunar,113,26,31]; ]
+    function LunarToSolar(lunar) {
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_113_33_141_4_start:
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 114 8 ]
+        [ "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_113_33_141_4_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_113_33_141_4_stop" ]
+        %baseYear.1 = local;
+        symbol [ baseYear %baseYear.1 114 12 20 ];
+        symbol [ lunar_month_days %tmp.2 114 23 39 ];
+        %tmp.2 = getv ? :lunar_month_days;
+        %tmp.3 = 0;
+        %tmp.4 = agetv %tmp.2 %tmp.3;
+        lputv %baseYear.1 %tmp.4;
+        symbol [ baseYear %baseYear.1 114 12 20 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 115 8 ]
+        [ "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_113_33_141_4_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_113_33_141_4_stop" ]
+        %index.2 = local;
+        symbol [ index %index.2 115 12 17 ];
+        %tmp.5 = lgetv %lunar;
+        symbol [ lunar %tmp.5 115 20 25 ];
+        symbol [ lunarYear %tmp.6 115 26 35 ];
+        %tmp.6 = getv %tmp.5 :lunarYear;
+        %tmp.7 = lgetv %baseYear.1;
+        symbol [ baseYear %tmp.7 115 38 46 ];
+        %tmp.8 = sub %tmp.6 %tmp.7;
+        lputv %index.2 %tmp.8;
+        symbol [ index %index.2 115 12 17 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 116 8 ]
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_116_8_118_8_if_stmt:
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_116_12_116_56_begin:
+        %tmp.9 = lgetv %index.2;
+        symbol [ index %tmp.9 116 12 17 ];
+        %tmp.10 = 0;
+        %tmp.11 = lt %tmp.9 %tmp.10;
+        bt %tmp.11 @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_116_8_118_8_if_true;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_116_25_116_56_false:
+        %tmp.12 = lgetv %index.2;
+        symbol [ index %tmp.12 116 25 30 ];
+        symbol [ lunar_month_days %tmp.14 116 34 50 ];
+        %tmp.14 = getv ? :lunar_month_days;
+        symbol [ size %tmp.15 116 51 55 ];
+        %tmp.15 = getv function %tmp.14 :size;
+        %tmp.16 = invoke %tmp.14 %tmp.15();
+        %tmp.17 = gte %tmp.12 %tmp.16;
+        push %tmp.17;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_116_25_116_56_end:
+        %tmp.18 = phi [%tmp.11 @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_116_12_116_56_begin] [%tmp.17 @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_116_25_116_56_false] [%tmp.18 @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_116_25_116_56_end];
+        bf %tmp.18 @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_116_8_118_8_if_end;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_116_8_118_8_if_true:
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_116_59_118_8_start:
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 117 12 ]
+        %tmp.19 = null;
+        ret %tmp.19;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_116_59_118_8_stop:
+        goto @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_116_8_118_8_if_end;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_116_8_118_8_if_end:
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 119 8 ]
+        [ "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_113_33_141_4_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_113_33_141_4_stop" ]
+        %days.3 = local;
+        symbol [ days %days.3 119 12 16 ];
+        symbol [ lunar_month_days %tmp.21 119 19 35 ];
+        %tmp.21 = getv ? :lunar_month_days;
+        %tmp.22 = lgetv %index.2;
+        symbol [ index %tmp.22 119 36 41 ];
+        %tmp.23 = agetv %tmp.21 %tmp.22;
+        lputv %days.3 %tmp.23;
+        symbol [ days %days.3 119 12 16 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 120 8 ]
+        [ "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_113_33_141_4_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_113_33_141_4_stop" ]
+        %leap.4 = local;
+        symbol [ leap %leap.4 120 12 16 ];
+        %tmp.24 = self;
+        symbol [ GetBitInt %tmp.25 120 19 28 ];
+        %tmp.25 = getv function %tmp.24 :GetBitInt;
+        %tmp.26 = lgetv %days.3;
+        symbol [ days %tmp.26 120 29 33 ];
+        %tmp.27 = 4;
+        %tmp.28 = 13;
+        %tmp.29 = invoke %tmp.24 %tmp.25(%tmp.26, %tmp.27, %tmp.28);
+        lputv %leap.4 %tmp.29;
+        symbol [ leap %leap.4 120 12 16 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 121 8 ]
+        [ "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_113_33_141_4_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_113_33_141_4_stop" ]
+        %offset.5 = local;
+        symbol [ offset %offset.5 121 12 18 ];
+        %tmp.30 = 0;
+        lputv %offset.5 %tmp.30;
+        symbol [ offset %offset.5 121 12 18 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 122 8 ]
+        [ "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_113_33_141_4_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_113_33_141_4_stop" ]
+        %loopend.6 = local;
+        symbol [ loopend %loopend.6 122 12 19 ];
+        %tmp.31 = lgetv %leap.4;
+        symbol [ leap %tmp.31 122 22 26 ];
+        lputv %loopend.6 %tmp.31;
+        symbol [ loopend %loopend.6 122 12 19 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 123 8 ]
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_123_8_129_8_if_stmt:
+        %tmp.32 = lgetv %lunar;
+        symbol [ lunar %tmp.32 123 13 18 ];
+        symbol [ isleap %tmp.33 123 19 25 ];
+        %tmp.33 = getv %tmp.32 :isleap;
+        %tmp.34 = not %tmp.33;
+        bf %tmp.34 @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_123_8_129_8_if_end;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_123_8_129_8_if_true:
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_123_27_129_8_start:
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 124 12 ]
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_124_12_128_12_if_stmt:
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_124_16_124_52_begin:
+        %tmp.35 = lgetv %lunar;
+        symbol [ lunar %tmp.35 124 16 21 ];
+        symbol [ lunarMonth %tmp.36 124 22 32 ];
+        %tmp.36 = getv %tmp.35 :lunarMonth;
+        %tmp.37 = lgetv %leap.4;
+        symbol [ leap %tmp.37 124 36 40 ];
+        %tmp.38 = lte %tmp.36 %tmp.37;
+        bt %tmp.38 @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_124_12_128_12_if_true;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_124_44_124_52_false:
+        %tmp.39 = lgetv %leap.4;
+        symbol [ leap %tmp.39 124 44 48 ];
+        %tmp.40 = 0;
+        %tmp.41 = eq %tmp.39 %tmp.40;
+        push %tmp.41;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_124_44_124_52_end:
+        %tmp.42 = phi [%tmp.38 @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_124_16_124_52_begin] [%tmp.41 @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_124_44_124_52_false] [%tmp.42 @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_124_44_124_52_end];
+        bf %tmp.42 @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_124_12_128_12_if_else_false;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_124_12_128_12_if_true:
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_124_55_126_12_start:
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 125 16 ]
+        %tmp.43 = lgetv %lunar;
+        symbol [ lunar %tmp.43 125 26 31 ];
+        symbol [ lunarMonth %tmp.44 125 32 42 ];
+        %tmp.44 = getv %tmp.43 :lunarMonth;
+        %tmp.45 = 1;
+        %tmp.46 = sub %tmp.44 %tmp.45;
+        lputv %loopend.6 %tmp.46;
+        symbol [ loopend %loopend.6 125 16 23 ];
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_124_55_126_12_stop:
+        goto @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_124_12_128_12_if_end;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_124_12_128_12_if_else_false:
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_126_19_128_12_start:
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 127 16 ]
+        %tmp.47 = lgetv %lunar;
+        symbol [ lunar %tmp.47 127 26 31 ];
+        symbol [ lunarMonth %tmp.48 127 32 42 ];
+        %tmp.48 = getv %tmp.47 :lunarMonth;
+        lputv %loopend.6 %tmp.48;
+        symbol [ loopend %loopend.6 127 16 23 ];
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_126_19_128_12_stop:
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_124_12_128_12_if_end:
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_123_27_129_8_stop:
+        goto @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_123_8_129_8_if_end;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_123_8_129_8_if_end:
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 130 8 ]
+        for @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_130_8_132_8_for_test @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_130_8_132_8_for_incr @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_130_8_132_8_for_end;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_130_8_132_8_for_init:
+        [ "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_130_8_132_8_for_begin" "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_130_8_132_8_for_end" ]
+        %i.7 = local;
+        symbol [ i %i.7 130 17 18 ];
+        %tmp.49 = 0;
+        lputv %i.7 %tmp.49;
+        symbol [ i %i.7 130 17 18 ];
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_130_8_132_8_for_test:
+        %tmp.50 = lgetv %i.7;
+        symbol [ i %tmp.50 130 24 25 ];
+        %tmp.51 = lgetv %loopend.6;
+        symbol [ loopend %tmp.51 130 28 35 ];
+        %tmp.52 = lt %tmp.50 %tmp.51;
+        bf %tmp.52 @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_130_8_132_8_for_end;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_130_8_132_8_for_begin:
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_130_45_132_8_start:
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 131 12 ]
+        %tmp.53 = lgetv %offset.5;
+        symbol [ offset %tmp.53 131 12 18 ];
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_131_22_131_63_begin:
+        %tmp.54 = self;
+        symbol [ GetBitInt %tmp.55 131 23 32 ];
+        %tmp.55 = getv function %tmp.54 :GetBitInt;
+        %tmp.56 = lgetv %days.3;
+        symbol [ days %tmp.56 131 33 37 ];
+        %tmp.57 = 1;
+        %tmp.58 = 12;
+        %tmp.59 = lgetv %i.7;
+        symbol [ i %tmp.59 131 47 48 ];
+        %tmp.60 = sub %tmp.58 %tmp.59;
+        %tmp.61 = invoke %tmp.54 %tmp.55(%tmp.56, %tmp.57, %tmp.60);
+        %tmp.62 = 1;
+        %tmp.63 = eq %tmp.61 %tmp.62;
+        bf %tmp.63 @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_131_22_131_63_else_false;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_131_22_131_63_true:
+        %tmp.64 = 30;
+        push %tmp.64;
+        goto @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_131_22_131_63_end;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_131_22_131_63_else_false:
+        %tmp.65 = 29;
+        push %tmp.65;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_131_22_131_63_end:
+        %tmp.66 = phi [%tmp.63 @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_131_22_131_63_begin] [%tmp.64 @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_131_22_131_63_true] [%tmp.65 @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_131_22_131_63_else_false] [%tmp.66 @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_131_22_131_63_end];
+        %tmp.67 = add %tmp.53 %tmp.66;
+        lputv %offset.5 %tmp.67;
+        symbol [ offset %offset.5 131 12 18 ];
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_130_45_132_8_stop:
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_130_8_132_8_for_incr:
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 130 ]
+        %tmp.68 = lgetv %i.7;
+        symbol [ i %tmp.68 130 37 38 ];
+        %tmp.69 = 1;
+        %tmp.70 = add %tmp.68 %tmp.69;
+        lputv %i.7 %tmp.70;
+        symbol [ i %i.7 130 37 38 ];
+        goto @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_130_8_132_8_for_test;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_130_8_132_8_for_end:
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 133 8 ]
+        %tmp.71 = lgetv %offset.5;
+        symbol [ offset %tmp.71 133 8 14 ];
+        %tmp.72 = lgetv %lunar;
+        symbol [ lunar %tmp.72 133 18 23 ];
+        symbol [ lunarDay %tmp.73 133 24 32 ];
+        %tmp.73 = getv %tmp.72 :lunarDay;
+        %tmp.74 = add %tmp.71 %tmp.73;
+        lputv %offset.5 %tmp.74;
+        symbol [ offset %offset.5 133 8 14 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 135 8 ]
+        [ "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_113_33_141_4_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_113_33_141_4_stop" ]
+        %solar11.8 = local;
+        symbol [ solar11 %solar11.8 135 12 19 ];
+        symbol [ solar_1_1 %tmp.76 135 22 31 ];
+        %tmp.76 = getv ? :solar_1_1;
+        %tmp.77 = lgetv %index.2;
+        symbol [ index %tmp.77 135 32 37 ];
+        %tmp.78 = agetv %tmp.76 %tmp.77;
+        lputv %solar11.8 %tmp.78;
+        symbol [ solar11 %solar11.8 135 12 19 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 136 8 ]
+        [ "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_113_33_141_4_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_113_33_141_4_stop" ]
+        %y.9 = local;
+        symbol [ y %y.9 136 12 13 ];
+        %tmp.79 = self;
+        symbol [ GetBitInt %tmp.80 136 16 25 ];
+        %tmp.80 = getv function %tmp.79 :GetBitInt;
+        %tmp.81 = lgetv %solar11.8;
+        symbol [ solar11 %tmp.81 136 26 33 ];
+        %tmp.82 = 12;
+        %tmp.83 = 9;
+        %tmp.84 = invoke %tmp.79 %tmp.80(%tmp.81, %tmp.82, %tmp.83);
+        lputv %y.9 %tmp.84;
+        symbol [ y %y.9 136 12 13 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 137 8 ]
+        [ "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_113_33_141_4_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_113_33_141_4_stop" ]
+        %m.10 = local;
+        symbol [ m %m.10 137 12 13 ];
+        %tmp.85 = self;
+        symbol [ GetBitInt %tmp.86 137 16 25 ];
+        %tmp.86 = getv function %tmp.85 :GetBitInt;
+        %tmp.87 = lgetv %solar11.8;
+        symbol [ solar11 %tmp.87 137 26 33 ];
+        %tmp.88 = 4;
+        %tmp.89 = 5;
+        %tmp.90 = invoke %tmp.85 %tmp.86(%tmp.87, %tmp.88, %tmp.89);
+        lputv %m.10 %tmp.90;
+        symbol [ m %m.10 137 12 13 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 138 8 ]
+        [ "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_113_33_141_4_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_113_33_141_4_stop" ]
+        %d.11 = local;
+        symbol [ d %d.11 138 12 13 ];
+        %tmp.91 = self;
+        symbol [ GetBitInt %tmp.92 138 16 25 ];
+        %tmp.92 = getv function %tmp.91 :GetBitInt;
+        %tmp.93 = lgetv %solar11.8;
+        symbol [ solar11 %tmp.93 138 26 33 ];
+        %tmp.94 = 5;
+        %tmp.95 = 0;
+        %tmp.96 = invoke %tmp.91 %tmp.92(%tmp.93, %tmp.94, %tmp.95);
+        lputv %d.11 %tmp.96;
+        symbol [ d %d.11 138 12 13 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 140 8 ]
+        %tmp.97 = self;
+        symbol [ SolarFromInt %tmp.98 140 15 27 ];
+        %tmp.98 = getv function %tmp.97 :SolarFromInt;
+        %tmp.99 = self;
+        symbol [ SolarToInt %tmp.100 140 28 38 ];
+        %tmp.100 = getv function %tmp.99 :SolarToInt;
+        %tmp.101 = lgetv %y.9;
+        symbol [ y %tmp.101 140 39 40 ];
+        %tmp.102 = lgetv %m.10;
+        symbol [ m %tmp.102 140 42 43 ];
+        %tmp.103 = lgetv %d.11;
+        symbol [ d %tmp.103 140 45 46 ];
+        %tmp.104 = invoke %tmp.99 %tmp.100(%tmp.101, %tmp.102, %tmp.103);
+        %tmp.105 = lgetv %offset.5;
+        symbol [ offset %tmp.105 140 50 56 ];
+        %tmp.106 = add %tmp.104 %tmp.105;
+        %tmp.107 = 1;
+        %tmp.108 = sub %tmp.106 %tmp.107;
+        %tmp.109 = invoke %tmp.97 %tmp.98(%tmp.108);
+        ret %tmp.109;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_113_33_141_4_stop:
+    }
+    [ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc"; @line = 144; @symbol_functiondef = [SolarToLunar,144,13,25]; @symbol_param<0> = [solar,144,26,31]; ]
+    function SolarToLunar(solar) {
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_144_33_196_4_start:
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 145 8 ]
+        [ "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_144_33_196_4_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_144_33_196_4_stop" ]
+        %baseYear.1 = local;
+        symbol [ baseYear %baseYear.1 145 12 20 ];
+        symbol [ solar_1_1 %tmp.2 145 23 32 ];
+        %tmp.2 = getv ? :solar_1_1;
+        %tmp.3 = 0;
+        %tmp.4 = agetv %tmp.2 %tmp.3;
+        lputv %baseYear.1 %tmp.4;
+        symbol [ baseYear %baseYear.1 145 12 20 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 146 8 ]
+        [ "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_144_33_196_4_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_144_33_196_4_stop" ]
+        %index.2 = local;
+        symbol [ index %index.2 146 12 17 ];
+        %tmp.5 = lgetv %solar;
+        symbol [ solar %tmp.5 146 20 25 ];
+        symbol [ solarYear %tmp.6 146 26 35 ];
+        %tmp.6 = getv %tmp.5 :solarYear;
+        %tmp.7 = lgetv %baseYear.1;
+        symbol [ baseYear %tmp.7 146 38 46 ];
+        %tmp.8 = sub %tmp.6 %tmp.7;
+        lputv %index.2 %tmp.8;
+        symbol [ index %index.2 146 12 17 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 147 8 ]
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_147_8_149_8_if_stmt:
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_147_12_147_49_begin:
+        %tmp.9 = lgetv %index.2;
+        symbol [ index %tmp.9 147 12 17 ];
+        %tmp.10 = 0;
+        %tmp.11 = lt %tmp.9 %tmp.10;
+        bt %tmp.11 @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_147_8_149_8_if_true;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_147_25_147_49_false:
+        %tmp.12 = lgetv %index.2;
+        symbol [ index %tmp.12 147 25 30 ];
+        symbol [ solar_1_1 %tmp.14 147 34 43 ];
+        %tmp.14 = getv ? :solar_1_1;
+        symbol [ size %tmp.15 147 44 48 ];
+        %tmp.15 = getv function %tmp.14 :size;
+        %tmp.16 = invoke %tmp.14 %tmp.15();
+        %tmp.17 = gte %tmp.12 %tmp.16;
+        push %tmp.17;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_147_25_147_49_end:
+        %tmp.18 = phi [%tmp.11 @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_147_12_147_49_begin] [%tmp.17 @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_147_25_147_49_false] [%tmp.18 @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_147_25_147_49_end];
+        bf %tmp.18 @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_147_8_149_8_if_end;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_147_8_149_8_if_true:
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_147_52_149_8_start:
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 148 12 ]
+        %tmp.19 = null;
+        ret %tmp.19;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_147_52_149_8_stop:
+        goto @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_147_8_149_8_if_end;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_147_8_149_8_if_end:
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 151 8 ]
+        [ "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_144_33_196_4_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_144_33_196_4_stop" ]
+        %data.3 = local;
+        symbol [ data %data.3 151 12 16 ];
+        %tmp.20 = lgetv %solar;
+        symbol [ solar %tmp.20 151 20 25 ];
+        symbol [ solarYear %tmp.21 151 26 35 ];
+        %tmp.21 = getv %tmp.20 :solarYear;
+        %tmp.22 = 9;
+        %tmp.23 = shl %tmp.21 %tmp.22;
+        %tmp.24 = lgetv %solar;
+        symbol [ solar %tmp.24 151 45 50 ];
+        symbol [ solarMonth %tmp.25 151 51 61 ];
+        %tmp.25 = getv %tmp.24 :solarMonth;
+        %tmp.26 = 5;
+        %tmp.27 = shl %tmp.25 %tmp.26;
+        %tmp.28 = bitor %tmp.23 %tmp.27;
+        %tmp.29 = lgetv %solar;
+        symbol [ solar %tmp.29 151 70 75 ];
+        symbol [ solarDay %tmp.30 151 76 84 ];
+        %tmp.30 = getv %tmp.29 :solarDay;
+        %tmp.31 = bitor %tmp.28 %tmp.30;
+        lputv %data.3 %tmp.31;
+        symbol [ data %data.3 151 12 16 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 152 8 ]
+        [ "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_144_33_196_4_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_144_33_196_4_stop" ]
+        %solar11.4 = local;
+        symbol [ solar11 %solar11.4 152 12 19 ];
+        symbol [ solar_1_1 %tmp.33 152 22 31 ];
+        %tmp.33 = getv ? :solar_1_1;
+        %tmp.34 = lgetv %index.2;
+        symbol [ index %tmp.34 152 32 37 ];
+        %tmp.35 = agetv %tmp.33 %tmp.34;
+        lputv %solar11.4 %tmp.35;
+        symbol [ solar11 %solar11.4 152 12 19 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 153 8 ]
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_153_8_156_8_if_stmt:
+        symbol [ solar_1_1 %tmp.37 153 12 21 ];
+        %tmp.37 = getv ? :solar_1_1;
+        %tmp.38 = lgetv %index.2;
+        symbol [ index %tmp.38 153 22 27 ];
+        %tmp.39 = agetv %tmp.37 %tmp.38;
+        %tmp.40 = lgetv %data.3;
+        symbol [ data %tmp.40 153 31 35 ];
+        %tmp.41 = gt %tmp.39 %tmp.40;
+        bf %tmp.41 @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_153_8_156_8_if_end;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_153_8_156_8_if_true:
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_153_37_156_8_start:
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 154 12 ]
+        %tmp.42 = lgetv %index.2;
+        symbol [ index %tmp.42 154 20 25 ];
+        %tmp.43 = 1;
+        %tmp.44 = sub %tmp.42 %tmp.43;
+        lputv %index.2 %tmp.44;
+        symbol [ index %index.2 154 12 17 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 155 12 ]
+        symbol [ solar_1_1 %tmp.46 155 22 31 ];
+        %tmp.46 = getv ? :solar_1_1;
+        %tmp.47 = lgetv %index.2;
+        symbol [ index %tmp.47 155 32 37 ];
+        %tmp.48 = agetv %tmp.46 %tmp.47;
+        lputv %solar11.4 %tmp.48;
+        symbol [ solar11 %solar11.4 155 12 19 ];
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_153_37_156_8_stop:
+        goto @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_153_8_156_8_if_end;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_153_8_156_8_if_end:
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 158 8 ]
+        [ "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_144_33_196_4_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_144_33_196_4_stop" ]
+        %y.5 = local;
+        symbol [ y %y.5 158 12 13 ];
+        %tmp.49 = self;
+        symbol [ GetBitInt %tmp.50 158 16 25 ];
+        %tmp.50 = getv function %tmp.49 :GetBitInt;
+        %tmp.51 = lgetv %solar11.4;
+        symbol [ solar11 %tmp.51 158 26 33 ];
+        %tmp.52 = 12;
+        %tmp.53 = 9;
+        %tmp.54 = invoke %tmp.49 %tmp.50(%tmp.51, %tmp.52, %tmp.53);
+        lputv %y.5 %tmp.54;
+        symbol [ y %y.5 158 12 13 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 159 8 ]
+        [ "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_144_33_196_4_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_144_33_196_4_stop" ]
+        %m.6 = local;
+        symbol [ m %m.6 159 12 13 ];
+        %tmp.55 = self;
+        symbol [ GetBitInt %tmp.56 159 16 25 ];
+        %tmp.56 = getv function %tmp.55 :GetBitInt;
+        %tmp.57 = lgetv %solar11.4;
+        symbol [ solar11 %tmp.57 159 26 33 ];
+        %tmp.58 = 4;
+        %tmp.59 = 5;
+        %tmp.60 = invoke %tmp.55 %tmp.56(%tmp.57, %tmp.58, %tmp.59);
+        lputv %m.6 %tmp.60;
+        symbol [ m %m.6 159 12 13 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 160 8 ]
+        [ "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_144_33_196_4_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_144_33_196_4_stop" ]
+        %d.7 = local;
+        symbol [ d %d.7 160 12 13 ];
+        %tmp.61 = self;
+        symbol [ GetBitInt %tmp.62 160 16 25 ];
+        %tmp.62 = getv function %tmp.61 :GetBitInt;
+        %tmp.63 = lgetv %solar11.4;
+        symbol [ solar11 %tmp.63 160 26 33 ];
+        %tmp.64 = 5;
+        %tmp.65 = 0;
+        %tmp.66 = invoke %tmp.61 %tmp.62(%tmp.63, %tmp.64, %tmp.65);
+        lputv %d.7 %tmp.66;
+        symbol [ d %d.7 160 12 13 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 162 8 ]
+        [ "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_144_33_196_4_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_144_33_196_4_stop" ]
+        %offset.8 = local;
+        symbol [ offset %offset.8 162 12 18 ];
+        %tmp.67 = self;
+        symbol [ SolarToInt %tmp.68 162 21 31 ];
+        %tmp.68 = getv function %tmp.67 :SolarToInt;
+        %tmp.69 = lgetv %solar;
+        symbol [ solar %tmp.69 162 32 37 ];
+        symbol [ solarYear %tmp.70 162 38 47 ];
+        %tmp.70 = getv %tmp.69 :solarYear;
+        %tmp.71 = lgetv %solar;
+        symbol [ solar %tmp.71 162 49 54 ];
+        symbol [ solarMonth %tmp.72 162 55 65 ];
+        %tmp.72 = getv %tmp.71 :solarMonth;
+        %tmp.73 = lgetv %solar;
+        symbol [ solar %tmp.73 162 67 72 ];
+        symbol [ solarDay %tmp.74 162 73 81 ];
+        %tmp.74 = getv %tmp.73 :solarDay;
+        %tmp.75 = invoke %tmp.67 %tmp.68(%tmp.70, %tmp.72, %tmp.74);
+        %tmp.76 = self;
+        symbol [ SolarToInt %tmp.77 162 85 95 ];
+        %tmp.77 = getv function %tmp.76 :SolarToInt;
+        %tmp.78 = lgetv %y.5;
+        symbol [ y %tmp.78 162 96 97 ];
+        %tmp.79 = lgetv %m.6;
+        symbol [ m %tmp.79 162 99 100 ];
+        %tmp.80 = lgetv %d.7;
+        symbol [ d %tmp.80 162 102 103 ];
+        %tmp.81 = invoke %tmp.76 %tmp.77(%tmp.78, %tmp.79, %tmp.80);
+        %tmp.82 = sub %tmp.75 %tmp.81;
+        lputv %offset.8 %tmp.82;
+        symbol [ offset %offset.8 162 12 18 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 164 8 ]
+        [ "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_144_33_196_4_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_144_33_196_4_stop" ]
+        %days.9 = local;
+        symbol [ days %days.9 164 12 16 ];
+        symbol [ lunar_month_days %tmp.84 164 19 35 ];
+        %tmp.84 = getv ? :lunar_month_days;
+        %tmp.85 = lgetv %index.2;
+        symbol [ index %tmp.85 164 36 41 ];
+        %tmp.86 = agetv %tmp.84 %tmp.85;
+        lputv %days.9 %tmp.86;
+        symbol [ days %days.9 164 12 16 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 165 8 ]
+        [ "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_144_33_196_4_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_144_33_196_4_stop" ]
+        %leap.10 = local;
+        symbol [ leap %leap.10 165 12 16 ];
+        %tmp.87 = self;
+        symbol [ GetBitInt %tmp.88 165 19 28 ];
+        %tmp.88 = getv function %tmp.87 :GetBitInt;
+        %tmp.89 = lgetv %days.9;
+        symbol [ days %tmp.89 165 29 33 ];
+        %tmp.90 = 4;
+        %tmp.91 = 13;
+        %tmp.92 = invoke %tmp.87 %tmp.88(%tmp.89, %tmp.90, %tmp.91);
+        lputv %leap.10 %tmp.92;
+        symbol [ leap %leap.10 165 12 16 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 167 8 ]
+        [ "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_144_33_196_4_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_144_33_196_4_stop" ]
+        %lunarY.11 = local;
+        symbol [ lunarY %lunarY.11 167 12 18 ];
+        %tmp.93 = lgetv %index.2;
+        symbol [ index %tmp.93 167 21 26 ];
+        %tmp.94 = lgetv %baseYear.1;
+        symbol [ baseYear %tmp.94 167 29 37 ];
+        %tmp.95 = add %tmp.93 %tmp.94;
+        lputv %lunarY.11 %tmp.95;
+        symbol [ lunarY %lunarY.11 167 12 18 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 168 8 ]
+        [ "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_144_33_196_4_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_144_33_196_4_stop" ]
+        %lunarM.12 = local;
+        symbol [ lunarM %lunarM.12 168 12 18 ];
+        %tmp.96 = 1;
+        lputv %lunarM.12 %tmp.96;
+        symbol [ lunarM %lunarM.12 168 12 18 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 169 8 ]
+        %tmp.97 = lgetv %offset.8;
+        symbol [ offset %tmp.97 169 8 14 ];
+        %tmp.98 = 1;
+        %tmp.99 = add %tmp.97 %tmp.98;
+        lputv %offset.8 %tmp.99;
+        symbol [ offset %offset.8 169 8 14 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 171 8 ]
+        for @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_171_8_179_8_for_test @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_171_8_179_8_for_incr @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_171_8_179_8_for_end;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_171_8_179_8_for_init:
+        [ "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_171_8_179_8_for_begin" "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_171_8_179_8_for_end" ]
+        %i.13 = local;
+        symbol [ i %i.13 171 17 18 ];
+        %tmp.100 = 0;
+        lputv %i.13 %tmp.100;
+        symbol [ i %i.13 171 17 18 ];
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_171_8_179_8_for_test:
+        %tmp.101 = lgetv %i.13;
+        symbol [ i %tmp.101 171 24 25 ];
+        %tmp.102 = 13;
+        %tmp.103 = lt %tmp.101 %tmp.102;
+        bf %tmp.103 @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_171_8_179_8_for_end;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_171_8_179_8_for_begin:
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_171_40_179_8_start:
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 172 12 ]
+        [ "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_171_40_179_8_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_171_40_179_8_stop" ]
+        %dm.14 = local;
+        symbol [ dm %dm.14 172 16 18 ];
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_172_21_172_62_begin:
+        %tmp.104 = self;
+        symbol [ GetBitInt %tmp.105 172 22 31 ];
+        %tmp.105 = getv function %tmp.104 :GetBitInt;
+        %tmp.106 = lgetv %days.9;
+        symbol [ days %tmp.106 172 32 36 ];
+        %tmp.107 = 1;
+        %tmp.108 = 12;
+        %tmp.109 = lgetv %i.13;
+        symbol [ i %tmp.109 172 46 47 ];
+        %tmp.110 = sub %tmp.108 %tmp.109;
+        %tmp.111 = invoke %tmp.104 %tmp.105(%tmp.106, %tmp.107, %tmp.110);
+        %tmp.112 = 1;
+        %tmp.113 = eq %tmp.111 %tmp.112;
+        bf %tmp.113 @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_172_21_172_62_else_false;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_172_21_172_62_true:
+        %tmp.114 = 30;
+        push %tmp.114;
+        goto @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_172_21_172_62_end;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_172_21_172_62_else_false:
+        %tmp.115 = 29;
+        push %tmp.115;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_172_21_172_62_end:
+        %tmp.116 = phi [%tmp.113 @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_172_21_172_62_begin] [%tmp.114 @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_172_21_172_62_true] [%tmp.115 @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_172_21_172_62_else_false] [%tmp.116 @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_172_21_172_62_end];
+        lputv %dm.14 %tmp.116;
+        symbol [ dm %dm.14 172 16 18 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 173 12 ]
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_173_12_178_12_if_stmt:
+        %tmp.117 = lgetv %offset.8;
+        symbol [ offset %tmp.117 173 16 22 ];
+        %tmp.118 = lgetv %dm.14;
+        symbol [ dm %tmp.118 173 25 27 ];
+        %tmp.119 = gt %tmp.117 %tmp.118;
+        bf %tmp.119 @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_173_12_178_12_if_else_false;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_173_12_178_12_if_true:
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_173_29_176_12_start:
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 174 16 ]
+        %tmp.120 = lgetv %lunarM.12;
+        symbol [ lunarM %tmp.120 174 16 22 ];
+        %tmp.121 = 1;
+        %tmp.122 = add %tmp.120 %tmp.121;
+        lputv %lunarM.12 %tmp.122;
+        symbol [ lunarM %lunarM.12 174 16 22 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 175 16 ]
+        %tmp.123 = lgetv %offset.8;
+        symbol [ offset %tmp.123 175 16 22 ];
+        %tmp.124 = lgetv %dm.14;
+        symbol [ dm %tmp.124 175 26 28 ];
+        %tmp.125 = sub %tmp.123 %tmp.124;
+        lputv %offset.8 %tmp.125;
+        symbol [ offset %offset.8 175 16 22 ];
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_173_29_176_12_stop:
+        goto @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_173_12_178_12_if_end;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_173_12_178_12_if_else_false:
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_176_19_178_12_start:
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 177 16 ]
+        goto break @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_171_8_179_8_for_end;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_176_19_178_12_stop:
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_173_12_178_12_if_end:
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_171_40_179_8_stop:
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_171_8_179_8_for_incr:
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 171 ]
+        %tmp.126 = lgetv %i.13;
+        symbol [ i %tmp.126 171 32 33 ];
+        %tmp.127 = 1;
+        %tmp.128 = add %tmp.126 %tmp.127;
+        lputv %i.13 %tmp.128;
+        symbol [ i %i.13 171 32 33 ];
+        goto @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_171_8_179_8_for_test;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_171_8_179_8_for_end:
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 181 8 ]
+        [ "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_144_33_196_4_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_144_33_196_4_stop" ]
+        %lunarD.15 = local;
+        symbol [ lunarD %lunarD.15 181 12 18 ];
+        %tmp.129 = lgetv %offset.8;
+        symbol [ offset %tmp.129 181 21 27 ];
+        lputv %lunarD.15 %tmp.129;
+        symbol [ lunarD %lunarD.15 181 12 18 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 182 8 ]
+        [ "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_144_33_196_4_start" "_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_144_33_196_4_stop" ]
+        %lunar.16 = local;
+        symbol [ lunar %lunar.16 182 12 17 ];
+        symbol [ Lunar %tmp.133 182 24 29 ];
+        %tmp.133 = getv ? :Lunar;
+        %tmp.130 = newc %tmp.133 ();
+        lputv %lunar.16 %tmp.130;
+        symbol [ lunar %lunar.16 182 12 17 ];
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 183 8 ]
+        %tmp.134 = lgetv %lunar.16;
+        symbol [ lunar %tmp.134 183 8 13 ];
+        %tmp.135 = lgetv %lunarY.11;
+        symbol [ lunarY %tmp.135 183 26 32 ];
+        symbol [ lunarYear ? 183 14 23 ];
+        putv %tmp.134 :lunarYear %tmp.135;
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 184 8 ]
+        %tmp.136 = lgetv %lunar.16;
+        symbol [ lunar %tmp.136 184 8 13 ];
+        %tmp.137 = lgetv %lunarM.12;
+        symbol [ lunarM %tmp.137 184 27 33 ];
+        symbol [ lunarMonth ? 184 14 24 ];
+        putv %tmp.136 :lunarMonth %tmp.137;
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 185 8 ]
+        %tmp.138 = lgetv %lunar.16;
+        symbol [ lunar %tmp.138 185 8 13 ];
+        %tmp.139 = lgetv %lunarD.15;
+        symbol [ lunarD %tmp.139 185 25 31 ];
+        symbol [ lunarDay ? 185 14 22 ];
+        putv %tmp.138 :lunarDay %tmp.139;
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 186 8 ]
+        %tmp.140 = lgetv %lunar.16;
+        symbol [ lunar %tmp.140 186 8 13 ];
+        %tmp.141 = false;
+        symbol [ isleap ? 186 14 20 ];
+        putv %tmp.140 :isleap %tmp.141;
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 188 8 ]
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_188_8_193_8_if_stmt:
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_188_12_188_34_begin:
+        %tmp.142 = lgetv %leap.10;
+        symbol [ leap %tmp.142 188 12 16 ];
+        %tmp.143 = 0;
+        %tmp.144 = ne %tmp.142 %tmp.143;
+        bf %tmp.144 @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_188_8_193_8_if_end;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_188_25_188_34_true:
+        %tmp.145 = lgetv %lunarM.12;
+        symbol [ lunarM %tmp.145 188 25 31 ];
+        %tmp.146 = lgetv %leap.10;
+        symbol [ leap %tmp.146 188 34 38 ];
+        %tmp.147 = gt %tmp.145 %tmp.146;
+        push %tmp.147;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_188_25_188_34_end:
+        %tmp.148 = phi [%tmp.144 @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_188_12_188_34_begin] [%tmp.147 @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_188_25_188_34_true] [%tmp.148 @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_188_25_188_34_end];
+        bf %tmp.148 @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_188_8_193_8_if_end;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_188_8_193_8_if_true:
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_188_40_193_8_start:
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 189 12 ]
+        %tmp.149 = lgetv %lunar.16;
+        symbol [ lunar %tmp.149 189 12 17 ];
+        %tmp.150 = lgetv %lunarM.12;
+        symbol [ lunarM %tmp.150 189 31 37 ];
+        %tmp.151 = 1;
+        %tmp.152 = sub %tmp.150 %tmp.151;
+        symbol [ lunarMonth ? 189 18 28 ];
+        putv %tmp.149 :lunarMonth %tmp.152;
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 190 12 ]
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_190_12_192_12_if_stmt:
+        %tmp.153 = lgetv %lunarM.12;
+        symbol [ lunarM %tmp.153 190 16 22 ];
+        %tmp.154 = lgetv %leap.10;
+        symbol [ leap %tmp.154 190 26 30 ];
+        %tmp.155 = 1;
+        %tmp.156 = add %tmp.154 %tmp.155;
+        %tmp.157 = eq %tmp.153 %tmp.156;
+        bf %tmp.157 @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_190_12_192_12_if_end;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_190_12_192_12_if_true:
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_190_36_192_12_start:
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 191 16 ]
+        %tmp.158 = lgetv %lunar.16;
+        symbol [ lunar %tmp.158 191 16 21 ];
+        %tmp.159 = true;
+        symbol [ isleap ? 191 22 28 ];
+        putv %tmp.158 :isleap %tmp.159;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_190_36_192_12_stop:
+        goto @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_190_12_192_12_if_end;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_190_12_192_12_if_end:
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_188_40_193_8_stop:
+        goto @_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_188_8_193_8_if_end;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_188_8_193_8_if_end:
+[ "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc" 195 8 ]
+        %tmp.160 = lgetv %lunar.16;
+        symbol [ lunar %tmp.160 195 15 20 ];
+        ret %tmp.160;
+_Users_vtpminim4_Documents_garmin_face_simpleface_source_LunarConverter_mc_144_33_196_4_stop:
+    }
+}
+[ @file = "/Users/vtpminim4/Documents/garmin-face/simpleface/source/LunarConverter.mc"; @line = 1; ]
+<init> {
+}

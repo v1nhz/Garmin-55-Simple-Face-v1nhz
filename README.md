@@ -46,3 +46,7 @@ Demo v3
 Dự án được phát triển bằng **Garmin Connect IQ (Monkey C)**.
 
 Sử dụng SDK 8.4.1, level API 3.4.0
+
+build .iq file
+
+monkeyc -e -f monkey.jungle -o app.iq -y developer_key
