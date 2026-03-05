@@ -1,6 +1,29 @@
 <settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
 
-    <setting propertyKey="@Properties.titleText" title="Watch Name">
+    <setting propertyKey="@Properties.watchName" title="Watch Name">
         <settingConfig type="alphaNumeric" />
+    </setting>
+
+    <setting propertyKey="@Properties.watchNameColor" title="Watch Name Color" prompt="Watch Name Color">
+        <settingConfig type="list">
+            <listEntry value="0x000000">Black</listEntry> 
+            <listEntry value="0xFFFFFF">White</listEntry> 
+            <listEntry value="0xAAAAAA">Gray</listEntry> 
+            <listEntry value="0x555555">Dark Gray</listEntry> 
+            <listEntry value="0xFF0000">Red</listEntry> 
+            <listEntry value="0xCC0000">Dark Red</listEntry> 
+            <listEntry value="0xFF5555">Soft Red</listEntry> 
+            <listEntry value="0x00FF00">Bright Green</listEntry> 
+            <listEntry value="0x00CC00">Green</listEntry> 
+            <listEntry value="0x009900">Dark Green</listEntry> 
+            <listEntry value="0x0000FF">Blue</listEntry> 
+            <listEntry value="0x0066FF">Bright Blue</listEntry> 
+            <listEntry value="0x3399FF">Soft Blue</listEntry> 
+            <listEntry value="0xFFFF00">Yellow</listEntry> 
+            <listEntry value="0xFFCC00">Orange Yellow</listEntry> 
+            <listEntry value="0xFF9900">Orange</listEntry> 
+            <listEntry value="0x9900FF">Purple</listEntry> 
+            <listEntry value="0x6600CC">Dark Purple</listEntry>
+        </settingConfig>
     </setting>
 </settings>

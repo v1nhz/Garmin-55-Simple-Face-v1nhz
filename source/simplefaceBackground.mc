@@ -14,9 +14,7 @@ class Background extends WatchUi.Drawable {
     }
 
     function draw(dc as Dc) as Void {
-        var bg = Application.Properties.getValue("BackgroundColor");
-        var color = (bg != null) ? bg as Number : Graphics.COLOR_WHITE;
-        dc.setColor(color, color);
+        dc.setColor(0x000000, 0x000000);
         dc.fillRectangle(0, 0, dc.getWidth(), dc.getHeight());
     }
 

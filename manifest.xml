@@ -5,7 +5,7 @@
         Use "Monkey C: Edit Application" from the Visual Studio Code command palette
         to update the application attributes.
     -->
-    <iq:application id="5f3992c5-6f51-464d-bc8f-1106f0e6b1d6" type="watchface" name="@Strings.AppName" entry="simplefaceApp" launcherIcon="@Drawables.LauncherIcon" minApiLevel="3.4.0">
+    <iq:application id="a41c5a9403314cb18f31059ba998fd8e" type="watchface" name="@Strings.AppName" entry="simplefaceApp" launcherIcon="@Drawables.LauncherIcon" minApiLevel="3.4.0">
         <!--
             Use the following from the Visual Studio Code comand palette to edit
             the build targets:
@@ -27,6 +27,7 @@
         -->
         <iq:languages>
             <iq:language>eng</iq:language>
+            <iq:language>vie</iq:language>
         </iq:languages>
         <!--
             Use "Monkey C: Configure Monkey Barrel" from the Visual Studio Code
