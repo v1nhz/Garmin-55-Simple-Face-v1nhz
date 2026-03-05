@@ -2,7 +2,9 @@
     <bitmap id="LauncherIcon" filename="launcher_icon.png" dithering="none" />
     <bitmap id="HeartIcon" filename="heart_icon.png" />
     <bitmap id="HeartRedIcon" filename="heart_red_icon.png" />
-    <bitmap id="FootIcon" filename="foot_icon.png" />
-    <bitmap id="HotIcon" filename="hot_icon.png" />
+    <bitmap id="FootIcon" filename="foot_white_16.png" />
+    <bitmap id="HotIcon" filename="calorie_white_16.png" />
     <bitmap id="MoonIcon" filename="moon_icon.png" />
+    <bitmap id="MoonWhite16" filename="moon_white_16.png" />
+    <bitmap id="LocationWhite16" filename="location_white_16.png" />
 </drawables>

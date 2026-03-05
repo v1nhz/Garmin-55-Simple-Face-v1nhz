@@ -17,7 +17,8 @@ class simplefaceView extends WatchUi.WatchFace {
     var heartBmp;
     var footIcon;
     var hotIcon;
-    var moonIcon;
+    var moonWhite16;
+    var locationWhite16;
 
     // cached labels
     var lblDate;
@@ -56,7 +57,8 @@ class simplefaceView extends WatchUi.WatchFace {
         heartBmp = WatchUi.loadResource(Rez.Drawables.HeartRedIcon);
         footIcon = WatchUi.loadResource(Rez.Drawables.FootIcon);
         hotIcon  = WatchUi.loadResource(Rez.Drawables.HotIcon);
-        moonIcon = WatchUi.loadResource(Rez.Drawables.MoonIcon);
+        moonWhite16 = WatchUi.loadResource(Rez.Drawables.MoonWhite16);
+        locationWhite16 = WatchUi.loadResource(Rez.Drawables.LocationWhite16);
     }
 
     function onLayout(dc) {
@@ -119,8 +121,11 @@ class simplefaceView extends WatchUi.WatchFace {
             solar.solarMonth = date.month;
             solar.solarDay   = date.day;
             cachedLunar = lunarConverter.SolarToLunar(solar);
-            txtLunarDate = cachedLunar.lunarDay + "-" + cachedLunar.lunarMonth;
 
+            var lMonthStr = cachedLunar.lunarMonth.format("%d");
+            var lDayStr   = cachedLunar.lunarDay.format("%d");
+            var countlMonthStr = lMonthStr.length();
+            txtLunarDate = lDayStr + "-" + (countlMonthStr == 1 ? "0" + lMonthStr : lMonthStr);
             txtDate = formatFullDate(date);
         }
         
@@ -129,17 +134,18 @@ class simplefaceView extends WatchUi.WatchFace {
 
         WatchFace.onUpdate(dc);
         // ---- ICONS ----
-        dc.drawBitmap(35, 150, heartBmp);
-        dc.drawBitmap(107, 144, footIcon);
-        dc.drawBitmap(107, 163, hotIcon);
-        dc.drawBitmap(130, 54, moonIcon);
-        // drawBatteryIcon(dc, sys.battery);
+        dc.drawBitmap(75, 183, heartBmp);
+        dc.drawBitmap(110, 98, locationWhite16);
+        dc.drawBitmap(110, 122, footIcon);
+        dc.drawBitmap(110, 146, hotIcon);
+        dc.drawBitmap(40, 122, moonWhite16);
+        drawBatteryIcon(dc, sys.battery);
     }
 
     
     function setValueToLabel() {
         lblDate.setText(txtDate);
-        lblBattery.setText(txtBattery);
+        lblBattery.setText("99%");
         lblTime.setText(txtTime);
         lblLunarDate.setText(txtLunarDate);
         lblHR.setText(txtHR);
@@ -190,17 +196,17 @@ class simplefaceView extends WatchUi.WatchFace {
     // ---DRAW ICON---
     // draw battery icon
     function drawBatteryIcon(dc, battery) {
-        var w = 20;
-        var h = 10;
-        var x = 75;
-        var y = 194;
+        var w = 37;
+        var h = 20;
+        var x = 85;
+        var y = 2;
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         dc.drawRectangle(x, y, w, h);
         dc.fillRectangle(x + w, y + (h / 4), 2, h / 2);
-        var fillWidth = (w - 4) * battery / 100;
-        if (fillWidth > 0) {
-            dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_GREEN);
-            dc.fillRectangle(x + 2, y + 2, fillWidth, h - 4);
-        }
+        // var fillWidth = (w - 4) * battery / 100;
+        // if (fillWidth > 0) {
+        //     dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_GREEN);
+        //     dc.fillRectangle(x + 2, y + 2, fillWidth, h - 4);
+        // }
     }
 }

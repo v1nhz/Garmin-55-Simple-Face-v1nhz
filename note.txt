@@ -1,0 +1,44 @@
+FONT_XTINY	0	
+API Level 1.0.0
+
+Extra tiny Connect IQ font
+
+FONT_TINY	1	
+API Level 1.0.0
+
+Tiny Connect IQ font
+
+FONT_SMALL	2	
+API Level 1.0.0
+
+Small Connect IQ font
+
+FONT_MEDIUM	3	
+API Level 1.0.0
+
+Medium Connect IQ font
+
+FONT_LARGE	4	
+API Level 1.0.0
+
+Large Connect IQ font
+
+FONT_NUMBER_MILD	5	
+API Level 1.0.0
+
+Normal size number only Connect IQ font
+
+FONT_NUMBER_MEDIUM	6	
+API Level 1.0.0
+
+Medium size number only Connect IQ font
+
+FONT_NUMBER_HOT	7	
+API Level 1.0.0
+
+Large size number only Connect IQ font
+
+FONT_NUMBER_THAI_HOT	8	
+API Level 1.0.0
+
+Huge size number only Connect IQ font
